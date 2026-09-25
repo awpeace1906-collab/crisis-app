@@ -1,0 +1,53 @@
+# Builds the PWA and publishes it to GitHub Pages on every push to main.
+#
+# Served from a subpath — https://awpeace1906-collab.github.io/crisis-app/ —
+# so the build passes --base=/crisis-app/. Everything that references a local
+# asset resolves through import.meta.env.BASE_URL (or %BASE_URL% in index.html)
+# for exactly this reason; local dev and the demo build keep base "/".
+#
+# Content does NOT come from here. The app fetches it at runtime from the
+# crisis-content CDN; the public/data/*.json baked into this build is only the
+# offline fallback, refreshed by `npm run sync-content`. A content fix never
+# needs this workflow to run.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time; a newer push supersedes an in-flight one.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx vite build --base=/crisis-app/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

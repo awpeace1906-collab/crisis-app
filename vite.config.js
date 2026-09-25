@@ -15,12 +15,15 @@ export default defineConfig({
         theme_color: '#0a0e14',
         background_color: '#0a0e14',
         display: 'standalone',
-        start_url: '/',
+        // Relative, so the installed PWA opens at its own base (/crisis-app/ on
+        // GitHub Pages) rather than the domain root.
+        start_url: './',
+        scope: './',
         icons: [
-          { src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
-          { src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png' },
-          { src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
-          { src: '/icons/icon.svg', sizes: 'any', type: 'image/svg+xml' },
+          { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+          { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+          { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+          { src: 'icons/icon.svg', sizes: 'any', type: 'image/svg+xml' },
         ],
       },
       workbox: {

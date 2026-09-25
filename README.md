@@ -1,16 +1,52 @@
-# React + Vite
+# CRISIS
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Clinical Reference for Immediate Stabilization In Situ** — an offline-first
+reference for crisis protocols, high-acuity low-occurrence (HALO) procedures,
+and envenomation.
 
-Currently, two official plugins are available:
+**Live:** https://awpeace1906-collab.github.io/crisis-app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> A reference for rapid recall under pressure — not a substitute for
+> institutional protocol, clinical judgment, or real-time specialist
+> consultation. Verify doses and technique against your own institution's
+> protocols before clinical use.
 
-## React Compiler
+## Two apps, one content source
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| | |
+|---|---|
+| `src/`, `public/` | React + Vite PWA. Installable, works fully offline. |
+| `ios/` | Native SwiftUI app (generated with `xcodegen` from `ios/project.yml`). |
 
-## Expanding the Oxlint configuration
+Neither app owns its content. Protocols, procedures and species data live in
+the separate **[crisis-content](https://github.com/awpeace1906-collab/crisis-content)**
+repo, which builds them to JSON and serves them from the jsDelivr CDN. Both apps
+fetch from the CDN at runtime and cache for offline use — so a content
+correction ships by pushing to crisis-content, with no app release.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+The JSON under `public/data/` and `ios/CRISIS/Resources/` is only the **offline
+fallback** baked into each build, used on a first launch with no network.
+
+## Working on it
+
+```bash
+npm install
+npm run dev            # local dev (serves the bundled /data first, then the CDN)
+npm run sync-content   # refresh the offline fallback from ../../crisis-content/dist
+npm run build          # production build (base "/")
+npm run build:demo     # single self-contained HTML file, for sharing a preview
+```
+
+Pushing to `main` deploys to GitHub Pages (`.github/workflows/pages.yml`). The
+site is served from `/crisis-app/`, so every local asset path goes through
+`import.meta.env.BASE_URL` (or `%BASE_URL%` in `index.html`) — a root-absolute
+path like `/data/...` builds fine and then 404s under the subpath, and for the
+offline fallback that failure only shows up when the device is actually offline.
+
+## Categories and ordering
+
+Category membership, order, and cross-listing are defined in crisis-content's
+`scripts/unified-categories.mjs`. Within a category, entries sort by
+`entryOrder`, not alphabetically — the app stores entries in IndexedDB keyed by
+`id`, so any order in the JSON is discarded on read. The web `EntryList.jsx` and
+iOS `DataStore.groupByCategory` both implement this and must stay in parity.

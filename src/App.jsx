@@ -28,7 +28,7 @@ function Header() {
       )}
       {atRoot ? (
         <Link to="/" className="brand-mark">
-          <img src="/icons/icon.svg" className="mark" alt="" />
+          <img src={`${import.meta.env.BASE_URL}icons/icon.svg`} className="mark" alt="" />
           <span className="name">CRISIS</span>
         </Link>
       ) : (

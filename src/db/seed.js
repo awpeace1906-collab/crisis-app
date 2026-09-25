@@ -1,6 +1,12 @@
 import { openCrisisDB } from './schema.js';
 import { CDN_BASE } from '../config.js';
 
+// Bundled offline copy. Resolved against Vite's base, not the domain root:
+// on GitHub Pages the app lives under /crisis-app/, and a root-absolute
+// "/data/..." there 404s — which only surfaces offline, because online the
+// CDN answers first. That is exactly the case this fallback exists for.
+const LOCAL_DATA = `${import.meta.env.BASE_URL}data`;
+
 async function fetchJSON(path) {
   const res = await fetch(path, { cache: 'no-store' });
   if (!res.ok) throw new Error(`Failed to fetch ${path}: ${res.status}`);
@@ -25,8 +31,8 @@ async function fetchJSONWithFallback(filename) {
   // as it sounds. Production keeps CDN-first so a content fix ships without
   // an app release.
   const order = import.meta.env.DEV
-    ? [`/data/${filename}`, `${CDN_BASE}/${filename}`]
-    : [`${CDN_BASE}/${filename}`, `/data/${filename}`];
+    ? [`${LOCAL_DATA}/${filename}`, `${CDN_BASE}/${filename}`]
+    : [`${CDN_BASE}/${filename}`, `${LOCAL_DATA}/${filename}`];
 
   try {
     return await fetchJSON(order[0]);
