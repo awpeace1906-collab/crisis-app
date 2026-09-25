@@ -1,0 +1,2075 @@
+{
+  "generatedAt": "2026-09-24T23:56:25.157Z",
+  "regions": [
+    {
+      "id": "africa",
+      "file": "envenomation-africa.html",
+      "label": "Africa",
+      "lede": "Sub-Saharan and southern African species. Antivenom access is a genuine, ongoing logistical constraint across this region — several entries below flag current supply status rather than treating it as settled.",
+      "species": [
+        {
+          "id": "puff-adder",
+          "class": "snake",
+          "mechanism": "cytotoxic",
+          "search": "puff adder bitis arietans",
+          "regionTag": "Africa",
+          "classTag": "Snake — Viperidae",
+          "mechanismTag": "Cytotoxic / Hemotoxic",
+          "title": "Puff Adder",
+          "subtitle": "Bitis arietans. The single most medically important snake across sub-Saharan Africa by case volume — widespread, common near human dwellings, and responsible for a large share of the region's estimated 314,000+ annual envenomings",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Rapid onset of pain and swelling at the bite site, progressing over hours. This is not a snake that hides its bite the way boomslang does — local findings are immediate and obvious."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Potently cytotoxic: severe pain, swelling, extensive blistering, and tissue necrosis at the bite site, which can leave patients vulnerable to serious secondary infection. Systemically, venom also has real hemotoxic activity — hypotension, spontaneous hemorrhage, thrombocytopenia, and coagulopathy occur alongside the local picture, so don't anchor purely on \"cytotoxic\" and skip coagulation labs."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Immobilize the limb, remove constricting items, transport. No tourniquet, incision, or suction. Given tissue destruction potential, minimize additional trauma to the bite site."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Serial limb measurements/marking as with other viper bites. Baseline and serial coagulation studies given the hemotoxic component. Aggressive wound care and low threshold for surgical consult given necrosis risk — this is one of the African species where secondary tissue infection is a real downstream threat, not just an antivenom question."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Covered by SAIMR Polyvalent Snakebite Antiserum (South African Vaccine Producers), the regional gold standard, alongside gaboon adder, rinkhals, green/Jameson's/black mamba, and cape/forest/snouted/Mozambique spitting cobra. Recommended initial dose for serious cytotoxic bites (puff adder, gaboon adder) is 5–10 ampoules (50–100 mL) IV. A newer WHO-approved alternative, PANAF Polyvalent, covers 24 African species including puff adder but requires roughly double the volume for equivalent neutralization based on preclinical comparison data. SAIMR polyvalent has a real anaphylaxis rate — roughly 4 in 10 patients in some reporting — so treat only in a monitored setting with epinephrine ready."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit for antivenom administration, wound care, and monitoring for compartment syndrome/secondary infection. Roughly 90% of hospitalized snakebite patients regionally don't end up needing antivenom — reserve it for progressive local or any systemic findings, not universally."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "SAIMR polyvalent antivenom supply is not a hypothetical concern — South Africa has had real, reported production shortages (most recently flagged in 2023–2024), and the product is also relied upon by neighboring countries with no domestic production of their own. Know your current regional supply chain before you need it, not during a shortage."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "black-mamba",
+          "class": "snake",
+          "mechanism": "neurotoxic",
+          "search": "black mamba dendroaspis polylepis",
+          "regionTag": "Africa",
+          "classTag": "Snake — Elapidae",
+          "mechanismTag": "Neurotoxic",
+          "title": "Black Mamba",
+          "subtitle": "Dendroaspis polylepis. Sub-Saharan Africa's most feared elapid — fast-moving, potently neurotoxic, capable of rapid progression to respiratory failure",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Neurotoxic signs can progress quickly relative to other elapids — this is not the slow-burn presentation seen with North American coral snake. Local findings at the bite are typically minimal, which can be falsely reassuring."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Classic descending neurotoxic pattern: ptosis, dysarthria, dysphagia, progressing to generalized paralysis and respiratory failure if untreated."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Rapid transport is the priority — this is one of the African species where time to definitive airway/antivenom access most directly determines outcome. Immobilize, remove constricting items, do not delay for field interventions that don't change outcome."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Airway equipment ready at bedside. Antivenom given in the acute phase of neurotoxic envenoming will often NOT halt progression of neurologic effects, especially respiratory paralysis already underway — the patient may still require ventilatory support regardless of antivenom timing, and will not survive without it if paralysis has already progressed."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Covered by SAIMR Polyvalent. Recommended dose for neurotoxic bites (mambas, neurotoxic cobras) is 80–120 mL, up to 200 mL in severe mamba envenomation — meaningfully higher volume than the cytotoxic-bite dosing. A follow-up dose is occasionally required specifically in black mamba bites. Neurologic improvement after antivenom is often slow (2–6 hours) and can be unconvincing even when treatment is working — don't judge efficacy on a 30-minute window the way you might with a North American crotalid."
+            },
+            {
+              "label": "Disposition",
+              "html": "ICU-level care for any patient with bulbar or respiratory signs. Ventilator support may be needed independent of antivenom response."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Minimal bite-site findings with a confirmed or strongly suspected black mamba exposure is not reassurance — treat this like the North American coral snake principle: the wound doesn't tell you the story, the timeline does. Don't wait for antivenom response to commit to airway support if respiratory signs are progressing."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "boomslang",
+          "class": "snake",
+          "mechanism": "hemotoxic",
+          "search": "boomslang dispholidus typus vine snake twig snake colubrid",
+          "regionTag": "Africa",
+          "classTag": "Snake — Colubridae (rear-fanged)",
+          "mechanismTag": "Hemotoxic (VICC)",
+          "title": "Boomslang",
+          "subtitle": "Dispholidus typus. Afrikaans for \"tree snake\" — arboreal, shy, non-aggressive. Bites are rare and almost always occur during handling. Not covered by SAIMR Polyvalent — requires its own monovalent product",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "This is the single most dangerous timeline mismatch in African envenomation. Initial local findings at the bite are minimal — mild swelling or pain, sometimes nothing at all. Venom-induced consumptive coagulopathy (VICC) can appear within 4 hours but is classically delayed up to 72 hours. A patient can look and feel completely fine for a full day or more while coagulation factors are actively being consumed."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Venom metalloproteinases activate prothrombin and factors IX/X, driving a consumptive coagulopathy that depletes fibrinogen and platelets. Untreated, this progresses to frank DIC. Bleeding ranges from minor oozing at puncture sites and epistaxis/gum bleeding to life-threatening bleeding into muscle, hemoglobinuria with acute tubular necrosis, GI hemorrhage, and CNS bleeding."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Any confirmed or strongly suspected boomslang bite requires hospital evaluation regardless of how the patient looks — this cannot be cleared in the field or dismissed because the wound is unimpressive."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "The 20-minute whole blood clotting test (draw blood into a plain glass tube, leave undisturbed 20 minutes, check for clot formation) is a fast bedside screen used widely across African snakebite care when formal coag panels are slow to return. Serial coagulation studies are essential given the delayed timeline — a normal initial PT/PTT does not clear the patient. Point-of-care viscoelastic testing (ROTEM/TEG), where available, has been used to detect subclinical coagulopathy that standard labs missed."
+            },
+            {
+              "label": "Antivenom",
+              "html": "SAIMR Polyvalent does NOT cover boomslang — a separate SAIMR Boomslang monovalent antivenom (South African Vaccine Producers) is required, and its supply is even more limited and expensive (roughly R6,800/vial domestically, or cited as high as US$6,000/vial internationally) than the polyvalent product. Dose: 20 mL (2 ampoules) IV in isotonic fluid over 30 minutes; a follow-up 10 mL dose is sometimes needed. When given, it reliably normalizes coagulation factors. There is no cross-coverage from polyvalent antivenom — don't substitute it here."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit and monitor coagulation status for at least the full 72-hour window even if the patient is asymptomatic and initial labs are normal, given how delayed onset can be. Any confirmed bite warrants hospitalization on this basis alone."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "The core teaching point: an unimpressive bite plus a real snake (or a plausible history of handling one) is not a benign combination here — it's the expected presentation before the coagulopathy declares itself. Confirm which antivenom your facility actually stocks; assuming polyvalent covers this species is a documented, repeated real-world error given the two products are so easily confused."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "spitting-cobra",
+          "class": "snake",
+          "mechanism": "cytotoxic",
+          "search": "spitting cobra naja nigricollis naja mossambica naja pallida mozambique red spitting cobra black-necked cobra bite",
+          "regionTag": "Africa",
+          "classTag": "Snake — Elapidae",
+          "mechanismTag": "Cytotoxic",
+          "title": "Spitting Cobras — Bite",
+          "subtitle": "Naja nigricollis (black-necked spitting cobra), N. mossambica (Mozambique spitting cobra), N. pallida (red spitting cobra), among others. This card covers the bite; venom spat into the eyes is a separate, non-critical problem — see the notice at the end of this page.",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Local pain and swelling develop rapidly, similar in character to other cytotoxic African vipers/cobras, with potential for significant local tissue necrosis."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Predominantly cytotoxic: pain, swelling, blistering, and tissue destruction at the bite site. Systemic neurotoxicity is possible but the local tissue damage is usually the dominant clinical problem, distinguishing these from the primarily neurotoxic mambas."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Standard cytotoxic snakebite approach: immobilize, remove constricting items, transport. No tourniquet, incision, or suction."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Standard cytotoxic snakebite wound care, monitoring for necrosis and secondary infection, serial limb assessment."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Mozambique spitting cobra is covered by SAIMR Polyvalent (dosed as for other cytotoxic bites, 5–10 ampoules). Black-necked spitting cobra (N. nigricollis) is covered by EchiTAb-Plus-ICP in West Africa alongside Echis and puff adder."
+            },
+            {
+              "label": "Disposition",
+              "html": "Managed per standard cytotoxic snakebite admission criteria — admit for antivenom, wound care, and necrosis/infection monitoring."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Confirm which antivenom product your facility stocks actually covers the specific Naja species in your area — coverage varies by product and region (SAIMR Polyvalent vs. EchiTAb-Plus-ICP), unlike the more uniform coverage for puff adder."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "carpet-viper",
+          "class": "snake",
+          "mechanism": "hemotoxic",
+          "search": "saw-scaled viper carpet viper echis ocellatus west african echitab",
+          "regionTag": "Africa (West)",
+          "classTag": "Snake — Viperidae",
+          "mechanismTag": "Hemotoxic (VICC)",
+          "title": "West African Carpet Viper (Saw-Scaled Viper)",
+          "subtitle": "Echis ocellatus (and related Echis spp.). Small snake, huge burden — the single most important cause of snakebite death and disability across the West African savannah",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Local pain, swelling, and bleeding from the bite site develop early. Systemic coagulopathy — the dominant threat — can be detected on bedside clotting tests within hours of a significant bite."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Systemic hemorrhage and incoagulable blood are the defining features: bleeding from the gums, nose, old wounds, and IV sites, with the potential for hemorrhagic shock, and occasional local tissue necrosis. This is the species responsible for the bulk of the region's snakebite mortality and morbidity — estimated incidence as high as ~500 per 100,000 population per year in some Nigerian savanna communities, with historically 10–20% of victims dying untreated."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Get the patient to a facility that can run a 20-minute whole blood clotting test and has antivenom on hand — in this region, that access question is often the actual determinant of survival, more than any specific field maneuver."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "20-minute whole blood clotting test (20WBCT) is the primary bedside diagnostic tool used across West African snakebite care to confirm venom-induced coagulopathy when formal lab turnaround is too slow. Treat any confirmed incoagulable blood as an indication for antivenom."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Two purpose-built products developed specifically for this species given historic antivenom supply crises in the region: <strong>EchiTAb-G</strong> (MicroPharm, ovine, monospecific for E. ocellatus, initial dose 1 vial/10 mL) and <strong>EchiTAb-Plus-ICP</strong> (Instituto Clodomiro Picado, equine, covers E. ocellatus plus Naja nigricollis and Bitis arietans, initial dose 3 vials/30 mL). Head-to-head trial data: both restored blood clotting in the large majority of patients within 6 hours (76% EchiTAb-G, 83% EchiTAb-Plus-ICP in the pivotal trial), with EchiTAb-Plus-ICP slightly more effective but EchiTAb-G associated with fewer and less severe early reactions. Specific antivenom confers roughly 75% protection against death compared to no/inappropriate antivenom in meta-analysis, and mortality has more than doubled during periods when antivenom stocks ran out regionally — this is a supply chain issue with a directly measurable body count, not an abstraction."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit any patient with confirmed incoagulable blood for antivenom and serial coagulation monitoring. Pregnant patients have been successfully treated with EchiTAb IgG antivenom with good maternal outcomes when treatment isn't delayed — delayed presentation is the main driver of fetal loss, not the antivenom itself."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Antivenom raised against the Asian species Echis carinatus is NOT reliably effective against West African E. ocellatus — regional specificity matters here more than in most snakebite scenarios, and using the wrong product has been a documented real-world problem. Don't assume any \"Echis antivenom\" is interchangeable across regions."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "thick-tailed-scorpion",
+          "class": "scorpion",
+          "mechanism": "neurotoxic",
+          "search": "thick-tailed scorpion fat-tail scorpion parabuthus southern african scorpion",
+          "regionTag": "Africa (Southern)",
+          "classTag": "Scorpion",
+          "mechanismTag": "Neurotoxic",
+          "title": "Thick-Tailed (Fat-Tail) Scorpion",
+          "subtitle": "Parabuthus spp. The medically significant scorpion genus across southern Africa, covered by a dedicated SAIMR antivenom",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Immediate significant pain at the sting site; systemic neurotoxic signs can follow within a similar timeframe to Centruroides envenomation in North America — faster progression and greater severity in children."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Neurotoxic picture: pain out of proportion to visible findings, potential for cranial nerve and neuromuscular dysfunction in significant envenomation, autonomic signs. Severity is greatest in young children and the elderly."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Analgesia, transport, lower threshold for urgency in pediatric patients."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Grade severity based on local vs. systemic/neurologic findings, similar framework to Centruroides grading. Supportive care (analgesia, benzodiazepines for agitation/neuromuscular symptoms) alongside antivenom decision-making."
+            },
+            {
+              "label": "Antivenom",
+              "html": "SAIMR Scorpion Antivenom (South African Vaccine Producers, equine) is produced specifically for Parabuthus species and is the regional product of record, produced by the same manufacturer as the SAIMR snake antivenoms."
+            },
+            {
+              "label": "Disposition",
+              "html": "Outpatient management for mild local envenomation; admit for systemic/neurologic signs, especially pediatric patients."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "As with Centruroides in North America, pediatric patients are disproportionately represented among severe envenomations — maintain a lower threshold for concern and antivenom consideration in children compared with adults presenting with the same sting history."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "egyptian-cobra",
+          "class": "snake",
+          "mechanism": "neurotoxic",
+          "search": "egyptian cobra naja haje",
+          "regionTag": "North & East Africa",
+          "classTag": "Snake — Elapidae",
+          "mechanismTag": "Neurotoxic + Cytotoxic",
+          "title": "Egyptian Cobra",
+          "subtitle": "Naja haje. One of Africa's largest true cobras, widespread across North and East Africa. Comparative toxicity studies rank its venom as considerably more lethal than the region's major vipers, consistent with the generally greater severity of cobra envenomation",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Local pain develops promptly at the bite site; neurotoxic progression follows a similar descending pattern and timeline to other true cobras."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Combines significant neurotoxicity — ptosis, bulbar weakness, progressive descending paralysis — with real local cytotoxic tissue effects (swelling, blistering, potential necrosis) at the bite site, similar in character to the spitting cobra bite picture already covered on this page but from a non-spitting true cobra."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Standard elapid approach: immobilize, remove constricting items, transport. Given the potency profile, don't delay transport waiting to see how the local picture develops."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Airway readiness given real neurotoxic potential. Local wound care and monitoring for necrosis alongside the neurologic picture, the same dual-track approach used for the region's other cytotoxic-plus-neurotoxic cobras."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Covered by SAIMR Polyvalent in southern/eastern parts of its range. In Egypt and neighboring North African countries, VACSERA polyvalent antivenom (Egypt) is the regional product, produced specifically against Naja haje, Cerastes cerastes, and other locally significant species — don't assume SAIMR is the only or default option across this species' full range; confirm which product is actually stocked regionally."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit for airway monitoring and wound care per standard cytotoxic-plus-neurotoxic elapid protocol."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "This species spans a huge range across North and East Africa where antivenom supply chains genuinely differ by country — the product available in Egypt is not necessarily the same one stocked further south or east within this snake's range."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        }
+      ],
+      "nonCritical": {
+        "label": "Non-Critical — Supportive Care Only",
+        "sub": "Not life-threatening and doesn't require antivenom or critical-care intervention. Not a full workup — just enough to recognize and reassure.",
+        "items": [
+          {
+            "name": "Spitting Cobra — Venom Ophthalmia",
+            "html": "(eyes only, not a bite) — venom spat into the eyes causing burning pain, conjunctivitis, possible corneal erosion. <em>Care:</em> immediate copious irrigation (tap water/saline) is the entire treatment — no antivenom indicated; fluorescein exam and ophthalmology follow-up if corneal findings."
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-south-america",
+      "file": "envenomation-central-south-america.html",
+      "label": "Central & South America",
+      "lede": "Bothrops species cause the overwhelming majority of snakebite in this region, but three rarer entries here — bushmaster, coral snake, and the South American rattlesnake — each have a genuinely distinct clinical signature that changes management from the start.",
+      "species": [
+        {
+          "id": "fer-de-lance",
+          "class": "snake",
+          "mechanism": "hemotoxic",
+          "search": "fer-de-lance bothrops asper terciopelo lancehead",
+          "regionTag": "Central America, N. South America",
+          "classTag": "Snake — Viperidae",
+          "mechanismTag": "Hemotoxic (VICC) + Cytotoxic",
+          "title": "Fer-de-Lance",
+          "subtitle": "Bothrops asper. Also called: terciopelo. The single most medically important snake across Central America and northern South America — responsible for the large majority of snakebites in the region it inhabits",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Local pain and swelling develop rapidly and can progress aggressively over the following hours, with tissue destruction extending well beyond the immediate bite site in severe cases."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Severe local tissue damage — swelling, blistering, and necrosis, sometimes severe enough to threaten a limb — combined with systemic coagulopathy, hemorrhage, and acute kidney injury. This is a species where local destruction and systemic hemotoxicity both need active management, not just one or the other."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Standard viper approach: immobilize, remove constricting items, transport. No tourniquet, incision, or suction — tissue destruction risk makes additional local trauma especially costly here."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Serial limb assessment and coagulation studies. Aggressive wound care and a low threshold for surgical consultation given the real risk of extensive local necrosis and secondary infection."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Regional polyvalent antivenoms are produced across multiple countries rather than a single continent-wide product — Instituto Clodomiro Picado (Costa Rica, PoliVal-ICP) for Central America, Instituto Bioclon (Mexico, Antivipmyn/Antivipmyn-Tri), Instituto Butantan (Brazil), and national institutes in Colombia and Peru, among others. Effectiveness varies by which regional Bothrops population a given product was raised against — this is another entry in the recurring theme of narrow geographic antivenom specificity, and it means \"polyvalent\" here still requires confirming the product matches the local venom population."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit for coagulation monitoring, wound care, and surveillance for evolving necrosis or compartment syndrome."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Local tissue destruction can be severe enough on its own to threaten the limb even when systemic coagulopathy is well controlled — don't let a reassuring coagulation panel substitute for close wound surveillance. Confirm which regional antivenom product is stocked; this genus has real population-level venom variation across its range."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "bushmaster",
+          "class": "snake",
+          "mechanism": "hemotoxic",
+          "search": "bushmaster lachesis muta lachesis acrochorda lachetic",
+          "regionTag": "Central/South America (forest interior)",
+          "classTag": "Snake — Viperidae",
+          "mechanismTag": "Hemotoxic + Vagal/Autonomic",
+          "title": "Bushmaster",
+          "subtitle": "Lachesis muta and L. acrochorda. The largest viper in the world. Bites are rare given the species' remote forest habitat, but carry disproportionately high mortality when they occur",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Local pain, edema, and erythema develop similarly to a Bothrops bite, which is part of why this species is easy to misdiagnose early. The distinguishing systemic features — bradycardia, hypotension, diarrhea — can appear alongside the local picture rather than as a late finding."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Venom is necrotizing, hemorrhagic, myotoxic, and hemolytic, resembling Bothrops envenomation locally — but a distinct set of vagal/autonomic findings (\"Lachesis syndrome\") sets it apart: bradycardia, hypotension, diarrhea, vomiting, and blurred vision, thought to reflect a vagal or cholinergic venom effect not seen in other regional pit vipers. Severity is graded in part by the presence or absence of these vagal manifestations — their presence marks a severe envenomation."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Standard viper approach, with particular attention to reporting any bradycardia, diarrhea, or hypotension during transport — these findings should raise suspicion for this species over a more common Bothrops bite and shape which antivenom the receiving facility prepares."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "A documented, real diagnostic trap: because the local picture mimics Bothrops so closely, bushmaster bites have been misdiagnosed and treated with plain bothropic antivenom, delaying correct treatment — in one published case, this delay contributed to digit amputation and severe infection. Actively ask about and examine for the vagal symptom cluster in any pit-viper-pattern bite from bushmaster habitat."
+            },
+            {
+              "label": "Antivenom",
+              "html": "A dedicated lachetic antivenom has not been available since 1986 in some regions; current treatment relies on bothropic-lachetic combination antivenom (Brazil: Soro Antibotrópico-Laquético, Instituto Butantan) where available. Where a lachetic-specific or combination product isn't accessible, some published protocols describe using large volumes of Crotalidae polyvalent antivenom instead, reflecting how genuinely scarce dedicated product is for this rare species. Treatment is further complicated by the need for comparatively high doses even when appropriate antivenom is available."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit for coagulation, cardiovascular, and wound monitoring. Given the misdiagnosis risk, reassess the working diagnosis if a \"Bothrops bite\" isn't responding as expected or shows vagal features."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Bradycardia and hypotension in a pit-viper-pattern bite from Central/South American forest habitat should raise bushmaster on the differential specifically — these findings run counter to the tachycardia/hypotension-from-hemorrhage pattern more typical of straightforward Bothrops envenomation, and getting the species right changes which antivenom is needed."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "south-american-coral-snake",
+          "class": "snake",
+          "mechanism": "neurotoxic",
+          "search": "south american coral snake micrurus corallinus micrurus frontalis micrurus surinamensis",
+          "regionTag": "Central/South America",
+          "classTag": "Snake — Elapidae",
+          "mechanismTag": "Neurotoxic",
+          "title": "South American Coral Snake",
+          "subtitle": "Micrurus corallinus, M. frontalis, and numerous other regional Micrurus species (genus spans ~80 species from the southern US to northern Argentina). Uncommon — roughly 1-2% of regional snakebites — but capable of rapid respiratory failure",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Follows the same deceptive pattern as the North American coral snake: local findings can be minimal, and neurotoxic onset is genuinely variable — one published case showed no neurotoxic signs until 14 hours after the bite, followed by respiratory failure requiring ventilation even after antivenom had been given."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Presynaptic and postsynaptic neuromuscular blockade producing progressive weakness, cranial nerve involvement, and descending paralysis that can culminate in respiratory failure and death by asphyxiation within 5-6 hours in severe untreated cases — though onset can also be markedly delayed, so a slow start doesn't guarantee a mild course."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Same principle as North American coral snake: an unimpressive bite from a confirmed or suspected elapid in this genus is not reassuring. Transport and monitor regardless of initial appearance."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Prolonged observation given the delayed-onset risk. Airway and ventilator readiness — published cases describe patients requiring multiple intubations and extended ventilatory support over several days even after appropriately timed antivenom."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Regional anti-elapidic antivenoms (Instituto Butantan in Brazil, national institutes elsewhere in the region) are raised against the more common local Micrurus species, but real species-level gaps exist — one well-documented case showed a standard Brazilian anti-elapidic antivenom unable to neutralize the lethal activity of a related Micrurus species despite venom similarity. Don't assume broad genus-level coverage; regional product selection matters as much here as with Echis or Bothrops."
+            },
+            {
+              "label": "Disposition",
+              "html": "ICU-level care for any patient with neurologic signs, with an expectation that recovery may take days and require ongoing ventilatory support."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Neither a benign-looking bite nor a slow initial course rules out a severe outcome with this genus — both the local exam and the early timeline can be falsely reassuring. This mirrors the North American coral snake and African black mamba pattern: elapid neurotoxicity often doesn't announce itself the way viper local tissue effects do."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "phoneutria",
+          "class": "spider",
+          "mechanism": "neurotoxic",
+          "search": "brazilian wandering spider phoneutria armed spider banana spider",
+          "regionTag": "Brazil, broader South America",
+          "classTag": "Spider — Ctenidae",
+          "mechanismTag": "Neurotoxic",
+          "title": "Brazilian Wandering Spider",
+          "subtitle": "Phoneutria spp. Also called: armed spider, banana spider (for turning up in shipped banana crates). Severe systemic envenomation is uncommon (~3% of bites) but concentrates in young children and the elderly",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Immediate, severe local pain — often described as radiating — is the most consistent finding across essentially all bites. Systemic signs, when they occur, tend to develop over the following hour or so."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Local: intense pain, edema, erythema, sweating, and fasciculation at the site. Systemic (uncommon, ~3% of cases, concentrated in children under 10 and adults over 70): tachycardia, hypertension, agitation, sialorrhea, vomiting, tachypnea, and — a distinctive and well-documented finding — priapism. Shock and pulmonary edema are the rare severe complications, thought to relate to a surge in sympathetic activity."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Analgesia and transport, with lower threshold for urgency in young children and elderly patients specifically."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Most cases are managed symptomatically — local analgesia, ice. Reserve escalation for the systemic-sign subset, watching in particular for the cardiovascular and priapism findings that distinguish severe cases."
+            },
+            {
+              "label": "Antivenom",
+              "html": "A specific antivenom exists (produced regionally, including by Instituto Butantan) but is recommended only for patients who develop significant systemic manifestations — not for the large majority of bites, which are local-pain-only and self-limited with supportive care alone."
+            },
+            {
+              "label": "Disposition",
+              "html": "Outpatient management with analgesia for the typical local-only presentation. Admit and consider antivenom for systemic signs, especially in the two vulnerable age groups."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Priapism is a genuinely distinctive finding for this species among all the arachnids on this site — worth specifically asking about or noting in a male patient with systemic signs after a bite in this region. Don't reach for antivenom on pain alone; it's reserved for the systemic minority."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "south-american-rattlesnake",
+          "class": "snake",
+          "mechanism": "neurotoxic",
+          "search": "south american rattlesnake crotalus durissus terrificus cascavel crotoxin",
+          "regionTag": "Brazil, broader South America",
+          "classTag": "Snake — Crotalinae",
+          "mechanismTag": "Neurotoxic + Myotoxic + Hemotoxic",
+          "title": "South American Rattlesnake",
+          "subtitle": "Crotalus durissus terrificus. Also called: cascavel (Brazil). Accounts for only about 10% of Brazilian snakebites but carries the highest case-fatality rate of any snake in the country — meaningfully more dangerous per-bite than the far more common Bothrops",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "This is the opposite presentation from Bothrops (fer-de-lance): local pain and swelling at the bite site are often minimal or absent, which can be falsely reassuring. The real damage is systemic and can take time to declare itself."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Venom is dominated by crotoxin, a potent presynaptic β-neurotoxin, producing neurotoxicity (ptosis, blurred vision, myasthenia-like weakness), systemic myotoxicity (myoglobinuria, elevated CK, risk of acute renal failure from rhabdomyolysis), and some hemotoxic/hemolytic activity. Reported mortality (roughly 1.1% in Brazilian series) exceeds that of the far more frequently encountered Bothrops species, despite the much lower bite volume — this is a species where rarity does not equal low risk."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Standard viper approach: immobilize, remove constricting items, transport. Given how unimpressive the local bite can look, don't let a benign-appearing wound delay urgency — the systemic picture is what matters here."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Monitor for myotoxicity specifically — serial CK, urine myoglobin, and renal function — alongside the neurologic exam. In published pediatric case series, patients who received early, definitive antivenom therapy did well; the cases with major morbidity were specifically those where initial treatment was delayed or given by a suboptimal route (subcutaneous) before definitive IV antivenom followed later. Timing and route both matter."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Anti-crotalic antivenom (Instituto Butantan, Brazil, and other regional producers) is the specific regional product. Notably, a documented US case report of an escaped pet C. d. terrificus successfully treated the bite with CroFab — the standard North American product — when species-specific antivenom wasn't immediately available, based on crotoxin's structural and functional similarity to Mojave toxin (which CroFab is known to cover). This is a useful contingency fact for any exotic-pet exposure outside the snake's native range, though regional anti-crotalic antivenom remains the standard of care where available."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit for neurologic, renal, and CK monitoring regardless of how mild the bite site appears. Given the documented morbidity difference between prompt IV antivenom and delayed/suboptimal-route treatment, don't let logistics substitute for getting definitive therapy started quickly."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "The core teaching point mirrors this page's coral snake and boomslang entries: an unimpressive local bite does not mean a mild envenomation for this species — it's actually closer to the rule than the exception here, unlike Bothrops where local findings are the dominant early clue. Route and timing of antivenom administration have documented real-world consequences in pediatric case data — IV, and promptly."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        }
+      ],
+      "nonCritical": {
+        "label": "Non-Critical — Supportive Care Only",
+        "sub": "Not life-threatening and doesn't require antivenom or critical-care intervention. Not a full workup — just enough to recognize and reassure.",
+        "items": [
+          {
+            "name": "False Coral Snakes",
+            "html": "(various non-venomous and mildly venomous mimics, e.g. Erythrolamprus and related genera) — banded coloration convincingly imitates true Micrurus coral snakes, causing significant alarm on sight alone. <em>Care:</em> species confirmation when possible; wound care only for a confirmed mimic bite, no antivenom or extended observation needed once true coral snake is excluded."
+          },
+          {
+            "name": "New World Tarantulas",
+            "html": "(Theraphosidae, e.g. Goliath birdeater and related genera) — the bite itself is generally mild in humans despite the intimidating size of these spiders; the bigger irritant is often urticating hairs flicked defensively, causing skin and eye irritation rather than systemic envenomation. <em>Care:</em> tape-strip removal of hairs from skin, eye irrigation if ocular contact, analgesia for bite-site pain; no antivenom exists or is needed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "europe",
+      "file": "envenomation-europe.html",
+      "label": "Europe",
+      "lede": "The lowest-acuity region in this build overall, but \"low-severity\" is a population-level statement, not a guarantee for the patient in front of you — a genuine minority of European viper bites and false widow bites still need real intervention.",
+      "species": [
+        {
+          "id": "european-vipers",
+          "class": "snake",
+          "mechanism": "hemotoxic",
+          "search": "european adder vipera berus asp viper vipera aspis nose-horned viper vipera ammodytes horned viper sand viper",
+          "regionTag": "Continental Europe, UK, Balkans",
+          "classTag": "Snake — Viperidae",
+          "mechanismTag": "Hemotoxic + Neurotoxic (variable)",
+          "title": "European Vipers",
+          "subtitle": "Vipera berus (common European adder — the only venomous snake native to the UK), V. aspis (asp viper — France, Italy, Switzerland), and V. ammodytes (nose-horned viper — the Balkans, most dangerous of the three). One antivenom family covers all three, but severity differs meaningfully by species and geography",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Local pain and swelling develop over the first hours. Most bites across this genus stay mild-to-moderate; a genuine minority progress to systemic involvement, and that minority is meaningfully larger and more severe for V. ammodytes than for V. berus."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Progressive local swelling, vomiting, tachycardia, hypotension, and — in more severe cases — acute kidney injury, hemorrhage, angioedema, pulmonary edema, and rarely cardiac arrest or neurotoxicity. V. ammodytes stands apart within the genus: in the largest published case series (Croatia, &gt;500 confirmed bites), roughly 16-22% of victims developed local or systemic complications, with neurotoxic findings (ptosis, ophthalmoplegia, dysphagia, dysphonia, neuromuscular weakness) in about 15-16% of cases — genuinely uncommon for a European viper but well short of rare. Fatalities from V. ammodytes are documented, though concentrated in children and hypersensitive individuals rather than typical healthy adults."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Standard viper approach: immobilize the limb, remove constricting items, transport. No tourniquet, incision, or suction."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Serial limb assessment and monitoring for systemic signs. In the UK, decisions on antivenom are guided by the National Poison Information Service via TOXBASE rather than a fixed local protocol — involve regional poison control early given how genuinely uncommon these bites are for most clinicians to have direct experience with."
+            },
+            {
+              "label": "Antivenom",
+              "html": "ViperaTAb (MicroPharm, UK, ovine Fab, monospecific against V. berus) and Viperfav (MicroPharm/France, similar Fab product) both show cross-reactivity across European Vipera species in animal models and supporting clinical data, including published use for V. aspis and V. ammodytes envenomation. In UK audit data, 20-60 of an estimated 50-200 annual V. berus bites are treated with antivenom, given IV, with better outcomes reported for IV Fab products (ViperaTAb, Viperfav) compared with older intramuscular antivenoms (Zagreb, Biomed, Bulbio) still used in parts of continental Europe. A single IV dose of Viperfav has shown good efficacy and pharmacokinetics for V. ammodytes specifically when given within hours of the bite."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit for observation and antivenom consideration per regional poison control guidance for any bite with progressive local swelling or systemic signs. Given the neurotoxic minority within V. ammodytes bites specifically, maintain a lower threshold for airway/respiratory monitoring with confirmed or suspected bites from that species and geography."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "\"Low severity\" describes the population, not the individual patient — a genuine subset of bites from any of these three species need real antivenom and monitoring, and V. ammodytes in particular should not be mentally filed alongside the milder V. berus. Older intramuscular antivenoms (Zagreb, Biomed, Bulbio) still in regional use have weaker outcome data than the newer IV Fab products — know which product your local supply chain actually carries."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        }
+      ],
+      "nonCritical": {
+        "label": "Non-Critical — Supportive Care Only",
+        "sub": "Not life-threatening and doesn't require antivenom or critical-care intervention. Not a full workup — just enough to recognize and reassure.",
+        "items": [
+          {
+            "name": "Noble False Widow Spider",
+            "html": "(Steatoda nobilis) — the only medically significant spider in the UK/Ireland, frequently sensationalized in local media as \"flesh-eating.\" Confirmed case series show sharp local pain, erythema, and swelling resolving fully within 48-72 hours with no lasting complications; venom does share Latrodectus-like toxin components but at far lower potency than true widows. <em>Care:</em> analgesia, ice, wound hygiene; the rare reports of severe necrosis or sepsis are almost always secondary bacterial infection from a dirty wound, not the venom itself — clean the bite site and this risk drops accordingly."
+          },
+          {
+            "name": "European Scorpion",
+            "html": "(Euscorpius spp.) — small, low-potency scorpions found across Southern Europe; sting severity is comparable to a bee sting for the overwhelming majority of cases. <em>Care:</em> ice, analgesia, reassurance; no antivenom exists or is needed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "marine",
+      "file": "envenomation-marine.html",
+      "label": "Marine (Global)",
+      "lede": "Grouped by mechanism rather than geography, since the species that matter cluster around the Indo-Pacific but the decontamination step you pick first — vinegar, hot water, or neither — is the single most consequential decision on this page and it varies dangerously by species.",
+      "species": [
+        {
+          "id": "box-jellyfish",
+          "class": "jellyfish",
+          "mechanism": "cardiotoxic",
+          "search": "box jellyfish chironex fleckeri cubozoan sea wasp",
+          "regionTag": "N. Australia, Indo-Pacific",
+          "classTag": "Jellyfish (Cubozoa)",
+          "mechanismTag": "Cardiotoxic",
+          "title": "Box Jellyfish",
+          "subtitle": "Chironex fleckeri. Also called: sea wasp. Widely described as the most venomous marine animal — a severe sting is one of the fastest-acting lethal envenomations known, with fatal cardiac arrest documented within 15-20 minutes",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Sudden, severe pain on contact. Stings covering more than roughly 10% of body surface area can progress to cardiorespiratory arrest within 5-10 minutes — this is described in the literature as among the most explosive envenomation processes known in humans. Most stings, however, are far less severe and respond to first aid alone."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Immediate severe pain with characteristic whip-like linear tentacle marks. Severe envenomation causes direct toxic effects on the myocardium and cell membranes broadly — myocardial irritability, arrhythmia, pulmonary edema, hypotension, and cardiac arrest, described as toxic rather than allergic in mechanism."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Douse generously with vinegar (4-6% acetic acid) to inactivate any undischarged nematocysts still on the skin — this does not relieve pain from venom already injected, but prevents further envenomation from adherent tentacles, which are present in roughly 30% of stings. If vinegar isn't available, diluted acidic alternatives (even cola) have been suggested, though effectiveness is debated; alcohol-based products must be avoided, as they trigger further nematocyst firing. Do NOT apply a pressure immobilization bandage — pressure itself can trigger nematocyst discharge and the venom acts too fast for PBI to meaningfully slow systemic spread. Begin CPR immediately for any cardiac arrest; vigorous, sustained resuscitation is explicitly the best prehospital survival factor for a massive sting."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Continue vinegar decontamination and remove remaining tentacles. Cardiorespiratory monitoring for any patient with significant sting area or pain refractory to first aid. IV magnesium sulfate has evidence for pain and cardiovascular control, particularly when response to antivenom is inadequate. Verapamil has been used in refractory circulatory arrest based on case data."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Box Jellyfish Antivenom (CSL, ovine) exists but its clinical effectiveness is genuinely disputed — animal studies conflict, and deaths have occurred despite antivenom administration in northern Australia. It remains indicated for pain refractory to IV opioids (1 ampoule) and for systemic envenoming with collapse, hypotension, or significant arrhythmia (3 ampoules IV over 20 minutes, repeatable). In cardiac arrest, give all immediately available antivenom (at least 6 ampoules) as a rapid undiluted IV push alongside standard resuscitation and magnesium."
+            },
+            {
+              "label": "Disposition",
+              "html": "Most stings, once decontaminated, are managed with analgesia and discharge. Any patient with systemic signs or a large-surface-area sting needs cardiorespiratory monitoring in a resuscitation-capable setting."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Vinegar is a decontamination step, not a treatment for pain or systemic symptoms already underway — don't let its application create false reassurance. Antivenom's real-world effectiveness for cardiac arrest is unresolved in the literature; giving it in that scenario is reasonable and recommended, but shouldn't replace aggressive standard resuscitation as the primary intervention."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "irukandji",
+          "class": "jellyfish",
+          "mechanism": "cardiotoxic",
+          "search": "irukandji syndrome carukia barnesi carybdeid jellyfish",
+          "regionTag": "N. Australia, Indo-Pacific",
+          "classTag": "Jellyfish (Carybdeid)",
+          "mechanismTag": "Cardiotoxic (Delayed)",
+          "title": "Irukandji Syndrome",
+          "subtitle": "Caused by Carukia barnesi and several related small carybdeid jellyfish species. The sting itself is often trivial or unnoticed — the danger is a delayed, severe systemic catecholamine crisis that follows",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "The initial sting is frequently minor — mild local pain, sometimes barely noticed, from a jellyfish that can be nearly invisible in the water. Systemic Irukandji syndrome develops 20-30 minutes later, which is the core diagnostic trap: patients and even early clinicians can dismiss the initial contact as inconsequential before the real syndrome announces itself."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Severe generalized pain (back, limbs, abdomen), profuse sweating, nausea and vomiting, anxiety and a sense of impending doom, hypertension, and tachycardia from a massive catecholamine surge. Severe cases can progress to pulmonary edema, cardiac dysfunction (including stress cardiomyopathy), and rarely fatal intracerebral hemorrhage from the hypertensive crisis. Most patients recover within 24-48 hours with supportive care, but the acute phase is genuinely dangerous."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Vinegar decontamination of the sting site as for box jellyfish. Transport for any patient with delayed severe pain or systemic symptoms after a jellyfish contact in endemic waters — do not be reassured by an initially trivial-seeming sting."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Aggressive analgesia (opioids are often required and may need high doses given the severity of pain). Manage hypertension actively — this is a hypertensive emergency risk, not just a pain syndrome. IV magnesium has trial evidence for symptom control, though a randomized trial found it did not reduce opioid requirement. Monitor for evolving cardiac dysfunction and pulmonary edema; echocardiography is reasonable in more severe presentations."
+            },
+            {
+              "label": "Antivenom",
+              "html": "No antivenom exists for the carybdeid species causing this syndrome — management is entirely supportive, centered on pain and blood pressure control."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit for monitoring given the hypertensive crisis and cardiac risk; most patients recover fully within 24-48 hours, but the acute window needs real cardiorespiratory monitoring capability."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "The name-brand danger here is the mismatch between a forgettable sting and a genuinely life-threatening syndrome 20-30 minutes later — treat any patient in endemic waters with delayed severe pain, sweating, and a sense of dread as Irukandji until proven otherwise, even without a clear jellyfish sighting."
+          },
+          "reviewTier": 2,
+          "reviewTierIsDefault": true,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-09-08"
+        },
+        {
+          "id": "stonefish",
+          "class": "fish",
+          "mechanism": "cytotoxic",
+          "search": "stonefish synanceia",
+          "regionTag": "Indo-Pacific",
+          "classTag": "Fish (Scorpaenidae)",
+          "mechanismTag": "Cytotoxic + Cardiotoxic",
+          "title": "Stonefish",
+          "subtitle": "Synanceia spp. The most venomous of the spine-bearing fish — venom potency has been compared to cobra venom. Camouflaged on the seafloor; nearly all injuries occur from stepping directly on one",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Venom is released mechanically from dorsal spines under pressure — immediate, severe pain out of proportion to the visible wound, often described as among the most painful stings a person can experience."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Severe local pain and edema, headache, and a distinctively painful cyanotic puncture wound that can progress to necrotic ulceration if untreated. Systemic effects in severe cases can include hypotension and cardiac dysfunction, given cardiotoxic components in the venom."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Hot water immersion (42-45°C, as hot as tolerated without scalding) for 30-90 minutes, or until pain doesn't recur on removal from the water — the venom is heat-labile, making this genuinely effective rather than just comfort care. This is the opposite first-aid principle from jellyfish, which is a common source of confusion in mixed reef environments."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Continue hot water immersion; imaging (X-ray or ultrasound) to check for retained spine fragments, since these are a real source of ongoing pain and infection if missed. Watch for compartment syndrome with significant hand or foot edema — this is a documented complication of severe spine-fish envenomation. Tetanus update and consideration of antibiotics given the puncture mechanism and marine organism exposure."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Stonefish Antivenom (CSL, ovine) exists and is one of the few marine antivenoms with reasonably established use — indicated for severe pain unresponsive to hot water immersion and analgesia, or for systemic envenomation. This is a meaningfully better-supported antivenom situation than box jellyfish or Irukandji."
+            },
+            {
+              "label": "Disposition",
+              "html": "Most cases resolve with hot water immersion and analgesia alone. Admit for systemic signs, evidence of compartment syndrome, or pain refractory to first aid and antivenom."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Hot water, not vinegar — mixing up the marine decontamination protocols between fish-spine stings and jellyfish stings is a real and consequential error given how different the two mechanisms are. Always image or explore the wound for retained spine material before calling the local injury fully addressed."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "blue-ringed-octopus",
+          "class": "mollusk",
+          "mechanism": "neurotoxic",
+          "search": "blue-ringed octopus hapalochlaena tetrodotoxin",
+          "regionTag": "Indo-Pacific (Australia, Japan)",
+          "classTag": "Octopus (Cephalopoda)",
+          "mechanismTag": "Neurotoxic (Tetrodotoxin)",
+          "title": "Blue-Ringed Octopus",
+          "subtitle": "Hapalochlaena spp. Small, docile, and easily overlooked — bites almost always occur when the animal is picked up or handled, often after being mistaken for an empty shell or curious tide-pool find",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "The bite itself is frequently painless and may go unnoticed at the moment it happens. Symptoms typically begin within minutes to about an hour: perioral numbness and tingling, followed by progressive weakness."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Tetrodotoxin blocks voltage-gated sodium channels, producing a descending flaccid paralysis: perioral paresthesia, excessive salivation, dysarthria, dysphagia, sweating, dizziness, progressing to muscle weakness, incoordination, and potentially complete flaccid paralysis with respiratory failure. Critically, patients can remain fully conscious and aware throughout complete paralysis — this is a real and psychologically significant feature to communicate and manage for."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Pressure immobilization bandaging is recommended for this bite, unlike jellyfish — wrap firmly from the bite site proximally over the whole limb, since this is a slower-acting neurotoxin where local venom containment genuinely helps, more like a snakebite than a jellyfish sting. Heat does NOT help — tetrodotoxin is heat-stable, so hot water immersion (correct for stonefish) is ineffective here. Be prepared to provide rescue breathing or bag-valve-mask ventilation; this can become necessary quickly and the patient may be unable to signal distress once paralysis sets in."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Intubate for respiratory paralysis or airway compromise from altered consciousness — severe cases typically require assisted ventilation for 2-5 days while the toxin clears. Atropine for symptomatic bradycardia. No antidote exists; this is entirely a supportive-care, buy-time-with-the-ventilator problem."
+            },
+            {
+              "label": "Antivenom",
+              "html": "None exists. Tetrodotoxin is not an enzyme-based venom in the way most entries on this site are, and there is no product that neutralizes it — full recovery depends on ventilatory support until the toxin is metabolized and cleared."
+            },
+            {
+              "label": "Disposition",
+              "html": "ICU admission with ventilator readiness for any patient with paralysis or bulbar signs. Full neurological recovery is the expected outcome with adequate supportive care, even after complete paralysis."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "A patient with complete flaccid paralysis from this bite may be fully conscious and able to hear and understand everything happening around them — communicate accordingly. Don't reach for hot water immersion out of habit from stonefish management; it does nothing for a heat-stable toxin like this one."
+          },
+          "reviewTier": 2,
+          "reviewTierIsDefault": true,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-09-08"
+        },
+        {
+          "id": "cone-snail",
+          "class": "mollusk",
+          "mechanism": "neurotoxic",
+          "search": "cone snail conus geographer cone geography cone",
+          "regionTag": "Indo-Pacific, tropical/subtropical reefs",
+          "classTag": "Mollusk (Conidae)",
+          "mechanismTag": "Neurotoxic",
+          "title": "Cone Snail",
+          "subtitle": "Conus spp., with the geographer cone (Conus geographus) the most notorious for human fatalities. Injury occurs via a venomous harpoon-like radular tooth, often when a shell is picked up by hand",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Immediate to rapid onset of local pain at the sting site, with numbness and paresthesia that can spread quickly. Severe cases progress to generalized weakness and paralysis within a similar timeframe to blue-ringed octopus envenomation."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Venom is a complex cocktail of conotoxins (plus tetrodotoxin in some species), producing intense local pain, swelling, numbness, and progressive paralysis that can extend to full respiratory failure in severe cases. Historical fatality rates for the most dangerous species are cited at roughly 25% of significant stings, though modern respiratory support has changed outcomes considerably where available."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Pressure immobilization bandaging, same rationale as blue-ringed octopus — this is a slower-progressing, containable neurotoxin unlike jellyfish venom. Clean the wound with fresh water and watch closely for progressive weakness. Be prepared to provide bag-valve-mask ventilation if paralysis progresses; heat is not an effective decontamination measure for this venom."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Serial neurologic and respiratory assessment. Intubate proactively for any evidence of progressive respiratory muscle weakness rather than waiting for frank failure — the same buy-time-with-ventilation principle as blue-ringed octopus applies here."
+            },
+            {
+              "label": "Antivenom",
+              "html": "None exists. Management is entirely supportive, centered on airway and ventilatory support until the venom's effects resolve."
+            },
+            {
+              "label": "Disposition",
+              "html": "ICU admission with ventilator readiness for any patient with paralysis or significant systemic symptoms. Full recovery is achievable with adequate supportive care."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "These shells are strikingly beautiful and are the classic reason people pick them up by hand — that's the actual mechanism of injury in the overwhelming majority of cases, not an unprovoked attack. The management principle mirrors blue-ringed octopus closely enough that the two are often taught together: PBI, no heat, ventilate as needed, no antivenom exists for either."
+          },
+          "reviewTier": 2,
+          "reviewTierIsDefault": true,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-09-08"
+        },
+        {
+          "id": "sea-snake",
+          "class": "snake",
+          "mechanism": "neurotoxic",
+          "search": "sea snake enhydrina schistosa beaked sea snake hydrophiidae",
+          "regionTag": "Indo-Pacific, Persian Gulf",
+          "classTag": "Snake — Hydrophiidae (marine elapids)",
+          "mechanismTag": "Neurotoxic + Myotoxic",
+          "title": "Sea Snakes",
+          "subtitle": "Multiple genera (Hydrophis, Enhydrina, Aipysurus, Laticauda, and others). Marine elapids — closely related to terrestrial cobras and kraits — with potent venom, but bites are uncommon and a large share are \"dry\" (no venom injected)",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "The bite itself is often painless or minimally painful, and local findings are typically minimal — genuinely easy to underestimate at first contact, similar in spirit to the elapid pattern seen with coral snakes and kraits on land. When envenomation occurs, systemic signs typically develop within 30 minutes to a few hours."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Neurotoxic descending paralysis (ptosis, dysphagia, progressive weakness, respiratory failure in severe cases) combined with a prominent myotoxic component — muscle pain and stiffness, myoglobinuria, and elevated CK, with risk of renal failure from rhabdomyolysis. This myotoxic emphasis is a genuine distinguishing feature from most terrestrial elapids covered elsewhere on this site."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Pressure immobilization bandaging, consistent with the general approach to elapid neurotoxin envenomation — immobilize the limb and transport. Many sea snake encounters (fishing net entanglement is the classic mechanism) result in bites without significant envenomation, but this can't be assumed in the field."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Observation for a reasonable window given how often bites are \"dry\" — a substantial proportion of sea snake bites do not result in clinically significant envenomation. Serial CK and renal function monitoring given the myotoxic risk, alongside standard neurologic assessment for any signs of progressive weakness."
+            },
+            {
+              "label": "Antivenom",
+              "html": "CSL Sea Snake Antivenom (Australia, raised primarily against Enhydrina schistosa venom) shows cross-reactivity against venom from multiple other sea snake species and genera. Where sea snake antivenom isn't available, tiger snake antivenom has demonstrated cross-protective activity against sea snake venom in comparative studies and has been used as an alternative."
+            },
+            {
+              "label": "Disposition",
+              "html": "Observe any confirmed bite for a period sufficient to exclude delayed envenomation, given how often initial presentation is misleadingly benign. Admit for neurologic or myotoxic signs."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "A painless bite with minimal local findings is not reassuring for this group any more than it is for terrestrial elapids — the \"dry bite\" phenomenon is real and common, but it can't be assumed at first contact, so observation still matters. The myotoxic/rhabdomyolysis angle is worth specifically screening for here, since it's less emphasized in most terrestrial elapid teaching."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "portuguese-man-o-war",
+          "class": "jellyfish",
+          "mechanism": "cardiotoxic",
+          "search": "portuguese man o war physalia physalis bluebottle",
+          "regionTag": "Global (warm oceanic waters)",
+          "classTag": "Siphonophore (not a true jellyfish)",
+          "mechanismTag": "Cytotoxic + Systemic Allergic Risk",
+          "title": "Portuguese Man o' War",
+          "subtitle": "Physalia physalis (Atlantic), P. utriculus / \"bluebottle\" (Pacific). Not a jellyfish at all — a colonial siphonophore — but managed as a marine sting emergency given documented fatalities and a genuine, actively debated first-aid controversy",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Immediate, intense pain on contact with the trailing tentacles, which can extend many meters from the visible floating body — contact doesn't require touching the obvious part of the animal. Pain typically peaks early and fades over 1-3 hours in uncomplicated stings, though systemic reactions can develop over a similar window."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Intense local pain with a whip-like linear sting pattern. Systemic reactions are less common but real: severe muscle cramping, breathing difficulty, nausea, vomiting, dizziness, and altered consciousness can indicate a systemic allergic-type reaction requiring prompt medical attention — patients with insect-sting allergies (bees, wasps) may be at elevated risk for a severe reaction here as well. Documented fatalities exist, though they are rare relative to the very high overall sting volume worldwide."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "This is a genuinely unsettled area of first aid, and it's worth knowing both sides rather than treating it as fully resolved. Most current mainstream clinical guidance (dive medicine organizations, several recent case reports) recommends AGAINST vinegar for Physalia specifically — unlike box jellyfish — and instead favors seawater or hot-water rinsing, on the basis that vinegar may trigger further nematocyst discharge for this genus. However, a 2017 peer-reviewed study directly testing this question found vinegar effective and safe for Physalia, and found that seawater rinsing actually spread stinging cells over more area and made stings worse in their model — directly contradicting the historical seawater recommendation. Given genuinely conflicting evidence, follow current regional/institutional protocol rather than assuming either approach is settled; whichever fluid is used, avoid rubbing the area, fresh water, alcohol, and ammonia, which are more consistently identified as harmful across studies. After decontamination, 45°C hot water immersion for about 45 minutes has support for inactivating already-injected venom and reducing pain."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Continue pain control with hot water immersion; regional nerve blocks (case reports describe erector spinae plane blocks) have been used for severe, extensive stings refractory to standard analgesia. Monitor for and treat systemic allergic-type reactions per standard anaphylaxis management if they develop — antihistamines and corticosteroids for milder systemic symptoms, escalating per usual allergic-reaction protocols for severe presentations."
+            },
+            {
+              "label": "Antivenom",
+              "html": "None exists. The only jellyfish/cnidarian antivenom in existence worldwide is the CSL box jellyfish product, which does not cover Physalia — management here is entirely decontamination and supportive/symptomatic care."
+            },
+            {
+              "label": "Disposition",
+              "html": "Most stings resolve with first aid and analgesia alone. Any patient with systemic symptoms — especially breathing difficulty, chest pain, or a sting covering a large body surface area — needs prompt medical evaluation and monitoring."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Don't reflexively apply the box jellyfish vinegar protocol here without knowing this is a live, unresolved debate specific to Physalia — this is exactly the kind of cross-species first-aid mix-up this page is trying to prevent elsewhere (see stonefish vs. jellyfish, blue-ringed octopus vs. stonefish). Detached tentacles washed up on the beach can still sting effectively even after the animal has died — treat beached specimens as live hazards."
+          },
+          "reviewTier": 2,
+          "reviewTierIsDefault": true,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-09-08"
+        }
+      ],
+      "nonCritical": {
+        "label": "Non-Critical — Supportive Care Only",
+        "sub": "Not life-threatening and doesn't require antivenom or critical-care intervention. Not a full workup — just enough to recognize and reassure.",
+        "items": [
+          {
+            "name": "Stingray",
+            "html": "— venom itself is not typically life-threatening; the danger from this animal is almost entirely mechanical trauma from the barb, which can rarely be fatal with deep penetrating chest or abdominal injury (treat that scenario as trauma, not envenomation). <em>Care:</em> hot water immersion for pain (venom is heat-labile, same principle as stonefish), wound exploration and imaging for retained barb fragments, tetanus update."
+          },
+          {
+            "name": "Sea Urchin",
+            "html": "— spine puncture wounds cause pain and local irritation; retained spine fragments are the main real complication, not the mild venom itself. <em>Care:</em> spine removal (may require imaging to locate fragments), hot water immersion for pain, watch for delayed granuloma formation around retained fragments."
+          }
+        ]
+      }
+    },
+    {
+      "id": "middle-east",
+      "file": "envenomation-middle-east.html",
+      "label": "Middle East",
+      "lede": "Three species drive the overwhelming majority of medically significant envenomation in this region. All have narrow, geography-specific antivenom requirements — a product that works for one population of the same species elsewhere is not a safe assumption here.",
+      "species": [
+        {
+          "id": "saw-scaled-viper",
+          "class": "snake",
+          "mechanism": "hemotoxic",
+          "search": "saw-scaled viper echis coloratus echis carinatus arabian carpet viper",
+          "regionTag": "Middle East",
+          "classTag": "Snake — Viperidae",
+          "mechanismTag": "Hemotoxic (VICC)",
+          "title": "Saw-Scaled Viper",
+          "subtitle": "Echis coloratus (Arabian/Levant saw-scaled viper — Israel, Jordan, Arabian Peninsula) and E. carinatus (Persian Gulf, Iran, further east). Second most common cause of snake envenomation in Israel; one of \"the Big Four\" venomous snakes across the broader Middle East/South Asia range",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Local pain and swelling within minutes of the bite. Hemostatic failure follows, though timeline and severity vary meaningfully between species/populations — E. coloratus in Israel is associated with lower mortality (rare, isolated fatalities from renal failure) than E. carinatus further east, where regional mortality estimates run higher."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Local swelling plus venom-induced consumptive coagulopathy. Roughly one-third of victims bleed or develop anemia. Severe outcomes (hemorrhage, acute kidney injury) are the exception rather than the rule with E. coloratus specifically, but should still be anticipated and screened for in every case."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Standard viper approach: immobilize the limb, remove constricting items, transport. No tourniquet, incision, or suction."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Baseline and serial coagulation studies, renal function, and urinalysis (proteinuria is a treatment-threshold marker, see below). A bedside whole blood clotting test is a reasonable adjunct where formal coags are slow to return."
+            },
+            {
+              "label": "Antivenom",
+              "html": "A regional monovalent equine IgG antivenom is used for E. coloratus envenomation, dosed by symptoms rather than a fixed protocol: an initial 20 mL IV dose for systemic involvement, with repeat 10 mL doses for relapse. In outcome data, 49% of patients showed no systemic symptoms and received no antivenom at all; of those treated, 63% resolved with a single 20 mL dose. A published decision model favors treating when bleeding risk is elevated — specifically with proteinuria, BUN &gt;7 mmol/L, platelet count &lt;100,000/µL, or hemoglobin &lt;13 g/dL — rather than treating every confirmed bite empirically."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit any suspected bite for coagulation monitoring regardless of initial appearance. Antivenom decision follows the symptom/lab-based threshold above rather than universal empiric dosing."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Echis antivenoms have documented narrow cross-reactivity — a product developed against one regional population (e.g., West African E. ocellatus, or Indian E. carinatus) is not reliably interchangeable with what's needed here, and mismatched antivenom has caused real treatment failures. Confirm the specific regional product your facility stocks. Serum sickness occurs in a notable share of antivenom-treated patients (reported as high as 44% in one series) — this is a real cost of treatment that factors into the symptom-triggered approach rather than treating everyone empirically."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "deathstalker-scorpion",
+          "class": "scorpion",
+          "mechanism": "neurotoxic",
+          "search": "deathstalker scorpion leiurus quinquestriatus palestine yellow scorpion omdurman scorpion israeli desert scorpion naqab desert scorpion",
+          "regionTag": "Middle East / North Africa",
+          "classTag": "Scorpion",
+          "mechanismTag": "Neurotoxic",
+          "title": "Deathstalker Scorpion",
+          "subtitle": "Leiurus quinquestriatus. Also called: Palestine yellow scorpion, Omdurman scorpion, Israeli desert scorpion, Naqab desert scorpion. Rarely fatal in healthy adults — dangerous mainly to children, the elderly, and those with cardiac disease",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Sting pain is immediate and severe. In vulnerable patients — overwhelmingly children — systemic signs can progress over hours to a catecholamine-driven autonomic storm."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Venom neurotoxins act on sodium and potassium channels, driving a massive catecholamine surge. In severe pediatric envenomation this produces hypertension, tachycardia, cardiogenic shock, and pulmonary edema, alongside CNS findings — lethargy, confusion, agitation, and reduced consciousness. A high rate of pancreatitis has been reported in Israeli case series following envenomation. Nausea, vomiting, and abdominal cramps are common even in milder cases. Healthy adults typically experience severe local pain without progressing to this systemic picture."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Analgesia and urgent transport, with a markedly lower threshold for urgency in pediatric, elderly, or cardiac-history patients — this is where the rare fatalities occur."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Local infiltration (1% lidocaine, digital block for a digit sting) is an effective, underused option for pain control. For hypertension and the catecholamine-driven cardiovascular picture, alpha-blockade (prazosin) or hydralazine have shown benefit in case series and small trials; beta-blockers, cardiac glycosides, and high-dose corticosteroids are not recommended. Mechanical ventilation and full ICU support for pulmonary edema or respiratory failure in severe pediatric cases."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Multiple regional products exist — the National Antivenom and Vaccine Production Center (Riyadh, Saudi Arabia), Sanofi Pasteur (France), and Twyford (Germany) all manufacture Leiurus-directed antivenom. None are FDA-approved in the US; access there is investigational-only (the US Armed Forces and the Florida Antivenin Bank hold IND applications for military/emergency use). Exact dosing for non-Centruroides scorpion antivenoms remains poorly established — treatment is guided by clinical severity and response rather than a fixed protocol, unlike the well-defined Anascorp dosing for North American Centruroides."
+            },
+            {
+              "label": "Disposition",
+              "html": "Any pediatric patient with systemic signs needs ICU-capable care given the cardiogenic and CNS risk. Healthy adults with isolated severe local pain can typically be managed with analgesia and observation."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "The core danger here is age-dependent, not dose-dependent in the way many envenomations are — a sting that's \"just very painful\" in an adult can be genuinely life-threatening in a child from the same scorpion. Don't extrapolate reassurance from an adult presentation to a pediatric one. Confirm which regional antivenom product (if any) is actually accessible before it's needed — availability varies significantly by country."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "levant-viper",
+          "class": "snake",
+          "mechanism": "hemotoxic",
+          "search": "levant viper blunt-nosed viper macrovipera lebetina",
+          "regionTag": "Middle East, Cyprus, Central Asia",
+          "classTag": "Snake — Viperidae",
+          "mechanismTag": "Hemotoxic (VICC)",
+          "title": "Levant Viper",
+          "subtitle": "Macrovipera lebetina. Also called: blunt-nosed viper. One of the largest and most dangerous vipers across its range, spanning the Levant, parts of the Arabian Peninsula, Cyprus, and into Central Asia",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Significant local pain and swelling develop rapidly given the species' large size and substantial venom yield; systemic coagulopathy follows over the subsequent hours."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Severe local tissue effects — swelling, blistering, and necrosis risk — combined with venom-induced consumption coagulopathy and systemic hemorrhage. Bites from this species are considered among the most medically significant viper envenomations in its range given the combination of large body size, substantial venom yield, and potent hemotoxic activity."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Standard viper approach: immobilize, remove constricting items, transport. No tourniquet, incision, or suction."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Serial coagulation studies and limb assessment as for other major regional vipers. Aggressive wound care given real necrosis risk from the substantial local tissue destruction this species can cause."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Regional coverage is genuinely fragmented across this species' wide range. The Razi Vaccine and Serum Research Institute (Iran) produces a pentavalent/hexavalent product specifically covering M. lebetina obtusa alongside several other regional vipers. Egyptian VACSERA polyvalent antivenom has also demonstrated cross-neutralization against Macrovipera lebetina species in laboratory studies. Confirm which specific regional product is stocked — this is not a species with one simple continent-wide antivenom answer."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit for coagulation monitoring and aggressive wound surveillance given the necrosis risk from this species' substantial local tissue destruction potential."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Don't underestimate this species relative to the smaller, more frequently discussed saw-scaled viper on this page — Levant viper bites carry real severity from sheer venom volume alone, and antivenom sourcing needs to be confirmed for the specific country/region rather than assumed."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        }
+      ],
+      "nonCritical": {
+        "label": "Non-Critical — Supportive Care Only",
+        "sub": "Not life-threatening and doesn't require antivenom or critical-care intervention. Not a full workup — just enough to recognize and reassure.",
+        "items": [
+          {
+            "name": "Camel Spider",
+            "html": "(Solifugae — not a true spider) — large, fast-moving, and alarming in appearance with powerful jaws that can cause a mechanically painful bite, but not venomous at all. <em>Care:</em> clean the wound, standard laceration/puncture care; no antivenom exists because none is needed."
+          },
+          {
+            "name": "Field/Common Scorpions",
+            "html": "(Buthus spp. and similar, excluding deathstalker) — painful sting, local swelling; not typically dangerous to healthy adults. <em>Care:</em> ice, analgesia, reassurance; treat pediatric or elderly patients with the same caution as any scorpion sting until deathstalker exposure is excluded."
+          }
+        ]
+      }
+    },
+    {
+      "id": "north-america",
+      "file": "envenomation-north-america.html",
+      "label": "North America",
+      "lede": "Pit vipers cause the overwhelming majority of US snakebite, but this page also covers the one species where local swelling actively misleads (Mojave rattlesnake) and the two arthropods where antivenom decisions carry real tradeoffs of their own (black widow, bark scorpion).",
+      "species": [
+        {
+          "id": "pit-vipers",
+          "class": "snake",
+          "mechanism": "hemotoxic",
+          "search": "pit viper crotalinae rattlesnake copperhead cottonmouth rattler diamondback sidewinder highland moccasin chunk head water moccasin gapper crofab anavip",
+          "regionTag": "North America",
+          "classTag": "Snake — Crotalinae",
+          "mechanismTag": "Hemotoxic / Cytotoxic",
+          "title": "Pit Vipers (Rattlesnake, Copperhead, Cottonmouth)",
+          "subtitle": "Crotalinae — ~98% of US venomous snakebites. Also called: rattler, diamondback, sidewinder (rattlesnake) · highland moccasin, chunk head (copperhead) · water moccasin, gapper (cottonmouth)",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Pain and local swelling begin within minutes. Copperhead and cottonmouth bites are dominated by local tissue effects; rattlesnake bites more often produce early, late, and recurrent coagulopathy layered on top of local injury. Coagulopathy can lag the local exam by hours and can recur after initial control."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Progressive edema, ecchymosis, and hemorrhagic bullae at the bite site. Hematologic effects: thrombocytopenia, hypofibrinogenemia, elevated PT/PTT. Systemic signs when significant: hypotension, perioral or extremity paresthesias, metallic or rubbery taste, nausea."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Remove rings, watches, and constricting clothing before swelling progresses. Immobilize the extremity at heart level. Mark and time the leading edge of swelling/erythema for serial comparison. Do not use tourniquets, ice, incision, suction, or electrical shock — none are proven and several cause harm. Avoid NSAIDs given bleeding risk. Rapid transport; no field antivenom."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Baseline CBC, platelets, PT/PTT, fibrinogen. Re-mark leading edge every 15–30 minutes until progression stops. True compartment syndrome from crotalid envenomation is rare — most tense swelling is subcutaneous, not compartmental; prophylactic fasciotomy is not recommended and compartment pressure measurement should be reserved for exam findings inconsistent with venom effect alone."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Two FDA-approved products, both effective for all three US pit viper genera. <strong>CroFab (FabAV)</strong>: initial dose 4–6 vials (4 vials for isolated copperhead bites), often needs scheduled maintenance dosing (2 vials q6h × 3 doses after initial control) to prevent recurrence. <strong>Anavip (Fab2AV)</strong>: fixed initial dose of 10 vials regardless of age, longer half-life associated with lower rates of late/recurrent coagulopathy, no standard maintenance dose but more patients need repeat initial-control dosing (registry data: median 18 vials Anavip vs 10 vials CroFab to reach control). Reassess q1h against exam and labs; redose either product until initial control achieved — arrest of local progression, improving systemic signs, correcting coagulopathy."
+            },
+            {
+              "label": "Disposition",
+              "html": "Observe a minimum of 18–24 hours after initial control regardless of antivenom used. Recheck coagulation labs 6–12 hours after control, again prior to discharge, and twice after discharge given recurrence risk — this applies to both products but especially CroFab."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "No prehospital intervention has ever been proven to change outcome — the job in the field is removing constricting items and getting the patient to antivenom, nothing else. Watch for alpha-gal (galactose-α-1,3-galactose) sensitization causing anaphylactoid reactions to CroFab, which is sheep-derived — regionally more relevant in the southeastern US where tick-associated alpha-gal allergy is common. Recurrent coagulopathy after apparent control is a real phenomenon, not a monitoring failure — this is why the discharge lab schedule exists."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "coral-snake",
+          "class": "snake",
+          "mechanism": "neurotoxic",
+          "search": "coral snake elapidae micrurus candy stick candy snake nacsa",
+          "regionTag": "North America",
+          "classTag": "Snake — Elapidae",
+          "mechanismTag": "Neurotoxic",
+          "title": "Coral Snake",
+          "subtitle": "Micrurus fulvius (Eastern), M. tener (Texas). Also called: candy stick, candy snake. Delayed neurotoxicity — distinct course from pit vipers",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Deceptive. Local findings at the bite are often minimal or absent — no significant pain or swelling like a pit viper bite. Neurologic signs can be delayed several hours before appearing, and once they start, progression can be rapid and does not reliably reverse with antivenom once established."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Bulbar findings first: ptosis, dysarthria, dysphagia, diplopia. Progresses to generalized skeletal muscle weakness and paralysis, then respiratory failure if untreated. The mismatch between an unimpressive bite site and the eventual severity is the core danger."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Same general principles as pit viper — immobilize, remove constricting items, transport. The critical field task is not under-triaging a bite just because it looks unremarkable."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Extended observation is mandatory even in asymptomatic patients, given delayed onset — historically 24 hours. Frequent neurologic and respiratory checks (cranial nerves, vital capacity/NIF if any bulbar signs appear). Have airway equipment ready; these patients can progress to needing prolonged ventilator support."
+            },
+            {
+              "label": "Antivenom",
+              "html": "North American Coral Snake Antivenin (NACSA, Wyeth/Pfizer) is the only FDA-approved product and production stopped in 2003. Remaining stock has run on serial FDA expiration-date extensions of a single lot (CL6814) for years; check current lot status with poison control (1-800-222-1222) since availability is not guaranteed and changes. Dose 3–5 vials in adults, decreased in small children per response. There is no other FDA-approved alternative in the US; Mexican Coralmyn (Bioclon) has been used via special arrangement in some shortage situations. Historic practice was empiric treatment of any suspected bite given irreversible neurotoxicity risk; more recent data suggest a symptom-triggered approach doesn't worsen outcomes and avoids adverse events from treating asymptomatic patients — but this is a genuine access-driven tradeoff, not just a clinical preference, given how scarce the product is."
+            },
+            {
+              "label": "Disposition",
+              "html": "Minimum 12–24 hour observation even if asymptomatic at presentation, given delayed onset. Any neurologic sign warrants ICU-level monitoring."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "\"Red touch yellow, kill a fellow; red touch black, venom lack\" distinguishes coral snake from mimics like the scarlet kingsnake in the US — this rhyme does not reliably apply outside North America and should never be used to clear a bite in another region. Minimal local findings are not reassurance — they are the expected presentation. Antivenom scarcity is a real operational constraint here, not a hypothetical; know your hospital's and region's current supply before you need it."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "black-widow",
+          "class": "spider",
+          "mechanism": "neurotoxic",
+          "search": "black widow latrodectus latrodectism hourglass spider shoe button spider lyovac",
+          "regionTag": "North America",
+          "classTag": "Spider — Theridiidae",
+          "mechanismTag": "Neurotoxic",
+          "title": "Black Widow",
+          "subtitle": "Latrodectus mactans and related spp. Also called: hourglass spider, shoe button spider. Syndrome: latrodectism",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Sharp pinprick pain at the bite site, then local cramping that spreads over 15 minutes to a few hours. Untreated, the syndrome typically runs 1–3 days."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Severe muscle cramping and rigidity — abdominal wall can become boardlike and mimic a surgical abdomen, but without true peritoneal tenderness. Autonomic findings: diaphoresis, tachycardia, hypertension. Bite site itself is often unremarkable, so the exam and history carry more weight than the wound."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Supportive — analgesia as tolerated, transport. No field-specific antidote or intervention beyond comfort measures."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Opioids and benzodiazepines are the mainstay for pain and rigidity control, though often only partially effective. Calcium gluconate has been used historically for muscle cramping but evidence is weak and it is not a substitute for antivenom in severe cases."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Merck's Lyovac Antivenin (Latrodectus mactans) — whole equine IgG — remains the product available in North America, though manufacturer low-inventory periods occur and current stock should be confirmed with poison control. Reserved for severe or refractory envenomation: seizures, hypertensive crisis, respiratory compromise, or intractable pain unresponsive to opioids and benzodiazepines. Dose: 1 vial diluted in 50 mL NS, IV over 15–30 minutes. Skin or conjunctival sensitivity testing is required first given real anaphylaxis risk (reported up to ~5%); history of asthma or atopy is a relative contraindication. Fear of this reaction is the main reason antivenom is underused in the US relative to how effective it is."
+            },
+            {
+              "label": "Disposition",
+              "html": "Most cases are managed with supportive care and observation without antivenom. Admit for antivenom administration or refractory symptoms."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Consider latrodectism in unexplained abdominal rigidity without true peritoneal signs, especially with autonomic findings and a plausible exposure — garages, woodpiles, outdoor storage. The bite site will often not help you; the history and autonomic picture will. Antivenom underuse in US practice reflects genuine reluctance around the anaphylaxis rate, not a lack of efficacy — know the skin-test protocol before you need it."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "bark-scorpion",
+          "class": "scorpion",
+          "mechanism": "neurotoxic",
+          "search": "centruroides bark scorpion arizona sculptured scorpion anascorp",
+          "regionTag": "North America",
+          "classTag": "Scorpion",
+          "mechanismTag": "Neurotoxic",
+          "title": "Bark Scorpion",
+          "subtitle": "Centruroides sculpturatus. Clinically significant scorpion in the US, concentrated in the Southwest (Arizona and neighboring states)",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Pain at the sting site is immediate and often out of proportion to visible findings — there's usually no significant local lesion. Systemic neurotoxic signs, when they occur, can develop within 30 minutes to a few hours, especially in young children."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Graded severity. Grade I–II: local pain and paresthesias only. Grade III–IV: either cranial nerve dysfunction (roving/abnormal eye movements, blurred vision, slurred speech, dysphagia) or somatic skeletal neuromuscular dysfunction (jerking, restlessness) — or both. The somatic findings in kids can look like seizure activity but are not epileptic."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Analgesia and transport, with lower threshold for urgency in pediatric patients or anyone with early cranial nerve or neuromuscular signs."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Grade the envenomation on cranial nerve and somatic findings to decide on antivenom. Prior to antivenom availability, severe cases were managed with benzodiazepines, sedation, and occasionally intubation for supportive control — that approach is now reserved for cases where antivenom is unavailable or as an adjunct."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Anascorp (equine F(ab')2) — initial dose is a fixed 3 vials IV over 10 minutes regardless of age or weight, for any patient with Grade III–IV signs. Additional 1-vial doses may be given every 30–60 minutes based on symptom resolution. Mean time to symptom resolution after treatment is roughly 1.4 hours. Distribution is exclusive through AnovoRx rather than standard pharmacy wholesale — a stocking/logistics point worth knowing before a shortage-of-time situation, not during one."
+            },
+            {
+              "label": "Disposition",
+              "html": "Patients typically can be discharged home once symptoms resolve after antivenom, often within a few hours of treatment."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "The \"tap test\" — light tapping over the sting site reproducing severe pain with no visible lesion — is a useful bedside clue that distinguishes this from other bites/stings. There's active debate over whether the fixed 3-vial initial dose is necessary versus a 1-vial-then-reassess strategy for Grade III–IV envenomation; this is evolving practice, not settled. Pediatric patients remain the population most likely to progress to severe neurotoxicity."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "mojave-rattlesnake",
+          "class": "snake",
+          "mechanism": "neurotoxic",
+          "search": "mojave rattlesnake crotalus scutulatus mojave green mojave toxin",
+          "regionTag": "SW United States, N. Mexico",
+          "classTag": "Snake — Crotalinae",
+          "mechanismTag": "Neurotoxic (variable)",
+          "title": "Mojave Rattlesnake",
+          "subtitle": "Crotalus scutulatus. Also called: Mojave green (though color varies — green, brown, yellow, gray). The pit viper that breaks the \"pit vipers are hemotoxic\" rule taught for every other species on this page",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Local pain and swelling on bite, similar to other pit vipers initially — but this species carries a real risk of a very different second act, depending on which venom phenotype delivered the bite."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "This species has at least two distinct venom phenotypes, and telling them apart matters clinically. <strong>Type A</strong> venom is dominated by Mojave toxin (MTX), a potent presynaptic β-neurotoxin with little hemorrhagic activity — bites can progress to weakness, ptosis, and respiratory compromise with deceptively unimpressive local swelling, genuinely unusual for a North American pit viper. <strong>Type B</strong> venom lacks MTX and instead is rich in hemorrhagic metalloproteinases — a more typical crotalid picture of significant local tissue damage and coagulopathy. Mixed Type A+B individuals also exist, and some populations additionally carry a distinct myotoxin (Type M). Geography offers only a rough guide: Type A predominates in California, southern Nevada, southwest Utah, and parts of Arizona/New Mexico/Texas, while Type B is concentrated in central Arizona — but populations overlap and mix, so the venom type of any individual snake can't be assumed from location alone."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Standard pit viper approach: immobilize, remove constricting items, transport. Given the neurotoxic risk, monitor for early bulbar or respiratory signs even if local swelling looks unimpressive — don't let a mild-looking bite site delay transport."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Assess for both pictures — coagulation studies as for any pit viper bite, AND close neurologic/respiratory monitoring given the real possibility of a Type A envenomation. A bite with minimal local swelling but early neurologic complaints should raise this species specifically, especially in its range."
+            },
+            {
+              "label": "Antivenom",
+              "html": "CroFab and Anavip are both derived from venom pools that include Mojave rattlesnake venom and are considered effective against this species, including the Type A neurotoxic component — this is not a species requiring a separate antivenom, unlike several other regional-specificity cases on this site. Standard pit viper dosing and initial-control principles apply."
+            },
+            {
+              "label": "Disposition",
+              "html": "Extend the standard pit-viper observation window with a lower threshold for prolonged neurologic monitoring, given that significant neurotoxicity can develop despite modest local findings."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "This is the one North American pit viper where \"mild local swelling\" is not reassuring on its own — a Type A envenomation can be doing its real damage neurologically while the bite site looks unremarkable. Don't apply the general crotalid teaching point (local findings track severity) uncritically to a confirmed or suspected Mojave rattlesnake bite."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        }
+      ],
+      "nonCritical": {
+        "label": "Non-Critical — Supportive Care Only",
+        "sub": "These North American species cause real pain/reaction but are not typically life-threatening and do not require antivenom or critical-care level intervention. Not a full workup — just enough to recognize and reassure.",
+        "items": [
+          {
+            "name": "Brown Recluse",
+            "html": "(fiddleback, violin spider) — most bites self-limited; minority progress to local necrotic lesion over days. <em>Care:</em> conservative wound care, no early debridement; rare pediatric systemic hemolysis is the exception — admit if it occurs."
+          },
+          {
+            "name": "Hymenoptera",
+            "html": "(bee/wasp/hornet/fire ant) — local pain and, with fire ants, a sterile pustule. <em>Care:</em> ice, analgesia; systemic/allergic reaction routes to <a href=\"anaphylaxis.html\" style=\"color:var(--accent);\">Anaphylaxis</a>, not this page."
+          },
+          {
+            "name": "Gila Monster",
+            "html": "— tenacious chewing bite, painful, occasional hypotension/anaphylactoid reaction; no US deaths reported in 70+ years. <em>Care:</em> wound irrigation, remove retained teeth, supportive care; observe ~6h."
+          },
+          {
+            "name": "Puss Caterpillar",
+            "html": "(asp, tree asp) — severe burning contact pain from hidden spines, resolves within hours. <em>Care:</em> tape-strip spine removal (don't scrape), ice, antihistamines."
+          },
+          {
+            "name": "Velvet Ant",
+            "html": "(\"cow killer\") — dramatic pain, minimal actual severity. <em>Care:</em> reassurance, ice, analgesia."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sea-oceania",
+      "file": "envenomation-sea-oceania.html",
+      "label": "SE Asia & Oceania",
+      "lede": "Australian elapids carry some of the most potent venoms in the world by laboratory measures, but clinical importance tracks bite frequency and human contact more than raw toxicity — the snake that bites people most often, not the one with the scariest LD50, drives regional mortality. Four distinct Australian elapid genera are covered here since their management differs enough to matter clinically.",
+      "species": [
+        {
+          "id": "coastal-taipan",
+          "class": "snake",
+          "mechanism": "neurotoxic",
+          "search": "coastal taipan oxyuranus scutellatus papuan taipan inland taipan",
+          "regionTag": "Australia / Papua New Guinea",
+          "classTag": "Snake — Elapidae",
+          "mechanismTag": "Neurotoxic + Hemotoxic (VICC)",
+          "title": "Coastal Taipan",
+          "subtitle": "Oxyuranus scutellatus. Widely cited as having one of the most toxic venoms of any land snake by laboratory LD50. The related inland taipan (O. microlepidotus) is even more toxic per bite but lives in remote desert with almost no human contact — coastal taipan is the one that actually bites people",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "The majority of significant bites develop systemic envenoming — this is not a species where \"wait and see\" is a reasonable default. Clinical or laboratory evidence of envenoming is usually apparent within 2 hours, though effective pressure immobilization can delay this."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Combines neurotoxicity, myotoxicity, venom-induced consumption coagulopathy, acute kidney injury, and thrombocytopenia — a genuinely multi-system envenomation rather than one dominant mechanism. In a large case series, roughly two-thirds of systemically envenomed patients had neurotoxicity and about 40% had complete or partial VICC."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Pressure bandage with immobilization (PBI) is the standard Australian first-aid approach for all elapid bites — firm elastic bandage over the bite site, then the entire limb, plus a rigid splint, with the whole patient kept still. This is a materially different approach from North American snakebite first aid (no tourniquet or bandaging there) — know which region's protocol applies."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Leave the PBI in place until antivenom and resuscitation facilities are ready — removal can precipitate rapid systemic deterioration as sequestered venom releases. The Snake Venom Detection Kit (SVDK) can help select which monovalent antivenom to use when more than one species is possible, but it is not a diagnostic test for envenoming itself and produces both false positives and negatives."
+            },
+            {
+              "label": "Antivenom",
+              "html": "CSL monovalent Taipan Antivenom (equine). One vial has been shown to bind all measurable venom in confirmed bites, and early antivenom administration is associated with better outcomes — this is a species where speed matters more than dose escalation. Typical dosing is 1 vial diluted in saline, IV over 20–30 minutes (undiluted rapid push if hemodynamically unstable or in arrest); total doses in case series have ranged 1–9 vials depending on severity. CSL polyvalent antivenom is an alternative when species identification is uncertain, at the cost of higher volume and anaphylaxis risk."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit any patient with confirmed or strongly suspected envenoming for coagulation, renal, and neurologic monitoring. Ventilator support may be needed for significant neurotoxicity."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Don't confuse \"most toxic venom in the world\" (inland taipan, by lab measures) with \"most clinically important\" — coastal taipan and eastern brown snake account for the overwhelming majority of actual severe Australian envenomations because they're the ones people encounter. Taipan and brown snake antivenoms are species-specific with little cross-protection — the right monovalent product matters."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-21",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-21"
+        },
+        {
+          "id": "eastern-brown-snake",
+          "class": "snake",
+          "mechanism": "hemotoxic",
+          "search": "eastern brown snake pseudonaja textilis",
+          "regionTag": "Australia",
+          "classTag": "Snake — Elapidae",
+          "mechanismTag": "Hemotoxic (VICC)",
+          "title": "Eastern Brown Snake",
+          "subtitle": "Pseudonaja textilis. The single most medically important snake in Australia by case volume — widespread, common near farmland and urban fringes, and responsible for the majority of Australian snakebite deaths despite venom that is less exotic-sounding than taipan's",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "A distinctive and dangerous feature: sudden collapse can occur very early after the bite, sometimes before any other envenoming signs are apparent — this is thought to reflect a rapid, direct cardiovascular effect distinct from the coagulopathy that develops afterward."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Early collapse and, in about 5% of envenomed patients, frank cardiac arrest — a genuine outlier among snakebites for how early cardiovascular collapse can occur. Venom-induced consumption coagulopathy follows in most systemically envenomed patients, presenting as bleeding gums or IV-site oozing, rarely progressing to intracerebral or intra-abdominal hemorrhage. Thrombotic microangiopathy (thrombocytopenia, microangiopathic hemolytic anemia, acute renal failure) occurs in roughly 10% of envenomings. Significant neurotoxicity is uncommon despite a neurotoxin being present in the venom — mild diplopia or ptosis can occur but frank paralysis is rare, unlike taipan or tiger snake."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Same PBI approach as other Australian elapids — firm bandage over the bite site, then the whole limb, plus splinting and immobilization of the entire patient."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Watch specifically for early collapse and be ready to manage cardiac arrest even before coagulopathy has had time to develop — this can be the first sign of envenoming, not a late complication. If arrest occurs, undiluted antivenom should be given as a rapid IV push alongside standard resuscitation, rather than the slower diluted-infusion approach used for stable patients."
+            },
+            {
+              "label": "Antivenom",
+              "html": "CSL monovalent Brown Snake Antivenom, indicated for systemic symptoms, collapse, cardiac arrest, or laboratory evidence of complete or partial VICC, within roughly 12 hours of the bite. Dosing has genuine ongoing controversy in the Australian toxinology literature — some data support higher doses than historically used, while also flagging that unnecessarily high doses may not add benefit; this is an area of active study rather than a settled protocol."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit for coagulation monitoring and cardiovascular observation given the early-collapse risk. Watch for evolving thrombotic microangiopathy independent of the coagulopathy picture."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Don't be reassured by an early, otherwise well-appearing patient — the sudden collapse phenomenon means brown snake envenoming can announce itself with cardiac arrest before any bleeding sign has developed. This is the Australian species where \"looks fine right now\" carries the least reassurance."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-21",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-21"
+        },
+        {
+          "id": "tiger-snake",
+          "class": "snake",
+          "mechanism": "hemotoxic",
+          "search": "tiger snake notechis scutatus notechis ater",
+          "regionTag": "Australia (esp. Victoria, Tasmania)",
+          "classTag": "Snake — Elapidae",
+          "mechanismTag": "Hemotoxic (VICC) + Neurotoxic + Myotoxic",
+          "title": "Tiger Snake",
+          "subtitle": "Notechis scutatus (mainland tiger snake) and N. ater (black tiger snake). The most important venomous snake in Tasmania and among the most frequent causes of envenoming in Victoria",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "A genuinely multi-system envenomation, similar in breadth to taipan. In a large prospective series, venom-induced consumption coagulopathy was near-universal (53 of 56 confirmed cases), with systemic symptoms, myotoxicity, and neurotoxicity all occurring at meaningful rates in the same population."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "VICC, systemic symptoms, myotoxicity (with substantial creatine kinase elevation and rhabdomyolysis risk), and neurotoxicity. The principal neurotoxin, notexin, acts presynaptically and physically destroys synaptic terminals and vesicles — this is a structural injury, not a reversible receptor blockade, which matters directly for treatment (see below). Post-bite collapse can occur and its significance is easily under-recognized."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Pressure bandage with immobilization (PBI), same as other Australian elapids."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Watch for rhabdomyolysis-driven renal injury given the myotoxic component — this is more prominent here than in brown snake envenoming. Because notexin destroys presynaptic terminals rather than blocking them reversibly, neostigmine will not restore acetylcholine release the way it might for a purely postsynaptic block — if used at all, it should be paired with atropine to prevent bradycardia, but don't expect it to meaningfully reverse established paralysis."
+            },
+            {
+              "label": "Antivenom",
+              "html": "CSL monovalent Tiger Snake Antivenom. One vial has been shown sufficient to bind all circulating venom in confirmed bites, matching the dose originally recommended when the product was first released. Notably, case data show clinical benefit from antivenom even when given after a substantial delay (one case report documents recovery after a 48-hour delay) — don't withhold treatment on the assumption that \"too much time has passed.\""
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit for coagulation, renal, and neurologic monitoring given the multi-system involvement. CK trend matters as much as coagulation labs here."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Don't treat a period of apparent stability after the bite as reassurance — post-bite collapse is a recognized and sometimes under-appreciated feature. The structural (not receptor-blocking) nature of notexin's neurotoxicity is the key mechanistic reason neostigmine underperforms here relative to death adder, where postsynaptic blockade is more prominent."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-21",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-21"
+        },
+        {
+          "id": "death-adder",
+          "class": "snake",
+          "mechanism": "neurotoxic",
+          "search": "death adder acanthophis antarcticus",
+          "regionTag": "Australia, Papua New Guinea, eastern Indonesia",
+          "classTag": "Snake — Elapidae",
+          "mechanismTag": "Neurotoxic",
+          "title": "Death Adder",
+          "subtitle": "Acanthophis antarcticus and related species. An ambush predator, unlike the actively foraging brown and tiger snakes — bites often happen when the snake is stepped on or disturbed rather than encountered moving",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Neurotoxicity develops in roughly half of definite bites in case series, typically presenting over hours. This is the one Australian elapid where a genuinely important lab caveat applies (see below)."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Predominantly neurotoxic: ptosis, diplopia, bulbar weakness, and intercostal muscle weakness in a descending pattern similar in character to krait or coral snake. Critically, death adder venom is NOT significantly coagulopathic — this breaks the general Australian-elapid rule that a normal coagulation screen argues against significant envenoming. A normal 20WBCT or coag panel does not clear a death adder bite the way it would for brown, tiger, or taipan."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "PBI as for other Australian elapid bites. Given the ambush-predator bite mechanism, consider this diagnosis even without a clear \"snake encounter\" history — a bite from stepping near or on a motionless snake fits this species' pattern."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Do not rely on coagulation studies to rule this out. One vial of antivenom is effective at binding circulating venom, but — much like krait and black mamba — this does not reliably reverse neurotoxicity that has already developed; average time to resolution of neurotoxicity is about a day regardless of treatment. Some case reports describe neostigmine response, reflecting a real postsynaptic component to this venom's neurotoxicity (in contrast to tiger snake's more structural, presynaptic damage) — a trial is reasonable but should never substitute for airway readiness."
+            },
+            {
+              "label": "Antivenom",
+              "html": "CSL monovalent Death Adder Antivenom, raised against Acanthophis antarcticus and effective across the death adder species found in Australia and Papua New Guinea."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit for neurologic and respiratory monitoring regardless of coagulation results. Ventilator readiness for any bulbar or respiratory signs."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "The single most important teaching point for this species: normal clotting studies do not rule out significant death adder envenoming, unlike every other major Australian elapid on this page. Base the treatment decision on the clinical neurologic exam, not the coagulation panel."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-21",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-21"
+        },
+        {
+          "id": "funnel-web-spider",
+          "class": "spider",
+          "mechanism": "neurotoxic",
+          "search": "sydney funnel-web spider atrax robustus hadronyche",
+          "regionTag": "Australia (NSW, SE Qld)",
+          "classTag": "Spider — Atracidae",
+          "mechanismTag": "Neurotoxic",
+          "title": "Sydney Funnel-Web Spider",
+          "subtitle": "Atrax robustus and related genus Hadronyche. The only spider in the world managed with the same pressure-immobilization first aid as a venomous snakebite — a genuine exception among spider envenomations",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Severe systemic envenoming develops fast — median onset around 28 minutes, usually within 2 hours, and death can occur within about 15 minutes in small children if untreated. Only male spiders cause serious envenomation; the toxin (δ-hexatoxin) has no equivalent effect in other mammals, which is part of why this genus is so specifically dangerous to humans."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "A two-phase picture. Phase 1: local pain (fang marks present, but notably little local swelling or redness), then perioral paresthesias and fasciculations prominent in the tongue, face, and intercostal muscles, progressing to autonomic storm — sweating, salivation, lacrimation, piloerection, hypertension, tachycardia — with airway compromise possible from muscle spasm and, in some cases, pulmonary edema causing death in this phase. Phase 2: adrenergic/cholinergic effects subside, followed by a deceptively calm period, then refractory hypotension, apnea, and cardiac arrest can follow if untreated. Children may present atypically with sudden inconsolable crying, salivation, vomiting, or collapse rather than the adult symptom pattern."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Pressure immobilization bandage — identical technique to snakebite. This is one of the few spider bites where PBI is indicated; do not extrapolate this to other spiders (see the non-critical notice below for the exception this creates with redback bites). Funnel-web venom is unusual in that local tissue inactivation of venom occurs with sustained pressure, so effective PBI genuinely buys time — laboratory data suggest up to 2 mg of venom can be inactivated over 24 hours of maintained pressure, well above what a bite typically delivers."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Do not remove the PBI until antivenom and resuscitation capability are ready — removal can precipitate rapid symptom onset. Observe for at least 4–6 hours post-envenomation and at least 2 hours after bandage removal before ruling out significant envenoming; only 1 in 5 to 1 in 10 bites become seriously ill, so mild presentations are genuinely common and don't all need antivenom. Aggressive supportive care (analgesia, blood pressure control, non-invasive or invasive ventilation) may be needed while antivenom is sourced or the patient remains critical."
+            },
+            {
+              "label": "Antivenom",
+              "html": "CSL Funnel-Web Spider Antivenom (rabbit-derived IgG), introduced in 1981 — no confirmed deaths have occurred since its introduction when appropriately administered, a genuinely dramatic before/after given 13+ known deaths in the pre-antivenom era. Effective against the broader funnel-web group beyond just Atrax robustus, and also used for mouse spider (Missulena spp.) envenomation. Initial dose 2 ampoules IV for systemic signs (4 ampoules for severe signs like ARDS or altered mental status); repeat 2 ampoules at 15 minutes if incompletely reversed; cardiac arrest warrants at least 4 ampoules as a rapid undiluted IV push alongside resuscitation. Severe allergic reaction occurs in roughly 1.3% of recipients."
+            },
+            {
+              "label": "Disposition",
+              "html": "ICU-level observation for any patient with systemic signs. Even confirmed severe envenoming carries a good prognosis with timely antivenom and supportive care."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Any large black spider bite in NSW or southern Queensland should be treated as a possible funnel-web until proven otherwise, given how much this changes the first-aid approach (PBI, unlike almost every other spider bite). Absent local swelling with severe local pain is a notable feature — don't expect visible inflammation to match the severity of the pain."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-21",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-21"
+        },
+        {
+          "id": "king-cobra",
+          "class": "snake",
+          "mechanism": "neurotoxic",
+          "search": "king cobra ophiophagus hannah",
+          "regionTag": "SE Asia, S. China, parts of India",
+          "classTag": "Snake — Elapidae",
+          "mechanismTag": "Neurotoxic",
+          "title": "King Cobra",
+          "subtitle": "Ophiophagus hannah. The world's longest venomous snake. Venom is only moderately toxic drop-for-drop compared to many smaller elapids, but the volume delivered per bite is enormous — up to 400–600 mg — which is what makes bites so dangerous",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Can progress to fatality within 30 minutes in severe cases. This snake tends to \"bite and hold,\" delivering more venom the longer contact is maintained — a distinct behavioral risk factor compared to snakes that strike and release."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Local findings can include dusky discoloration, swelling, and pain, with severe cases extending to proximal swelling, necrosis, and tissue sloughing that may require amputation. Systemically: blurred vision, vertigo, drowsiness, and progressive descending paralysis, potentially reaching cardiovascular collapse and respiratory failure. Reported mortality in some case series runs as high as 50–60% without prompt treatment — genuinely higher than most other elapid bites, reflecting the combination of high venom volume and rarity of clinical experience treating it."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Bites are rare in the wild (the species avoids humans and mostly preys on other snakes) but occur disproportionately among reptile handlers, zookeepers, and collectors — most documented cases are occupational or captive-animal exposures rather than wild encounters. Rapid transport is critical given the fast progression."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Airway support and ventilation are frequently required — case reports describe rapid intubation for bulbar and respiratory paralysis. If treating a king cobra bite outside its native range (e.g., an exotic pet or zoo exposure), contact the regional poison control center or a zoo with exotic antivenom access immediately; sourcing the correct product is a genuine logistical race against time in these cases."
+            },
+            {
+              "label": "Antivenom",
+              "html": "The Thai Red Cross Society (Queen Saovabha Memorial Institute, Bangkok) produces the only species-specific King Cobra monovalent antivenom in the world, raised against Thai-origin venom. A Thai Neuro-Polyvalent antivenom (covering king cobra, monocled cobra, banded krait, and Malayan krait) is a reasonable alternative when the monospecific product isn't available, though at generally lower potency against king cobra specifically. Documented case reports show recovery with doses ranging widely — from single digits up to 33 vials — reflecting real variability in venom load and presentation severity; expect to titrate against clinical response rather than anchor to one number. Antivenom raised against Thai-origin venom shows reduced effectiveness against king cobra populations from other geographic regions (Indonesia, China) given documented venom composition differences — another entry in this page's recurring geographic-variation theme."
+            },
+            {
+              "label": "Disposition",
+              "html": "ICU admission with ventilator readiness for any confirmed bite. Recovery with adequate, timely antivenom and supportive care — including prolonged ventilation where needed — is achievable even in severe cases, per multiple published full-recovery case reports."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Local necrosis can be significant enough to require surgical debridement or amputation — this isn't a purely neurotoxic bite the way krait is; treat the wound as seriously as the airway. Given how rare confirmed bites are worldwide, involving a toxinologist or exotic-animal-experienced poison center early is genuinely valuable rather than optional."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-21",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-21"
+        },
+        {
+          "id": "malayan-pit-viper",
+          "class": "snake",
+          "mechanism": "hemotoxic",
+          "search": "malayan pit viper calloselasma rhodostoma",
+          "regionTag": "Thailand, Malaysia, Java",
+          "classTag": "Snake — Viperidae",
+          "mechanismTag": "Hemotoxic (VICC)",
+          "title": "Malayan Pit Viper",
+          "subtitle": "Calloselasma rhodostoma. The species responsible for the largest share of snakebite poisoning cases in Thailand (roughly 38% in national data) — bad-tempered, quick to strike, and known for staying in place at the bite scene rather than fleeing",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Local pain and swelling develop rapidly at the bite site. Systemic coagulopathy follows over the subsequent hours, consistent with the hemotoxic classification this species carries in regional snakebite frameworks."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Local tissue effects (swelling, blistering, necrosis risk) combined with venom-induced consumption coagulopathy and systemic bleeding — the same general hemotoxic viper picture seen elsewhere on this site, occurring here in one of the region's most frequently encountered venomous snakes."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Standard viper approach: immobilize, remove constricting items, transport. Because this species has a documented behavioral tendency to remain near the bite location rather than retreat, there's a real secondary-bite risk to bystanders or rescuers attempting to identify or move the snake — leave that to trained personnel."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Serial coagulation studies and limb assessment per standard hemotoxic viper protocol."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Purified monovalent equine antivenin is manufactured locally in Thailand (Thai Red Cross Society, Queen Saovabha Memorial Institute) specifically for this species, alongside the country's other medically important snakes. This is a well-supported, well-supplied antivenom situation relative to several other entries on this site — competent treatment is described as widely available throughout Thailand, contributing to serious morbidity being far more common than death in the country's modern snakebite data."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit for coagulation monitoring and wound care per standard viper protocol."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Volume matters here more than exotic severity — this is the single largest contributor to Thailand's snakebite burden, so competence with this species specifically has outsized practical value in the region compared with rarer but more dramatic entries elsewhere on this page."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-21",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-21"
+        }
+      ],
+      "nonCritical": {
+        "label": "Non-Critical — Supportive Care Only",
+        "sub": "Not life-threatening and doesn't require antivenom or critical-care intervention. Not a full workup — just enough to recognize and reassure.",
+        "items": [
+          {
+            "name": "Redback Spider",
+            "html": "(Latrodectus hasselti — Australia's relative of the North American black widow) — intense local, radiating, and sometimes generalized pain with sweating; not life-threatening, and no confirmed death since antivenom was introduced in 1956. <em>Care:</em> standard analgesia is first-line; two placebo-controlled RCTs (RAVE, RAVE-II) found antivenom no better than placebo for pain or systemic effects, so routine antivenom use is now discouraged in Australian guidance — reserve it for severe pain unresponsive to analgesics. Do NOT use pressure immobilization here — unlike funnel-web, this venom acts slowly and PBI tends to worsen local pain rather than help."
+          },
+          {
+            "name": "White-Tailed Spider",
+            "html": "(Lampona spp.) — the \"flesh-eating bite\" reputation is a thoroughly debunked myth; a prospective study of 130 confirmed bites found zero cases of necrotic ulcers. <em>Care:</em> ice for pain, reassurance; no antibiotics or debridement indicated on this basis alone."
+          }
+        ]
+      }
+    },
+    {
+      "id": "south-asia",
+      "file": "envenomation-south-asia.html",
+      "label": "South Asia",
+      "lede": "The \"Big Four\" — the four species responsible for the overwhelming majority of snakebite morbidity and mortality across India, Sri Lanka, Bangladesh, Pakistan, and Nepal. All four are covered by a single Indian polyvalent antivenom, but that coverage is meaningfully uneven across the region given real venom variation between populations. Two additional critical species round out this page precisely because they fall outside that framework — one with no working antivenom, one where antivenom isn't even the primary treatment.",
+      "species": [
+        {
+          "id": "russells-viper",
+          "class": "snake",
+          "mechanism": "hemotoxic",
+          "search": "russell's viper daboia russelii russell viper",
+          "regionTag": "South Asia",
+          "classTag": "Snake — Viperidae",
+          "mechanismTag": "Hemotoxic (VICC) + Neurotoxic",
+          "title": "Russell's Viper",
+          "subtitle": "Daboia russelii. The single most medically important snake in South Asia — India, Sri Lanka, Bangladesh, Pakistan, Myanmar. Responsible for over half of India's snakebite deaths",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Local pain and swelling develop promptly at the bite site. Coagulopathy, renal dysfunction, and (in South Indian and Sri Lankan populations specifically) neuromuscular paralysis can all follow — this species doesn't stay in one mechanism lane the way most vipers do."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Local swelling, coagulopathy (VICC), acute kidney injury, and myonecrosis are the core picture. Sri Lankan and South Indian Russell's viper populations additionally cause a distinct neuromuscular paralysis not typically seen with other regional Daboia populations — ptosis and other cranial nerve findings can develop alongside the hemotoxic picture. Abdominal pain has been identified as an early feature of systemic envenoming in Sri Lankan data, appearing before more obvious bleeding signs — worth treating as a red flag rather than a nonspecific complaint."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Standard viper approach: immobilize, remove constricting items, transport. No tourniquet, incision, or suction."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Baseline and serial coagulation studies, renal function, and urinalysis. A 20-minute whole blood clotting test (20WBCT) is the standard regional bedside screen — recheck roughly 6 hours after antivenom, since that's the approximate time needed for the liver to replenish consumed clotting factors. Watch closely for evolving renal injury independent of the coagulopathy picture."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Covered by Indian polyvalent antivenom (VINS, Bharat, and other manufacturers), raised against all \"Big Four\" species — but sourced predominantly from Tamil Nadu (South India) venom. This matters clinically: documented venom composition differences across Daboia populations mean the same antivenom performs less reliably against Sri Lankan, Pakistani, and Bangladeshi Russell's vipers than against South Indian ones. Dosing protocols vary by country and product concentration rather than a single universal number — commonly an initial dose followed by reassessment against the 20WBCT and clinical picture, with escalation for persistent coagulopathy. Antivenom reliably clears free venom from the bloodstream but does NOT reliably reverse neurotoxicity that has already developed — this is a distinct failure mode from the coagulopathy response, which does respond well."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit for coagulation and renal monitoring regardless of initial severity, given the AKI risk. Any neuromuscular signs warrant the same airway vigilance as a primarily neurotoxic bite."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Don't assume \"polyvalent antivenom\" means uniform coverage across the region — a Sri Lankan, Pakistani, or Bangladeshi patient may respond less predictably to an Indian-manufactured product raised against South Indian venom than the label alone would suggest. Renal injury can evolve on its own trajectory separate from the coagulopathy — track it independently, not just as a coagulopathy complication."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "common-krait",
+          "class": "snake",
+          "mechanism": "neurotoxic",
+          "search": "common krait bungarus caeruleus indian krait blue krait",
+          "regionTag": "South Asia",
+          "classTag": "Snake — Elapidae",
+          "mechanismTag": "Neurotoxic",
+          "title": "Common Krait",
+          "subtitle": "Bungarus caeruleus. Also called: Indian krait, blue krait. Nocturnal, painless bite — often called the \"silent killer\" because victims frequently don't realize they've been bitten until paralysis sets in overnight",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Bites classically occur indoors at night, on people sleeping on the floor. The bite itself is often painless, with minimal or no visible local findings — victims commonly wake with symptoms already progressing, or don't wake at all until paralysis is advanced. Progression to respiratory paralysis can occur within hours."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Descending neuromuscular paralysis: ptosis progressing to complete ophthalmoplegia, facial and bulbar weakness, neck weakness, and ultimately respiratory failure. Abdominal pain is a recognized early feature. Critically, this is a bite with essentially no local tissue signs — no significant swelling or necrosis — which is itself a diagnostic clue when the biting snake wasn't seen or identified."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Maintain high suspicion in anyone found with unexplained paralysis or altered consciousness after sleeping on the floor in an endemic area, even without a clear bite history. Rapid transport; airway monitoring en route."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Antivenom clears free venom from the blood but does not reliably reverse paralysis that has already developed — patients can progress to needing intubation despite timely, appropriately dosed antivenom. Don't interpret ongoing paralysis after antivenom as treatment failure requiring more antivenom; it often reflects venom already bound at the neuromuscular junction. Have ventilator support ready and do not delay intubation for respiratory compromise while waiting to see if other measures work."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Covered by Indian polyvalent antivenom. The regional national protocol includes a neostigmine/atropine trial (atropine first to blunt cholinergic side effects, then neostigmine) in many centers, but the evidence for krait specifically is genuinely mixed: at least one prospective study of 72 confirmed krait-bite patients found zero clinical improvement from neostigmine, with all patients progressing to respiratory paralysis regardless. Other case reports describe a \"neostigmine responsiveness test\" identifying a subset of patients who do improve. Given the low downside and established regional protocol, a trial is reasonable, but it should never delay or substitute for ventilatory support when respiratory compromise is present."
+            },
+            {
+              "label": "Disposition",
+              "html": "ICU-level care with ventilator availability for any patient with neurologic signs. Recovery can be prolonged — case reports describe over a week of mechanical ventilation with eventual full recovery, so a slow response doesn't necessarily mean a poor prognosis."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "The painless, sign-free bite is the whole danger here — treat any unexplained overnight paralysis in an endemic area as a krait bite until proven otherwise, particularly if the patient was sleeping at floor level. Don't wait on neostigmine response before securing the airway."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "indian-cobra",
+          "class": "snake",
+          "mechanism": "neurotoxic",
+          "search": "indian cobra naja naja spectacled cobra",
+          "regionTag": "South Asia",
+          "classTag": "Snake — Elapidae",
+          "mechanismTag": "Neurotoxic + Cytotoxic",
+          "title": "Indian Cobra",
+          "subtitle": "Naja naja. Also called: spectacled cobra. Common in both rural and urban/peri-urban settings across the subcontinent",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Unlike krait, local pain and swelling at the bite site are typically apparent early — this is a useful bedside differentiator between the two elapids when the snake wasn't identified. Neurotoxic progression follows a similar descending pattern to krait but the venom is generally considered less potent milligram-for-milligram."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Combines neurotoxic descending paralysis (ptosis, ophthalmoplegia, bulbar and respiratory weakness) with real local cytotoxic tissue effects — swelling, blistering, and potential local necrosis at the bite site, which krait does not typically produce."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Standard elapid approach: immobilize, remove constricting items, transport. Local wound care as findings warrant."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Same airway vigilance as any neurotoxic elapid bite. Local wound monitoring for necrosis/secondary infection, distinct from the pure neurotoxic-only picture of krait."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Covered by Indian polyvalent antivenom. Some regional protocols and case data suggest neostigmine has more consistent benefit in cobra bites than in krait bites specifically, though this should still be treated as an adjunct rather than a substitute for antivenom and ventilatory readiness."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit for airway monitoring and wound care. Ventilator availability for any respiratory signs, as with krait."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Local necrosis and tissue findings are the key bedside clue distinguishing this from a krait bite when the snake is unidentified — a painful, swollen bite with neurologic signs points here; a painless, sign-free bite with new paralysis points to krait."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "south-asia-saw-scaled-viper",
+          "class": "snake",
+          "mechanism": "hemotoxic",
+          "search": "saw-scaled viper echis carinatus india pakistan carpet viper",
+          "regionTag": "South Asia",
+          "classTag": "Snake — Viperidae",
+          "mechanismTag": "Hemotoxic (VICC)",
+          "title": "Saw-Scaled Viper",
+          "subtitle": "Echis carinatus. Smallest of the Big Four but disproportionately dangerous given how common bites are — high local abundance across India and Pakistan in particular. A distinct population from the Middle Eastern Echis coloratus/carinatus covered on that region's page",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Local pain and swelling within minutes, with coagulopathy developing over the following hours."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Venom-induced consumptive coagulopathy driving systemic bleeding, alongside local pain, swelling, and occasional tissue necrosis at the bite site."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Standard viper approach: immobilize, remove constricting items, transport."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "20WBCT and serial coagulation studies, same framework as Russell's viper."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Covered directly by Indian polyvalent antivenom — this is one of the four species the product is raised against, so coverage here is more consistent than for some of the region's other medically significant but non-Big-Four species."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit for coagulation monitoring per standard viper protocol."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Don't confuse regional Echis populations — a product effective against South Asian E. carinatus is not automatically interchangeable with antivenom for African or Middle Eastern Echis species (see the Africa and Middle East pages); the reverse also holds. This is one of the more consistent narrow-cross-reactivity teaching points across the whole Echis genus."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "hump-nosed-pit-viper",
+          "class": "snake",
+          "mechanism": "hemotoxic",
+          "search": "hump-nosed pit viper hypnale hypnale merrem's hump-nosed viper",
+          "regionTag": "Sri Lanka, SW India (Western Ghats/Kerala)",
+          "classTag": "Snake — Viperidae",
+          "mechanismTag": "Hemotoxic (VICC)",
+          "title": "Hump-Nosed Pit Viper",
+          "subtitle": "Hypnale hypnale (plus H. zara and H. nepa, endemic to Sri Lanka). Not part of the \"Big Four\" by tradition, but a genuinely major cause of snakebite in its range — and the standard antivenom does not work against it",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Local swelling develops early in the large majority of bites. Blood incoagulability can appear anywhere from 15 minutes to 48 hours after the bite, and in most cases is already present by the time the patient reaches hospital."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "In the largest published Sri Lankan series (302 confirmed bites), local swelling occurred in 91% and local necrosis in 16%, with 4% requiring digit amputation and 4% needing skin grafts. Venom-induced consumption coagulopathy was detected in 39%, spontaneous systemic bleeding in 18%, and acute renal failure in 10% — with an overall case fatality rate of 1.7%. This is a genuinely small snake causing disproportionate morbidity: it was the single most common identified snakebite species in that series, ahead of every other snake in the country."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Standard viper approach: immobilize, remove constricting items, transport. Bites most commonly occur on the feet or ankles at night near people's homes — a distinct epidemiological pattern worth recognizing."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Serial coagulation studies and renal function monitoring, same framework as other regional vipers. Given the real necrosis and amputation risk seen in the case series, involve surgical/wound care early for significant local findings rather than treating this as a purely medical-management bite."
+            },
+            {
+              "label": "Antivenom",
+              "html": "This is the critical point: the standard Indian polyvalent antivenoms used across South Asia (including Bharat and Haffkine products) have been clinically and laboratory-confirmed to be NOT effective against Hypnale venom — this snake is not one of the four species the standard product is raised against, despite historically being misidentified as Russell's viper or saw-scaled viper in many cases, which likely contributed to years of under-recognition. No antivenom is currently available in India for this species. In Sri Lanka, some case reports and lab studies suggest cross-neutralization from Thai Red Cross products (Malayan pit viper monovalent, or Hemato polyvalent), but this is not a standardized, widely available clinical solution — management remains predominantly supportive."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit for coagulation and renal monitoring regardless of antivenom availability, given the real fatality and complication rates in confirmed bites. Supportive management — fluid/electrolyte correction, transfusion support for significant bleeding, dialysis if renal failure develops — is the mainstay rather than antivenom-centered care."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "This is arguably the single most important teaching point on this entire regional page: \"give the polyvalent antivenom\" is NOT the answer for this species, unlike every other South Asian viper covered here. A snake this genuinely common causing real mortality with no working antivenom is a distinct clinical reality from the Big Four framework — don't let the \"Big Four\" label create a false sense that it covers the region's full risk."
+          },
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-03-08"
+        },
+        {
+          "id": "indian-red-scorpion",
+          "class": "scorpion",
+          "mechanism": "neurotoxic",
+          "search": "indian red scorpion hottentotta tamulus mesobuthus tamulus prazosin",
+          "regionTag": "India, E. Pakistan, Nepal, Sri Lanka",
+          "classTag": "Scorpion",
+          "mechanismTag": "Neurotoxic / Cardiotoxic (Autonomic Storm)",
+          "title": "Indian Red Scorpion",
+          "subtitle": "Hottentotta tamulus (formerly Mesobuthus/Buthus tamulus). Widely considered among the most dangerous scorpion species globally — not because of the sting itself, but because of the autonomic cascade it triggers",
+          "fields": [
+            {
+              "label": "Onset / Timeline",
+              "html": "Intense local pain at the sting site is immediate. Systemic autonomic effects follow over a period of hours: hypertension typically within 1-10 hours, tachycardia within 1-24 hours, and pulmonary edema — the feared complication — within 6-24 hours in published series."
+            },
+            {
+              "label": "Clinical Syndrome",
+              "html": "Venom delays sodium channel inactivation and inhibits potassium channels, driving a massive, sustained catecholamine release — an \"autonomic storm.\" Mild cases show vasoconstriction and hypertension; severe cases progress to hypotension, pulmonary edema, and myocardial dysfunction. Priapism has been specifically documented in pediatric case series. ECG changes are common — ST depression, tented T waves, an acute-infarction-like pattern — reflecting real myocardial stress rather than primary cardiac disease. Children are disproportionately represented among severe and fatal cases."
+            },
+            {
+              "label": "Field / Prehospital Management",
+              "html": "Immobilize the affected limb and transport urgently — early treatment is the single most important factor in preventing progression to pulmonary edema. Do not delay for traditional or non-medical remedies; delayed presentation is a repeatedly documented factor in severe outcomes."
+            },
+            {
+              "label": "ED / Resuscitation Management",
+              "html": "Recognize this as a cardiovascular emergency, not primarily a pain management problem. Serial vital signs and ECG monitoring given the real risk of evolving pulmonary edema and myocardial dysfunction over the following 24 hours."
+            },
+            {
+              "label": "Antivenom",
+              "html": "Scorpion antivenom has shown limited clinical benefit for this species specifically and is not the primary treatment. <strong>Prazosin</strong> (an oral post-synaptic alpha-1 blocker) is the treatment that has changed outcomes here — in a landmark comparative study, mortality was 25% with conventional therapy, 3.5% with nifedipine, and 0% with prazosin; complicating pulmonary edema fell from 46% to zero across the same comparison. For prazosin-resistant cardiotoxicity, dobutamine has shown benefit in case series. Severe pulmonary edema unresponsive to first-line measures has been managed with sodium nitroprusside or inotropic support in published cases."
+            },
+            {
+              "label": "Disposition",
+              "html": "Admit any patient with systemic signs for cardiovascular monitoring — this applies especially to children, who show higher rates of severe complications. Even patients presenting late (one published case: 36 hours, with established pulmonary edema) have recovered with prazosin and supportive care, so a delayed presentation is not itself a reason to withhold treatment."
+            }
+          ],
+          "pearls": {
+            "label": "Pearls / Pitfalls",
+            "html": "Prazosin is the single highest-yield intervention for this species and is inexpensive, widely available, and free of the anaphylaxis risk that comes with antivenom — this is genuinely one of the best-supported low-cost antidotes on this entire site, backed by a striking mortality difference in comparative data. Don't reflexively reach for antivenom as the primary answer here the way you would with most other critical entries on this page."
+          },
+          "reviewTier": 2,
+          "reviewTierIsDefault": true,
+          "lastVerified": "2026-09-08",
+          "lastVerifiedIsInferred": true,
+          "reviewDue": "2027-09-08"
+        }
+      ],
+      "nonCritical": {
+        "label": "Non-Critical — Supportive Care Only",
+        "sub": "Not life-threatening and doesn't require antivenom or critical-care intervention. Not a full workup — just enough to recognize and reassure.",
+        "items": [
+          {
+            "name": "Green Vine Snake",
+            "html": "(Ahaetulla nasuta and related species) — mildly venomous, rear-fanged; bites cause local swelling and mild pain only, no reported systemic envenoming of significance. <em>Care:</em> wound cleaning and reassurance; no antivenom exists or is needed."
+          },
+          {
+            "name": "Non-Venomous Mimics",
+            "html": "(rat snake, wolf snake, checkered keelback, and others) — frequently mistaken for the Big Four given overlapping habitat and superficial resemblance, causing significant patient and family anxiety. <em>Care:</em> confirm species when possible (photo, description, or expert identification); wound care only, no antivenom, no coagulation workup needed once a non-venomous species is confirmed."
+          }
+        ]
+      }
+    }
+  ]
+}

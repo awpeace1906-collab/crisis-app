@@ -1,0 +1,246 @@
+import SwiftUI
+
+struct SectionBlocksView: View {
+    let blocks: [ContentBlock]
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            ForEach(blocks) { BlockView(block: $0) }
+        }
+    }
+}
+
+struct BlockView: View {
+    let block: ContentBlock
+
+    var body: some View {
+        switch block.type {
+        case "steps":
+            StepsBlockView(steps: block.steps ?? [])
+        case "box":
+            BoxBlockView(color: block.color ?? "teal", html: block.html ?? "")
+        case "alert":
+            AlertBlockView(color: block.color ?? "red", title: block.title, html: block.html ?? "")
+        case "table":
+            TableBlockView(headers: block.headers ?? [], rows: block.rows ?? [])
+        case "xref":
+            XrefBlockView(html: block.html ?? "")
+        case "sources":
+            SourcesBlockView(items: block.items ?? [])
+        case "html":
+            HTMLTextView(html: block.html ?? "")
+        case "tagline":
+            HTMLTextView(html: block.html ?? "")
+                .font(AppFont.serif(13, italic: true))
+                .foregroundStyle(Theme.text2)
+        case "figure":
+            // SwiftUI has no native SVG rendering, so the diagram itself
+            // arrives as a build-time PNG rasterization (see
+            // crisis-content/scripts/rasterize-figures.mjs). Until a given
+            // figure has been rasterized, still render the caption — it
+            // carries real teaching content that shouldn't vanish on iOS.
+            FigureBlockView(assetId: block.figureId ?? "", caption: block.caption ?? "", alt: block.alt ?? "")
+        default:
+            EmptyView()
+        }
+    }
+}
+
+private struct StepsBlockView: View {
+    let steps: [ProtocolStep]
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            ForEach(Array(steps.enumerated()), id: \.offset) { index, step in
+                HStack(alignment: .top, spacing: 14) {
+                    Text(step.num)
+                        .font(AppFont.display(13))
+                        .foregroundStyle(Theme.bg)
+                        .frame(width: 32, height: 32)
+                        .background(Circle().fill(Theme.color(step.color)))
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(step.title)
+                            .font(AppFont.display(14))
+                            .foregroundStyle(Theme.text)
+                        HTMLTextView(html: step.html)
+                            .font(.system(size: 13.5))
+                            .foregroundStyle(Theme.text2)
+                    }
+                }
+                .padding(.vertical, 11)
+                if index < steps.count - 1 {
+                    Divider().overlay(Theme.border)
+                }
+            }
+        }
+        .padding(16)
+        .background(Theme.surface2)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+    }
+}
+
+private struct BoxBlockView: View {
+    let color: String
+    let html: String
+    var body: some View {
+        HTMLTextView(html: html)
+            .padding(16)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(color == "red" ? Theme.tint("red") : Theme.surface2)
+            .overlay(alignment: .leading) {
+                Rectangle().fill(Theme.color(color)).frame(width: 3)
+            }
+            .clipShape(RoundedRectangle(cornerRadius: 10))
+    }
+}
+
+private struct AlertBlockView: View {
+    let color: String
+    let title: String?
+    let html: String
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            if let title, !title.isEmpty {
+                Text(title.uppercased())
+                    .font(AppFont.mono(10.5, weight: .semibold))
+                    .foregroundStyle(Theme.color(color))
+            }
+            HTMLTextView(html: html)
+                .font(.system(size: 14))
+                .foregroundStyle(Theme.text)
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Theme.tint(color))
+        .overlay(RoundedRectangle(cornerRadius: 8).stroke(Theme.color(color).opacity(0.3)))
+        .clipShape(RoundedRectangle(cornerRadius: 8))
+    }
+}
+
+private struct TableBlockView: View {
+    let headers: [String]
+    let rows: [[String]]
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            VStack(alignment: .leading, spacing: 0) {
+                HStack(spacing: 0) {
+                    ForEach(headers, id: \.self) { h in
+                        Text(h.uppercased())
+                            .font(AppFont.mono(10.5, weight: .semibold))
+                            .foregroundStyle(Theme.text)
+                            .padding(.horizontal, 12).padding(.vertical, 8)
+                            .frame(minWidth: 130, alignment: .leading)
+                    }
+                }
+                .background(Theme.surface2)
+
+                ForEach(Array(rows.enumerated()), id: \.offset) { rIndex, row in
+                    HStack(alignment: .top, spacing: 0) {
+                        ForEach(Array(row.enumerated()), id: \.offset) { cIndex, cell in
+                            HTMLTextView(html: cell)
+                                .font(.system(size: 13.5))
+                                .foregroundStyle(cIndex == 0 ? Theme.text : Theme.text2)
+                                .padding(.horizontal, 12).padding(.vertical, 9)
+                                .frame(minWidth: 130, alignment: .leading)
+                        }
+                    }
+                    if rIndex < rows.count - 1 {
+                        Divider().overlay(Theme.border)
+                    }
+                }
+            }
+            .overlay(RoundedRectangle(cornerRadius: 8).stroke(Theme.border))
+        }
+    }
+}
+
+private struct XrefBlockView: View {
+    let html: String
+    var body: some View {
+        HTMLTextView(html: html)
+            .font(.system(size: 13.5))
+            .foregroundStyle(Theme.text2)
+            .padding(.vertical, 10).padding(.horizontal, 14)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(Theme.tint("blue"))
+            .overlay(alignment: .leading) {
+                Rectangle().fill(Theme.blue).frame(width: 3)
+            }
+            .clipShape(RoundedRectangle(cornerRadius: 8))
+    }
+}
+
+private struct SourcesBlockView: View {
+    let items: [SourceItem]
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            ForEach(Array(items.enumerated()), id: \.offset) { index, item in
+                HStack(alignment: .top, spacing: 8) {
+                    if !item.tier.isEmpty {
+                        Text(item.tier)
+                            .font(AppFont.mono(9.5))
+                            .padding(.horizontal, 6).padding(.vertical, 1)
+                            .foregroundStyle(Theme.teal)
+                            .background(Theme.tint("teal"))
+                            .overlay(RoundedRectangle(cornerRadius: 3).stroke(Theme.teal.opacity(0.3)))
+                            .clipShape(RoundedRectangle(cornerRadius: 3))
+                    }
+                    HTMLTextView(html: item.html)
+                        .font(.system(size: 12.5))
+                        .foregroundStyle(Theme.text2)
+                }
+                .padding(.vertical, 6)
+                if index < items.count - 1 {
+                    Divider().overlay(Theme.border)
+                }
+            }
+        }
+    }
+}
+
+/// Renders a figure: the rasterized diagram when one is available on disk
+/// (bundled or in the content cache), plus its caption. Falls back to
+/// caption-only rather than an empty space if the image isn't there yet.
+struct FigureBlockView: View {
+    let assetId: String
+    let caption: String
+    let alt: String
+
+    private var image: UIImage? {
+        guard !assetId.isEmpty else { return nil }
+        // 1. A figure fetched from the CDN into the content cache (newest).
+        if let cached = DataStore.figureURL(assetId),
+           let data = try? Data(contentsOf: cached),
+           let img = UIImage(data: data) {
+            return img
+        }
+        // 2. The copy shipped in the app bundle. Note the build flattens
+        //    Resources/figures/*.png to the bundle root, so look it up by
+        //    name with no subdirectory — verified against the built .app.
+        if let url = Bundle.main.url(forResource: assetId, withExtension: "png"),
+           let data = try? Data(contentsOf: url),
+           let img = UIImage(data: data) {
+            return img
+        }
+        // 3. Asset-catalog lookup, in case a figure is ever added that way.
+        return UIImage(named: assetId)
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            if let image {
+                Image(uiImage: image)
+                    .resizable()
+                    .scaledToFit()
+                    .accessibilityLabel(alt)
+                    .padding(12)
+                    .background(Theme.surface)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Theme.border))
+            }
+            if !caption.isEmpty {
+                HTMLTextView(html: caption)
+                    .font(AppFont.serif(12, italic: true))
+                    .foregroundStyle(Theme.text2)
+            }
+        }
+    }
+}

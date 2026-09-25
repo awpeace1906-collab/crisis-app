@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0387B255F69606806E302476 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D546E1826C592FBCB1A67DB5 /* ContentView.swift */; };
+		054A0202C9B60E8EF02FD2B2 /* anterior-neck-anatomy-for-front-of-neck-airway.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21BB3C02CFE2D7289518D7 /* anterior-neck-anatomy-for-front-of-neck-airway.png */; };
+		0885FECDCF7C122E00D7721D /* intracardiac-v1-electrogram-as-the-pacing-wire-advances.png in Resources */ = {isa = PBXBuildFile; fileRef = C77077A025FAAD7E2DDFB1A6 /* intracardiac-v1-electrogram-as-the-pacing-wire-advances.png */; };
+		22C82F12BDC252205C421917 /* SourceSerif4-Italic[opsz,wght].ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2846AC31FF7776E5AAFCCE59 /* SourceSerif4-Italic[opsz,wght].ttf */; };
+		25B4BD845EF77984EF9BD2B5 /* BlockRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43335F864F74F8111A7E740 /* BlockRenderer.swift */; };
+		276816A1569B77502D62E332 /* SourceSerif4[opsz,wght].ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2F035A0B56410A65970D4D9 /* SourceSerif4[opsz,wght].ttf */; };
+		27962ADCA862FF5EABDC7A25 /* EnvenomationHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBEA1A441F543E6837D4C71 /* EnvenomationHubView.swift */; };
+		2EA4902D30565C15A7988BFB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20548E8E831C2827E319492A /* Theme.swift */; };
+		32CEC213AAC0FF1D05AF0E84 /* ProtocolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DA1003F26341DA1E4BFDF /* ProtocolDetailView.swift */; };
+		33A5BFE5C57039A4F0FC47B1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EAA8F965E1703854BBA94 /* SettingsView.swift */; };
+		4713C4982C7B4FB1C48CB91A /* SpeciesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E11B608CCD13275D1EABC6 /* SpeciesDetailView.swift */; };
+		5588B4D01B0D2499E2942C65 /* Syne[wght].ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01B864E13206F4E27975A7D4 /* Syne[wght].ttf */; };
+		7495698705545C73C2905E23 /* protocols.json in Resources */ = {isa = PBXBuildFile; fileRef = B477F8972EF0CB159CA0493F /* protocols.json */; };
+		7D47F437038863508E225532 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BE86919C47F1D414236030 /* Config.swift */; };
+		8EA8307D901082326FC4F409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F432D41FF8F0C9D4DBB12931 /* Assets.xcassets */; };
+		94224235602DFE6D5B688025 /* ProtocolModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC6F10B8175710BC56673EA /* ProtocolModels.swift */; };
+		9D092910001BDDC748A70451 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C57887F11D45E00932B132 /* Components.swift */; };
+		9EC28E10320AF74318AE09EC /* IBMPlexMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9818BB22F630D8F4AB2403AF /* IBMPlexMono-Medium.ttf */; };
+		A314E5BBF4B6FCC98DD7E42D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91FE7285B0E53AEB78255D6 /* HomeView.swift */; };
+		B40CDE5E7BEA73C5C5AEA5EA /* EnvenomationRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C7D50F47C886B2978DBEB /* EnvenomationRegionView.swift */; };
+		CDE4C47E28D78557BF73C2F8 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710778977AD57761F679C2C5 /* DataStore.swift */; };
+		D528EF467BB0F99EEEB26843 /* EnvenomationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8370CAF571A867BEA97ED /* EnvenomationModels.swift */; };
+		D5D37C728B9916D056A9E9F2 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = C5AD3DFB4AA5AB7B7FD21A87 /* manifest.json */; };
+		DC92252DE5C693031397FCD2 /* CRISISApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12E6579D27BEF9C2383FCA1 /* CRISISApp.swift */; };
+		E65DC49A4A5416A426A2F3BA /* envenomation.json in Resources */ = {isa = PBXBuildFile; fileRef = 9874786301C2AD9FE7D763C1 /* envenomation.json */; };
+		E708E07B2A5875CD01D2356D /* EntryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985CF3234E68B7C4C84625DA /* EntryListView.swift */; };
+		F30D367F6B1989EC8B324EF4 /* procedures.json in Resources */ = {isa = PBXBuildFile; fileRef = 274050841DCED395C5A39B0F /* procedures.json */; };
+		F31A0DC69C660DEF3D4C1943 /* IBMPlexMono-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 791533EA4CDA828333065EA2 /* IBMPlexMono-SemiBold.ttf */; };
+		F894304593CCB03E61700A15 /* HTMLText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F04DF454201C4C7B7B6DB4 /* HTMLText.swift */; };
+		FAEFD8DB451439A24E89E004 /* IBMPlexMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93DAC378B7DE3C1B64B5F529 /* IBMPlexMono-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01B864E13206F4E27975A7D4 /* Syne[wght].ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Syne[wght].ttf"; sourceTree = "<group>"; };
+		01BE86919C47F1D414236030 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		024C7D50F47C886B2978DBEB /* EnvenomationRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvenomationRegionView.swift; sourceTree = "<group>"; };
+		14F04DF454201C4C7B7B6DB4 /* HTMLText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLText.swift; sourceTree = "<group>"; };
+		1EBEA1A441F543E6837D4C71 /* EnvenomationHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvenomationHubView.swift; sourceTree = "<group>"; };
+		20548E8E831C2827E319492A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		274050841DCED395C5A39B0F /* procedures.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = procedures.json; sourceTree = "<group>"; };
+		2846AC31FF7776E5AAFCCE59 /* SourceSerif4-Italic[opsz,wght].ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSerif4-Italic[opsz,wght].ttf"; sourceTree = "<group>"; };
+		2E21BB3C02CFE2D7289518D7 /* anterior-neck-anatomy-for-front-of-neck-airway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-neck-anatomy-for-front-of-neck-airway.png"; sourceTree = "<group>"; };
+		34E1B39BC40B6D3FC3A2B751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		41689AE8F42439752FAF9BDD /* CRISIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRISIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51C57887F11D45E00932B132 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		710778977AD57761F679C2C5 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		71E11B608CCD13275D1EABC6 /* SpeciesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesDetailView.swift; sourceTree = "<group>"; };
+		791533EA4CDA828333065EA2 /* IBMPlexMono-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-SemiBold.ttf"; sourceTree = "<group>"; };
+		7D9EAA8F965E1703854BBA94 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		93DAC378B7DE3C1B64B5F529 /* IBMPlexMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Regular.ttf"; sourceTree = "<group>"; };
+		9818BB22F630D8F4AB2403AF /* IBMPlexMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Medium.ttf"; sourceTree = "<group>"; };
+		985CF3234E68B7C4C84625DA /* EntryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListView.swift; sourceTree = "<group>"; };
+		9874786301C2AD9FE7D763C1 /* envenomation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = envenomation.json; sourceTree = "<group>"; };
+		A43335F864F74F8111A7E740 /* BlockRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRenderer.swift; sourceTree = "<group>"; };
+		A7C8370CAF571A867BEA97ED /* EnvenomationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvenomationModels.swift; sourceTree = "<group>"; };
+		B477F8972EF0CB159CA0493F /* protocols.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = protocols.json; sourceTree = "<group>"; };
+		C5AD3DFB4AA5AB7B7FD21A87 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		C77077A025FAAD7E2DDFB1A6 /* intracardiac-v1-electrogram-as-the-pacing-wire-advances.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "intracardiac-v1-electrogram-as-the-pacing-wire-advances.png"; sourceTree = "<group>"; };
+		D12E6579D27BEF9C2383FCA1 /* CRISISApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRISISApp.swift; sourceTree = "<group>"; };
+		D44DA1003F26341DA1E4BFDF /* ProtocolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolDetailView.swift; sourceTree = "<group>"; };
+		D546E1826C592FBCB1A67DB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D91FE7285B0E53AEB78255D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DDC6F10B8175710BC56673EA /* ProtocolModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolModels.swift; sourceTree = "<group>"; };
+		F2F035A0B56410A65970D4D9 /* SourceSerif4[opsz,wght].ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSerif4[opsz,wght].ttf"; sourceTree = "<group>"; };
+		F432D41FF8F0C9D4DBB12931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		07A4BAFA8ABABC45D891BA5A /* CRISIS */ = {
+			isa = PBXGroup;
+			children = (
+				F432D41FF8F0C9D4DBB12931 /* Assets.xcassets */,
+				D546E1826C592FBCB1A67DB5 /* ContentView.swift */,
+				D12E6579D27BEF9C2383FCA1 /* CRISISApp.swift */,
+				34E1B39BC40B6D3FC3A2B751 /* Info.plist */,
+				809737DAA11A9EBBC393951C /* Models */,
+				210633E8BAFDF88576D15C25 /* Resources */,
+				21CFCAFA8DB40FE6B5499B82 /* Utilities */,
+				75862BD29E5D1D58720EB1EA /* Views */,
+			);
+			path = CRISIS;
+			sourceTree = "<group>";
+		};
+		210633E8BAFDF88576D15C25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD2B27A1BD09EA884189ABC8 /* data */,
+				C4A8A5294AF6646967818D97 /* figures */,
+				819E61FD86F00B75FA1721E4 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		21CFCAFA8DB40FE6B5499B82 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				14F04DF454201C4C7B7B6DB4 /* HTMLText.swift */,
+				20548E8E831C2827E319492A /* Theme.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		25DF0A749B0BCCD9E50A05D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41689AE8F42439752FAF9BDD /* CRISIS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75862BD29E5D1D58720EB1EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A43335F864F74F8111A7E740 /* BlockRenderer.swift */,
+				51C57887F11D45E00932B132 /* Components.swift */,
+				985CF3234E68B7C4C84625DA /* EntryListView.swift */,
+				1EBEA1A441F543E6837D4C71 /* EnvenomationHubView.swift */,
+				024C7D50F47C886B2978DBEB /* EnvenomationRegionView.swift */,
+				D91FE7285B0E53AEB78255D6 /* HomeView.swift */,
+				D44DA1003F26341DA1E4BFDF /* ProtocolDetailView.swift */,
+				7D9EAA8F965E1703854BBA94 /* SettingsView.swift */,
+				71E11B608CCD13275D1EABC6 /* SpeciesDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		809737DAA11A9EBBC393951C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01BE86919C47F1D414236030 /* Config.swift */,
+				710778977AD57761F679C2C5 /* DataStore.swift */,
+				A7C8370CAF571A867BEA97ED /* EnvenomationModels.swift */,
+				DDC6F10B8175710BC56673EA /* ProtocolModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		819E61FD86F00B75FA1721E4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9818BB22F630D8F4AB2403AF /* IBMPlexMono-Medium.ttf */,
+				93DAC378B7DE3C1B64B5F529 /* IBMPlexMono-Regular.ttf */,
+				791533EA4CDA828333065EA2 /* IBMPlexMono-SemiBold.ttf */,
+				2846AC31FF7776E5AAFCCE59 /* SourceSerif4-Italic[opsz,wght].ttf */,
+				F2F035A0B56410A65970D4D9 /* SourceSerif4[opsz,wght].ttf */,
+				01B864E13206F4E27975A7D4 /* Syne[wght].ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		918C2824F0EAD852C58895C5 = {
+			isa = PBXGroup;
+			children = (
+				07A4BAFA8ABABC45D891BA5A /* CRISIS */,
+				25DF0A749B0BCCD9E50A05D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4A8A5294AF6646967818D97 /* figures */ = {
+			isa = PBXGroup;
+			children = (
+				2E21BB3C02CFE2D7289518D7 /* anterior-neck-anatomy-for-front-of-neck-airway.png */,
+				C77077A025FAAD7E2DDFB1A6 /* intracardiac-v1-electrogram-as-the-pacing-wire-advances.png */,
+			);
+			path = figures;
+			sourceTree = "<group>";
+		};
+		FD2B27A1BD09EA884189ABC8 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				9874786301C2AD9FE7D763C1 /* envenomation.json */,
+				C5AD3DFB4AA5AB7B7FD21A87 /* manifest.json */,
+				274050841DCED395C5A39B0F /* procedures.json */,
+				B477F8972EF0CB159CA0493F /* protocols.json */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18086CEA837DA9FE3DE67F75 /* CRISIS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D17A704346136F8A8DFB6918 /* Build configuration list for PBXNativeTarget "CRISIS" */;
+			buildPhases = (
+				E51DD2EDD3608E1C9E357BEC /* Sources */,
+				B0171783FD5A613DBBB49AA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CRISIS;
+			packageProductDependencies = (
+			);
+			productName = CRISIS;
+			productReference = 41689AE8F42439752FAF9BDD /* CRISIS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD509E9A7BAFC3A980CE8EAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+			};
+			buildConfigurationList = 6DC64CFE81705A921C431648 /* Build configuration list for PBXProject "CRISIS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 918C2824F0EAD852C58895C5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 25DF0A749B0BCCD9E50A05D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18086CEA837DA9FE3DE67F75 /* CRISIS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0171783FD5A613DBBB49AA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EA8307D901082326FC4F409 /* Assets.xcassets in Resources */,
+				9EC28E10320AF74318AE09EC /* IBMPlexMono-Medium.ttf in Resources */,
+				FAEFD8DB451439A24E89E004 /* IBMPlexMono-Regular.ttf in Resources */,
+				F31A0DC69C660DEF3D4C1943 /* IBMPlexMono-SemiBold.ttf in Resources */,
+				22C82F12BDC252205C421917 /* SourceSerif4-Italic[opsz,wght].ttf in Resources */,
+				276816A1569B77502D62E332 /* SourceSerif4[opsz,wght].ttf in Resources */,
+				5588B4D01B0D2499E2942C65 /* Syne[wght].ttf in Resources */,
+				054A0202C9B60E8EF02FD2B2 /* anterior-neck-anatomy-for-front-of-neck-airway.png in Resources */,
+				E65DC49A4A5416A426A2F3BA /* envenomation.json in Resources */,
+				0885FECDCF7C122E00D7721D /* intracardiac-v1-electrogram-as-the-pacing-wire-advances.png in Resources */,
+				D5D37C728B9916D056A9E9F2 /* manifest.json in Resources */,
+				F30D367F6B1989EC8B324EF4 /* procedures.json in Resources */,
+				7495698705545C73C2905E23 /* protocols.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E51DD2EDD3608E1C9E357BEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B4BD845EF77984EF9BD2B5 /* BlockRenderer.swift in Sources */,
+				DC92252DE5C693031397FCD2 /* CRISISApp.swift in Sources */,
+				9D092910001BDDC748A70451 /* Components.swift in Sources */,
+				7D47F437038863508E225532 /* Config.swift in Sources */,
+				0387B255F69606806E302476 /* ContentView.swift in Sources */,
+				CDE4C47E28D78557BF73C2F8 /* DataStore.swift in Sources */,
+				E708E07B2A5875CD01D2356D /* EntryListView.swift in Sources */,
+				27962ADCA862FF5EABDC7A25 /* EnvenomationHubView.swift in Sources */,
+				D528EF467BB0F99EEEB26843 /* EnvenomationModels.swift in Sources */,
+				B40CDE5E7BEA73C5C5AEA5EA /* EnvenomationRegionView.swift in Sources */,
+				F894304593CCB03E61700A15 /* HTMLText.swift in Sources */,
+				A314E5BBF4B6FCC98DD7E42D /* HomeView.swift in Sources */,
+				32CEC213AAC0FF1D05AF0E84 /* ProtocolDetailView.swift in Sources */,
+				94224235602DFE6D5B688025 /* ProtocolModels.swift in Sources */,
+				33A5BFE5C57039A4F0FC47B1 /* SettingsView.swift in Sources */,
+				4713C4982C7B4FB1C48CB91A /* SpeciesDetailView.swift in Sources */,
+				2EA4902D30565C15A7988BFB /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2048826BB9633C289AAFAFEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		871F668D98707E6E05575934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2SV7C5X7P3;
+				INFOPLIST_FILE = CRISIS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.criticalvector.crisis;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		929667BF6C5C884F6BD8FF89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2SV7C5X7P3;
+				INFOPLIST_FILE = CRISIS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.criticalvector.crisis;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9D8493CE40D20F4AAC844D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DC64CFE81705A921C431648 /* Build configuration list for PBXProject "CRISIS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2048826BB9633C289AAFAFEF /* Debug */,
+				9D8493CE40D20F4AAC844D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D17A704346136F8A8DFB6918 /* Build configuration list for PBXNativeTarget "CRISIS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				871F668D98707E6E05575934 /* Debug */,
+				929667BF6C5C884F6BD8FF89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD509E9A7BAFC3A980CE8EAC /* Project object */;
+}

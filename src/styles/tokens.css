@@ -1,0 +1,114 @@
+/* Design tokens + content-block styles ported from the CV Crisis Management
+   source documents. Kept 1:1 with the source so protocol/species content
+   renders exactly as authored — this file should not need a "new feel" pass,
+   only src/styles/app.css (the app shell) does. */
+:root {
+  --bg: #0a0e14;
+  --surface: #111720;
+  --surface2: #182030;
+  --border: rgba(255, 255, 255, 0.08);
+  --teal: #00d4aa;
+  --blue: #2563eb;
+  --red: #e84c4c;
+  --amber: #f59e0b;
+  --purple: #a78bfa;
+  --text: #e8edf5;
+  --text2: #8a9ab5;
+  --text3: #4a5670;
+  --teal-tint: rgba(0, 212, 170, 0.09);
+  --blue-tint: rgba(37, 99, 235, 0.1);
+  --red-tint: rgba(232, 76, 76, 0.09);
+  --amber-tint: rgba(245, 158, 11, 0.09);
+  --purple-tint: rgba(167, 139, 250, 0.09);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.kicker {
+  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 11px;
+  letter-spacing: 1.6px; text-transform: uppercase; color: var(--teal);
+}
+.badges { display: flex; gap: 8px; flex-wrap: wrap; }
+.badge {
+  font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 500;
+  padding: 3px 9px; border-radius: 4px; letter-spacing: 0.3px;
+}
+.badge.red { background: var(--red-tint); border: 1px solid rgba(232,76,76,.3); color: var(--red); }
+.badge.teal { background: var(--teal-tint); border: 1px solid rgba(0,212,170,.3); color: var(--teal); }
+.badge.amber { background: var(--amber-tint); border: 1px solid rgba(245,158,11,.3); color: var(--amber); }
+.badge.blue { background: var(--blue-tint); border: 1px solid rgba(37,99,235,.3); color: var(--blue); }
+.badge.purple { background: var(--purple-tint); border: 1px solid rgba(167,139,250,.3); color: var(--purple); }
+
+.sec-head {
+  display: flex; align-items: center; gap: 12px; padding: 10px 16px;
+  border-radius: 8px; margin: 28px 0 14px; position: relative; scroll-margin-top: 96px;
+}
+.sec-head::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; border-radius: 4px 0 0 4px; }
+.sec-head.c-teal { background: linear-gradient(90deg, var(--teal-tint), transparent); } .sec-head.c-teal::before { background: var(--teal); }
+.sec-head.c-blue { background: linear-gradient(90deg, var(--blue-tint), transparent); } .sec-head.c-blue::before { background: var(--blue); }
+.sec-head.c-red { background: linear-gradient(90deg, var(--red-tint), transparent); } .sec-head.c-red::before { background: var(--red); }
+.sec-head.c-amber { background: linear-gradient(90deg, var(--amber-tint), transparent); } .sec-head.c-amber::before { background: var(--amber); }
+.sec-head.c-purple { background: linear-gradient(90deg, var(--purple-tint), transparent); } .sec-head.c-purple::before { background: var(--purple); }
+.sec-num { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text3); }
+.sec-head h2 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 16px; color: var(--text); }
+.tagline { font-style: italic; color: var(--text2); font-size: 13px; margin: -6px 0 14px 2px; }
+
+.box { background: var(--surface2); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin-bottom: 14px; }
+.box.t-teal { border-left: 3px solid var(--teal); }
+.box.t-blue { border-left: 3px solid var(--blue); }
+.box.t-amber { border-left: 3px solid var(--amber); }
+.box.t-purple { border-left: 3px solid var(--purple); }
+.box.t-red { border-left: 3px solid var(--red); background: var(--red-tint); }
+.box p { margin-bottom: 8px; } .box p:last-child { margin-bottom: 0; }
+.box ul { padding-left: 18px; } .box li { margin-bottom: 6px; }
+
+.alert { border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; }
+.alert.red { background: var(--red-tint); border: 1px solid rgba(232,76,76,.3); }
+.alert.amber { background: var(--amber-tint); border: 1px solid rgba(245,158,11,.3); }
+.alert-t { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 10.5px; letter-spacing: .8px; text-transform: uppercase; margin-bottom: 4px; }
+.alert.red .alert-t { color: var(--red); } .alert.amber .alert-t { color: var(--amber); }
+.alert p { font-size: 14px; color: var(--text); }
+
+.step-row { display: flex; gap: 14px; padding: 11px 0; border-bottom: 1px solid var(--border); align-items: flex-start; }
+.step-row:last-child { border-bottom: none; }
+.step-num { flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Syne', sans-serif; font-weight: 800; font-size: 13px; color: #0a0e14; }
+.step-body { flex: 1; padding-top: 2px; }
+.step-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; color: var(--text); margin-bottom: 2px; }
+.step-desc { color: var(--text2); font-size: 13.5px; line-height: 1.55; }
+.step-desc .d, .field-body .d { font-family: 'IBM Plex Mono', monospace; color: var(--text); background: rgba(255,255,255,.06); padding: 1px 5px; border-radius: 3px; font-size: 12.5px; }
+.step-desc b, .field-body b { color: var(--text); }
+
+table.rt { width: 100%; border-collapse: collapse; font-size: 13.5px; margin-bottom: 16px; display: block; overflow-x: auto; }
+.rt th { background: var(--surface2); color: var(--text); font-family: 'Syne', sans-serif; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
+.rt td { padding: 9px 12px; border-bottom: 1px solid var(--border); color: var(--text2); vertical-align: top; }
+.rt td:first-child { color: var(--text); font-weight: 600; }
+.rt tr:last-child td { border-bottom: none; }
+
+.xref { border-left: 3px solid var(--blue); background: var(--blue-tint); border-radius: 0 8px 8px 0; padding: 10px 14px; margin-bottom: 14px; font-size: 13.5px; color: var(--text2); }
+.xref b { color: var(--text); }
+
+.sources { list-style: none; font-size: 12.5px; color: var(--text2); }
+.sources li { padding: 6px 0; border-bottom: 1px solid var(--border); }
+.sources li:last-child { border-bottom: none; }
+.sources .tier { display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; padding: 1px 6px; border-radius: 3px; margin-right: 8px; background: var(--teal-tint); color: var(--teal); border: 1px solid rgba(0,212,170,.3); }
+
+.footer-note { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-style: italic; color: var(--text3); font-size: 12px; line-height: 1.6; }
+
+/* Envenomation species fields (subset of the box/alert vocabulary above) */
+.field { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.05); }
+.field:last-child { border-bottom: none; }
+.field-label { font-size: 10px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--teal); margin-bottom: 6px; }
+.field-body { font-family: 'Source Serif 4', Georgia, serif; font-size: 14px; font-weight: 300; color: var(--text2); line-height: 1.7; }
+.tag { font-family: 'IBM Plex Mono', monospace; font-size: 9px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; }
+.tag.region { background: rgba(96,165,250,.15); color: var(--blue); }
+.tag.class { background: rgba(167,139,250,.15); color: var(--purple); }
+.tag.mechanism { background: rgba(251,191,36,.15); color: var(--amber); }

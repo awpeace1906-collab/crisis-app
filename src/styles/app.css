@@ -1,0 +1,171 @@
+/* App shell — chrome around the ported content (tokens.css). This layer is
+   CRISIS-specific: bottom tab navigation, list/search screens. */
+
+#root { min-height: 100vh; display: flex; flex-direction: column; }
+
+.app-header {
+  position: sticky; top: 0; z-index: 40;
+  background: rgba(10, 14, 20, 0.92); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 18px;
+  display: flex; align-items: center; gap: 10px;
+}
+.app-header .back-btn {
+  background: none; border: none; color: var(--text2); font-size: 20px;
+  cursor: pointer; padding: 4px 8px 4px 0; line-height: 1;
+}
+.app-header .back-btn:hover { color: var(--text); }
+.app-header h1 {
+  font-family: 'Syne', sans-serif; font-weight: 800; font-size: 17px;
+  color: var(--text); letter-spacing: -0.2px; flex: 1;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.brand-mark {
+  display: flex; align-items: center; gap: 8px; text-decoration: none; color: inherit;
+}
+.brand-mark .mark {
+  width: 28px; height: 28px; border-radius: 7px;
+  flex-shrink: 0; display: block;
+}
+.brand-mark .name {
+  font-family: 'Syne', sans-serif; font-weight: 800; font-size: 17px;
+  letter-spacing: -0.2px; color: var(--text);
+}
+
+main.app-main { flex: 1; padding-bottom: 84px; max-width: 880px; margin: 0 auto; width: 100%; }
+
+.app-tabbar {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
+  display: flex; background: rgba(10, 14, 20, 0.96); backdrop-filter: blur(10px);
+  border-top: 1px solid var(--border);
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+.tab-link {
+  flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px;
+  padding: 10px 4px 8px; text-decoration: none; color: var(--text3);
+  font-family: 'Syne', sans-serif; font-size: 10.5px; font-weight: 600;
+  letter-spacing: 0.3px; text-transform: uppercase;
+}
+.tab-link .tab-icon { font-size: 19px; line-height: 1; }
+.tab-link.active { color: var(--teal); }
+
+.search-input {
+  width: 100%; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 11px 14px; color: var(--text);
+  font-family: 'Syne', sans-serif; font-size: 14px; margin-bottom: 12px;
+}
+.search-input:focus { outline: none; border-color: var(--teal); }
+.search-input::placeholder { color: var(--text3); }
+
+.page-pad { padding: 18px; }
+.page-kicker { margin-bottom: 6px; }
+.page-title { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 24px; margin-bottom: 6px; }
+.page-lede { color: var(--text2); font-size: 14px; font-style: italic; margin-bottom: 18px; max-width: 620px; }
+
+.chip-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.chip {
+  font-family: 'IBM Plex Mono', monospace; font-size: 11px; padding: 5px 11px;
+  border-radius: 14px; border: 1px solid var(--border); color: var(--text3);
+  cursor: pointer; background: transparent; transition: all .15s;
+}
+.chip:hover { border-color: var(--teal); color: var(--text); }
+.chip.active { background: var(--teal); color: var(--bg); border-color: var(--teal); font-weight: 600; }
+
+.cat-block { margin-bottom: 30px; }
+.cat-block-head {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
+}
+.cat-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.cat-block-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; color: var(--text); }
+.cat-count { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text3); margin-left: auto; }
+
+.grid-list { display: grid; grid-template-columns: 1fr; gap: 10px; }
+@media (min-width: 560px) { .grid-list { grid-template-columns: 1fr 1fr; } }
+
+.entry-card {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+  padding: 14px 16px; position: relative; overflow: hidden; transition: border-color .15s;
+}
+.entry-card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--accent, var(--teal)); }
+.entry-card:hover { border-color: var(--text3); }
+.entry-card .entry-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14.5px; color: var(--text); margin-bottom: 5px; }
+.entry-card .entry-desc { font-size: 12.5px; color: var(--text2); line-height: 1.5; }
+.entry-card .entry-meta { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.entry-type-icon { display: inline-block; width: 1.1em; margin-right: 6px; text-align: center; color: var(--text3); font-style: normal; }
+
+.region-card { padding: 18px; }
+.region-card .entry-title { font-size: 17px; margin-bottom: 6px; }
+.region-card .entry-desc { font-size: 13px; }
+.region-count-badge {
+  font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--text3);
+  margin-top: 10px; display: inline-block;
+}
+
+.species-list { display: flex; flex-direction: column; gap: 10px; }
+
+.empty-state { text-align: center; padding: 60px 20px; color: var(--text3); }
+.empty-state .icon { font-size: 36px; margin-bottom: 10px; }
+
+.quicknav-strip {
+  position: sticky; top: 57px; z-index: 39; background: rgba(10,14,20,.92);
+  backdrop-filter: blur(6px); border-bottom: 1px solid var(--border);
+  padding: 9px 0; margin-bottom: 4px; overflow-x: auto; scrollbar-width: none;
+}
+.quicknav-strip::-webkit-scrollbar { display: none; }
+.quicknav-strip-inner { display: flex; gap: 7px; padding: 0 18px; }
+.qn {
+  flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; font-size: 11px;
+  padding: 6px 11px; border-radius: 6px; text-decoration: none; white-space: nowrap;
+  border: 1px solid var(--border); color: var(--text2);
+  background: transparent; cursor: pointer; line-height: 1.4;
+}
+.qn:hover { color: var(--text); border-color: var(--text3); }
+
+/* Clears the sticky header + quicknav strip so a jumped-to section heading
+   isn't hidden underneath them. */
+.sec-head { scroll-margin-top: 108px; }
+
+.pearls-box { border-left: 3px solid var(--red); background: var(--red-tint); }
+
+/* Inline SVG diagrams. The SVG carries its own literal colors (not CSS vars)
+   so it renders identically here, in the standalone source HTML, and when
+   rasterized to PNG for iOS. */
+.fig { margin: 0 0 18px; }
+.fig .fig-svg { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px; }
+.fig .fig-svg svg { display: block; width: 100%; height: auto; }
+.fig figcaption {
+  margin-top: 8px; font-size: 12px; line-height: 1.55; color: var(--text2);
+  font-style: italic;
+}
+
+.review-meta {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--text3);
+  margin-bottom: 18px;
+}
+.review-meta .flag-link {
+  color: var(--text3); text-decoration: none; border-bottom: 1px dotted var(--text3);
+}
+.review-meta .flag-link:hover { color: var(--amber); border-color: var(--amber); }
+
+.offline-banner {
+  background: var(--amber-tint); border-bottom: 1px solid rgba(245,158,11,.3);
+  color: var(--amber); font-family: 'IBM Plex Mono', monospace; font-size: 11.5px;
+  text-align: center; padding: 7px; letter-spacing: .3px;
+}
+
+.settings-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 14px 0; border-bottom: 1px solid var(--border);
+}
+.settings-row:last-child { border-bottom: none; }
+.settings-label { font-family: 'Syne', sans-serif; font-weight: 600; font-size: 14px; color: var(--text); }
+.settings-value { color: var(--text2); font-size: 12.5px; font-family: 'IBM Plex Mono', monospace; }
+.btn {
+  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 12.5px;
+  padding: 8px 14px; border-radius: 7px; border: 1px solid var(--teal);
+  background: var(--teal-tint); color: var(--teal); cursor: pointer;
+}
+.btn:hover { background: var(--teal); color: var(--bg); }
+.btn:disabled { opacity: .5; cursor: default; background: var(--teal-tint); color: var(--teal); }
