@@ -23,9 +23,21 @@ let out = src
   // The header logo <img> is rendered client-side by React, so its src is a
   // JS string literal (minifier emits backtick-quoted literals here) rather
   // than an HTML attribute — replace that literal, not an HTML attr.
-  .replace('src:`/icons/icon.svg`', `src:\`${iconDataUri}\``)
+  //
+  // Matched with a pattern, not an exact string: the src is built from
+  // import.meta.env.BASE_URL, and vite-plugin-singlefile forces base "./", so
+  // the literal is `./icons/icon.svg` — while it was `/icons/icon.svg` before
+  // BASE_URL was introduced for GitHub Pages. An exact-string .replace() that
+  // matches nothing fails silently and ships a broken logo; see the guard below.
+  .replace(/src:`[^`]*icons\/icon\.svg`/, `src:\`${iconDataUri}\``)
   .replace('<title>CRISIS — Clinical Reference for Immediate Stabilization In Situ</title>', '<title>CRISIS</title>')
   .trim();
+
+// The artifact has no /icons/ directory to fall back on, so any surviving
+// reference is a broken image. Fail the build instead of publishing it.
+if (/icons\/icon\.svg/.test(out)) {
+  throw new Error('make-artifact: an icons/icon.svg reference survived — the logo would be broken in the artifact');
+}
 
 writeFileSync('dist-demo/artifact.html', out);
 console.log('wrote dist-demo/artifact.html', out.length, 'bytes');
