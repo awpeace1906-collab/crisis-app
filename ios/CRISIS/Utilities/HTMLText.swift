@@ -36,6 +36,8 @@ enum HTMLText {
 
         var out = AttributedString()
         var bold = 0, italic = 0, sub = 0, sup = 0
+        // HTML comments (e.g. crisis-content's colspan placeholder) render as nothing.
+        let html = html.replacingOccurrences(of: "<!--[\\s\\S]*?-->", with: "", options: .regularExpression)
         var link: URL?
         let ns = html as NSString
 

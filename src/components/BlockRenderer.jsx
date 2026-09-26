@@ -14,6 +14,22 @@ function StepsBlock({ block }) {
   );
 }
 
+const COLSPAN = '<!--colspan-->';
+
+/** Group a row's cells with the placeholder columns their colspan covers
+ *  (crisis-content emits COLSPAN for each), so the span is rebuilt on the
+ *  table and the card label names every column the value belongs to. */
+function spannedCells(row, headers) {
+  const out = [];
+  row.forEach((cell, j) => {
+    if (cell === COLSPAN) return;
+    let span = 1;
+    while (row[j + span] === COLSPAN) span++;
+    out.push({ html: cell, col: j, span, label: headers.slice(j, j + span).filter(Boolean).join(' / ') });
+  });
+  return out;
+}
+
 // Three or more columns cannot fit a phone as a grid, so below phone width
 // they reflow to one card per row (see .rt-stack in tokens.css): the first
 // cell is the card's title and every other cell carries its column header
@@ -27,8 +43,8 @@ function TableBlock({ block }) {
         <tr className="rt-head">{block.headers.map((h, i) => <th key={i}>{h}</th>)}</tr>
         {block.rows.map((row, i) => (
           <tr key={i}>
-            {row.map((cell, j) => (
-              <td key={j} data-label={block.headers[j] ?? ''} dangerouslySetInnerHTML={{ __html: cell }} />
+            {spannedCells(row, block.headers).map((c) => (
+              <td key={c.col} colSpan={c.span > 1 ? c.span : undefined} data-label={c.label} dangerouslySetInnerHTML={{ __html: c.html }} />
             ))}
           </tr>
         ))}

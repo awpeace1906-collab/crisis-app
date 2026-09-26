@@ -149,6 +149,26 @@ private struct TableBlockView: View {
         .overlay(RoundedRectangle(cornerRadius: 8).stroke(Theme.border))
     }
 
+    /// crisis-content emits this for each column covered by the previous
+    /// cell's colspan, so later cells keep their own headers.
+    private static let colspan = "<!--colspan-->"
+
+    /// A row's real cells, each labeled with every column header it spans.
+    private func spannedCells(_ row: [String]) -> [(col: Int, html: String, label: String)] {
+        var out: [(col: Int, html: String, label: String)] = []
+        for (j, cell) in row.enumerated() where cell != Self.colspan {
+            var span = 1
+            while j + span < row.count, row[j + span] == Self.colspan { span += 1 }
+            let label = headers.indices
+                .filter { $0 >= j && $0 < j + span }
+                .map { headers[$0] }
+                .filter { !$0.isEmpty }
+                .joined(separator: " / ")
+            out.append((j, cell, label))
+        }
+        return out
+    }
+
     private func header(_ h: String) -> some View {
         Text(h.uppercased())
             .font(AppFont.mono(10, weight: .semibold))
@@ -173,7 +193,7 @@ private struct TableBlockView: View {
                     Divider().overlay(Theme.border).gridCellUnsizedAxes(.horizontal)
                 }
                 GridRow {
-                    ForEach(Array(row.enumerated()), id: \.offset) { cIndex, cell in
+                    ForEach(Array(row.enumerated()).filter { $0.element != Self.colspan }, id: \.offset) { cIndex, cell in
                         HTMLTextView(html: cell, spacing: 4)
                             .font(.system(size: 13.5, weight: cIndex == 0 ? .semibold : .regular))
                             .foregroundStyle(cIndex == 0 ? Theme.text : Theme.text2)
@@ -195,10 +215,10 @@ private struct TableBlockView: View {
                             .font(.system(size: 14.5, weight: .semibold))
                             .foregroundStyle(Theme.text)
                     }
-                    ForEach(Array(row.enumerated().dropFirst()), id: \.offset) { cIndex, cell in
+                    ForEach(spannedCells(row).dropFirst(), id: \.col) { c in
                         VStack(alignment: .leading, spacing: 2) {
-                            if cIndex < headers.count { header(headers[cIndex]) }
-                            HTMLTextView(html: cell, spacing: 4)
+                            if !c.label.isEmpty { header(c.label) }
+                            HTMLTextView(html: c.html, spacing: 4)
                                 .font(.system(size: 13.5))
                                 .foregroundStyle(Theme.text2)
                         }
