@@ -76,7 +76,9 @@ body {
 .alert.amber { background: var(--amber-tint); border: 1px solid rgba(245,158,11,.3); }
 .alert-t { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 10.5px; letter-spacing: .8px; text-transform: uppercase; margin-bottom: 4px; }
 .alert.red .alert-t { color: var(--red); } .alert.amber .alert-t { color: var(--amber); }
-.alert p { font-size: 14px; color: var(--text); }
+.alert p, .alert-body { font-size: 14px; color: var(--text); }
+.alert-body p { margin: 0 0 6px; } .alert-body p:last-child { margin-bottom: 0; }
+.alert-body ul { padding-left: 18px; margin: 4px 0 0; } .alert-body li { margin-bottom: 3px; }
 
 .step-row { display: flex; gap: 14px; padding: 11px 0; border-bottom: 1px solid var(--border); align-items: flex-start; }
 .step-row:last-child { border-bottom: none; }

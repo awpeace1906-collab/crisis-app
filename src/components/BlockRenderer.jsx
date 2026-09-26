@@ -60,7 +60,9 @@ export function Block({ block }) {
       return (
         <div className={`alert ${block.color}`}>
           {block.title && <div className="alert-t">{block.title}</div>}
-          <p dangerouslySetInnerHTML={{ __html: block.html }} />
+          {/* A div, not a <p>: a multi-paragraph alert arrives as <p>…</p><p>…</p>,
+              and a <p> inside a <p> is invalid HTML that the browser splits apart. */}
+          <div className="alert-body" dangerouslySetInnerHTML={{ __html: block.html }} />
         </div>
       );
     case 'table':
