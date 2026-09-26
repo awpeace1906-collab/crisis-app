@@ -14,14 +14,22 @@ function StepsBlock({ block }) {
   );
 }
 
+// Three or more columns cannot fit a phone as a grid, so below phone width
+// they reflow to one card per row (see .rt-stack in tokens.css): the first
+// cell is the card's title and every other cell carries its column header
+// via data-label. Two-column tables stay a real table with a fixed first
+// column, so headers and cells always line up.
 function TableBlock({ block }) {
+  const cols = Math.max(block.headers.length, ...block.rows.map((r) => r.length));
   return (
-    <table className="rt">
+    <table className={cols >= 3 ? 'rt rt-stack' : 'rt'}>
       <tbody>
-        <tr>{block.headers.map((h, i) => <th key={i}>{h}</th>)}</tr>
+        <tr className="rt-head">{block.headers.map((h, i) => <th key={i}>{h}</th>)}</tr>
         {block.rows.map((row, i) => (
           <tr key={i}>
-            {row.map((cell, j) => <td key={j} dangerouslySetInnerHTML={{ __html: cell }} />)}
+            {row.map((cell, j) => (
+              <td key={j} data-label={block.headers[j] ?? ''} dangerouslySetInnerHTML={{ __html: cell }} />
+            ))}
           </tr>
         ))}
       </tbody>

@@ -10,6 +10,9 @@
 		0387B255F69606806E302476 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D546E1826C592FBCB1A67DB5 /* ContentView.swift */; };
 		054A0202C9B60E8EF02FD2B2 /* anterior-neck-anatomy-for-front-of-neck-airway.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21BB3C02CFE2D7289518D7 /* anterior-neck-anatomy-for-front-of-neck-airway.png */; };
 		0885FECDCF7C122E00D7721D /* intracardiac-v1-electrogram-as-the-pacing-wire-advances.png in Resources */ = {isa = PBXBuildFile; fileRef = C77077A025FAAD7E2DDFB1A6 /* intracardiac-v1-electrogram-as-the-pacing-wire-advances.png */; };
+		0B5284063E68F373E58E4634 /* proximal-tibial-intraosseous-landmarks-anterior-view-of-the-.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F289A3776935495E7734D7B /* proximal-tibial-intraosseous-landmarks-anterior-view-of-the-.png */; };
+		10304CB69F2063A2B82918A5 /* why-the-lower-edge-follows-the-rib.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDDD5EACFC39BC370ADC3465 /* why-the-lower-edge-follows-the-rib.jpg */; };
+		1B9FED452993C464A61C2F46 /* the-three-reboa-aortic-zones.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4188E9904765A018CEA347 /* the-three-reboa-aortic-zones.png */; };
 		22C82F12BDC252205C421917 /* SourceSerif4-Italic[opsz,wght].ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2846AC31FF7776E5AAFCCE59 /* SourceSerif4-Italic[opsz,wght].ttf */; };
 		25B4BD845EF77984EF9BD2B5 /* BlockRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43335F864F74F8111A7E740 /* BlockRenderer.swift */; };
 		276816A1569B77502D62E332 /* SourceSerif4[opsz,wght].ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2F035A0B56410A65970D4D9 /* SourceSerif4[opsz,wght].ttf */; };
@@ -17,25 +20,39 @@
 		2EA4902D30565C15A7988BFB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20548E8E831C2827E319492A /* Theme.swift */; };
 		32CEC213AAC0FF1D05AF0E84 /* ProtocolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DA1003F26341DA1E4BFDF /* ProtocolDetailView.swift */; };
 		33A5BFE5C57039A4F0FC47B1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EAA8F965E1703854BBA94 /* SettingsView.swift */; };
+		3BFA6528366A200C00C50CCE /* transcutaneous-pad-placement-anterior-posterior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54A676F0C510E5D334C8AC4D /* transcutaneous-pad-placement-anterior-posterior.jpg */; };
 		4713C4982C7B4FB1C48CB91A /* SpeciesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E11B608CCD13275D1EABC6 /* SpeciesDetailView.swift */; };
 		5588B4D01B0D2499E2942C65 /* Syne[wght].ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01B864E13206F4E27975A7D4 /* Syne[wght].ttf */; };
+		578C777726112897179C9C21 /* true-capture-versus-false-capture-during-pacing.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F6F5AE4F55344FE94730B9 /* true-capture-versus-false-capture-during-pacing.png */; };
+		57E4D96E1211718088EB2147 /* retrograde-intubation-wire-direction-shown-as-a-vertical-sch.png in Resources */ = {isa = PBXBuildFile; fileRef = E039DD84E104B27D8A2F6A78 /* retrograde-intubation-wire-direction-shown-as-a-vertical-sch.png */; };
+		595D9F5B6C0448124CCD3159 /* binder-level-trochanters-not-iliac-crests.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1D691ABCD1D854AC6BBBC6A9 /* binder-level-trochanters-not-iliac-crests.jpg */; };
+		737226E9EC06E842B796E9A4 /* proximal-humerus-intraosseous-access-in-two-steps.png in Resources */ = {isa = PBXBuildFile; fileRef = B192E719FE039849A708DA27 /* proximal-humerus-intraosseous-access-in-two-steps.png */; };
 		7495698705545C73C2905E23 /* protocols.json in Resources */ = {isa = PBXBuildFile; fileRef = B477F8972EF0CB159CA0493F /* protocols.json */; };
 		7D47F437038863508E225532 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BE86919C47F1D414236030 /* Config.swift */; };
+		7DAB1E413183F3BDF40E5FBF /* why-needle-cricothyrotomy-depends-on-the-upper-airway.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1F1FF940818C6C50F22C29 /* why-needle-cricothyrotomy-depends-on-the-upper-airway.png */; };
+		86E2BF72C7E8B999AA479642 /* subxiphoid-approach-on-the-hearts-projection.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5F61B495F442D1B0A4AF6C7 /* subxiphoid-approach-on-the-hearts-projection.jpg */; };
+		8921E3F775CB57E24EF121E2 /* femoral-vein-below-the-inguinal-ligament.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 229225DBB96ECB97481941C2 /* femoral-vein-below-the-inguinal-ligament.jpg */; };
 		8EA8307D901082326FC4F409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F432D41FF8F0C9D4DBB12931 /* Assets.xcassets */; };
 		94224235602DFE6D5B688025 /* ProtocolModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC6F10B8175710BC56673EA /* ProtocolModels.swift */; };
+		9B55E07B1FC65AE60D69D32E /* lateral-canthotomy-on-the-tarsal-plates.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54BCD8537E41913F298D693D /* lateral-canthotomy-on-the-tarsal-plates.jpg */; };
 		9D092910001BDDC748A70451 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C57887F11D45E00932B132 /* Components.swift */; };
 		9EC28E10320AF74318AE09EC /* IBMPlexMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9818BB22F630D8F4AB2403AF /* IBMPlexMono-Medium.ttf */; };
 		A314E5BBF4B6FCC98DD7E42D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91FE7285B0E53AEB78255D6 /* HomeView.swift */; };
+		AD668F3873FD5104EE6D3895 /* cricothyroid-membrane-on-a-real-neck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10114E28A2B8BC34A1CDDD3B /* cricothyroid-membrane-on-a-real-neck.jpg */; };
 		B40CDE5E7BEA73C5C5AEA5EA /* EnvenomationRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C7D50F47C886B2978DBEB /* EnvenomationRegionView.swift */; };
 		CDE4C47E28D78557BF73C2F8 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710778977AD57761F679C2C5 /* DataStore.swift */; };
 		D528EF467BB0F99EEEB26843 /* EnvenomationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8370CAF571A867BEA97ED /* EnvenomationModels.swift */; };
 		D5D37C728B9916D056A9E9F2 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = C5AD3DFB4AA5AB7B7FD21A87 /* manifest.json */; };
+		D5E9CA12EB4F9DE62C5DB299 /* transverse-cricothyroid-ultrasound-view-of-the-anterior-neck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8EB95AD410111EA25F3401F1 /* transverse-cricothyroid-ultrasound-view-of-the-anterior-neck.jpg */; };
+		DB0D6930926711C911134876 /* escharotomy-incision-map-anterior-view.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C0C966AAF26B694410DF2D /* escharotomy-incision-map-anterior-view.png */; };
 		DC92252DE5C693031397FCD2 /* CRISISApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12E6579D27BEF9C2383FCA1 /* CRISISApp.swift */; };
+		DFF82C6F6CAB4BC9ACC950B7 /* the-shoulder-dystocia-escalation-sequence-against-a-clock-ab.png in Resources */ = {isa = PBXBuildFile; fileRef = E71924ACCB2D5C1ECDFED12D /* the-shoulder-dystocia-escalation-sequence-against-a-clock-ab.png */; };
 		E65DC49A4A5416A426A2F3BA /* envenomation.json in Resources */ = {isa = PBXBuildFile; fileRef = 9874786301C2AD9FE7D763C1 /* envenomation.json */; };
 		E708E07B2A5875CD01D2356D /* EntryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985CF3234E68B7C4C84625DA /* EntryListView.swift */; };
 		F30D367F6B1989EC8B324EF4 /* procedures.json in Resources */ = {isa = PBXBuildFile; fileRef = 274050841DCED395C5A39B0F /* procedures.json */; };
 		F31A0DC69C660DEF3D4C1943 /* IBMPlexMono-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 791533EA4CDA828333065EA2 /* IBMPlexMono-SemiBold.ttf */; };
 		F894304593CCB03E61700A15 /* HTMLText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F04DF454201C4C7B7B6DB4 /* HTMLText.swift */; };
+		F9D474258188A4333DEF45DA /* safe-triangle-on-real-anatomy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17DBE526166FD3F23FB5DFC2 /* safe-triangle-on-real-anatomy.jpg */; };
 		FAEFD8DB451439A24E89E004 /* IBMPlexMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93DAC378B7DE3C1B64B5F529 /* IBMPlexMono-Regular.ttf */; };
 /* End PBXBuildFile section */
 
@@ -43,33 +60,50 @@
 		01B864E13206F4E27975A7D4 /* Syne[wght].ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Syne[wght].ttf"; sourceTree = "<group>"; };
 		01BE86919C47F1D414236030 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		024C7D50F47C886B2978DBEB /* EnvenomationRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvenomationRegionView.swift; sourceTree = "<group>"; };
+		04F6F5AE4F55344FE94730B9 /* true-capture-versus-false-capture-during-pacing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "true-capture-versus-false-capture-during-pacing.png"; sourceTree = "<group>"; };
+		10114E28A2B8BC34A1CDDD3B /* cricothyroid-membrane-on-a-real-neck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cricothyroid-membrane-on-a-real-neck.jpg"; sourceTree = "<group>"; };
 		14F04DF454201C4C7B7B6DB4 /* HTMLText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLText.swift; sourceTree = "<group>"; };
+		17DBE526166FD3F23FB5DFC2 /* safe-triangle-on-real-anatomy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "safe-triangle-on-real-anatomy.jpg"; sourceTree = "<group>"; };
+		1D691ABCD1D854AC6BBBC6A9 /* binder-level-trochanters-not-iliac-crests.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "binder-level-trochanters-not-iliac-crests.jpg"; sourceTree = "<group>"; };
 		1EBEA1A441F543E6837D4C71 /* EnvenomationHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvenomationHubView.swift; sourceTree = "<group>"; };
+		1F289A3776935495E7734D7B /* proximal-tibial-intraosseous-landmarks-anterior-view-of-the-.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "proximal-tibial-intraosseous-landmarks-anterior-view-of-the-.png"; sourceTree = "<group>"; };
 		20548E8E831C2827E319492A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		229225DBB96ECB97481941C2 /* femoral-vein-below-the-inguinal-ligament.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "femoral-vein-below-the-inguinal-ligament.jpg"; sourceTree = "<group>"; };
 		274050841DCED395C5A39B0F /* procedures.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = procedures.json; sourceTree = "<group>"; };
 		2846AC31FF7776E5AAFCCE59 /* SourceSerif4-Italic[opsz,wght].ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSerif4-Italic[opsz,wght].ttf"; sourceTree = "<group>"; };
 		2E21BB3C02CFE2D7289518D7 /* anterior-neck-anatomy-for-front-of-neck-airway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-neck-anatomy-for-front-of-neck-airway.png"; sourceTree = "<group>"; };
 		34E1B39BC40B6D3FC3A2B751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		41689AE8F42439752FAF9BDD /* CRISIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRISIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41689AE8F42439752FAF9BDD /* CRISIS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CRISIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C57887F11D45E00932B132 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		54A676F0C510E5D334C8AC4D /* transcutaneous-pad-placement-anterior-posterior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "transcutaneous-pad-placement-anterior-posterior.jpg"; sourceTree = "<group>"; };
+		54BCD8537E41913F298D693D /* lateral-canthotomy-on-the-tarsal-plates.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lateral-canthotomy-on-the-tarsal-plates.jpg"; sourceTree = "<group>"; };
 		710778977AD57761F679C2C5 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		71E11B608CCD13275D1EABC6 /* SpeciesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesDetailView.swift; sourceTree = "<group>"; };
 		791533EA4CDA828333065EA2 /* IBMPlexMono-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-SemiBold.ttf"; sourceTree = "<group>"; };
 		7D9EAA8F965E1703854BBA94 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7F4188E9904765A018CEA347 /* the-three-reboa-aortic-zones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "the-three-reboa-aortic-zones.png"; sourceTree = "<group>"; };
+		8E1F1FF940818C6C50F22C29 /* why-needle-cricothyrotomy-depends-on-the-upper-airway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "why-needle-cricothyrotomy-depends-on-the-upper-airway.png"; sourceTree = "<group>"; };
+		8EB95AD410111EA25F3401F1 /* transverse-cricothyroid-ultrasound-view-of-the-anterior-neck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "transverse-cricothyroid-ultrasound-view-of-the-anterior-neck.jpg"; sourceTree = "<group>"; };
 		93DAC378B7DE3C1B64B5F529 /* IBMPlexMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Regular.ttf"; sourceTree = "<group>"; };
 		9818BB22F630D8F4AB2403AF /* IBMPlexMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Medium.ttf"; sourceTree = "<group>"; };
 		985CF3234E68B7C4C84625DA /* EntryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListView.swift; sourceTree = "<group>"; };
 		9874786301C2AD9FE7D763C1 /* envenomation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = envenomation.json; sourceTree = "<group>"; };
 		A43335F864F74F8111A7E740 /* BlockRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRenderer.swift; sourceTree = "<group>"; };
 		A7C8370CAF571A867BEA97ED /* EnvenomationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvenomationModels.swift; sourceTree = "<group>"; };
+		B192E719FE039849A708DA27 /* proximal-humerus-intraosseous-access-in-two-steps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "proximal-humerus-intraosseous-access-in-two-steps.png"; sourceTree = "<group>"; };
 		B477F8972EF0CB159CA0493F /* protocols.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = protocols.json; sourceTree = "<group>"; };
 		C5AD3DFB4AA5AB7B7FD21A87 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		C77077A025FAAD7E2DDFB1A6 /* intracardiac-v1-electrogram-as-the-pacing-wire-advances.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "intracardiac-v1-electrogram-as-the-pacing-wire-advances.png"; sourceTree = "<group>"; };
 		D12E6579D27BEF9C2383FCA1 /* CRISISApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRISISApp.swift; sourceTree = "<group>"; };
 		D44DA1003F26341DA1E4BFDF /* ProtocolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolDetailView.swift; sourceTree = "<group>"; };
 		D546E1826C592FBCB1A67DB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D5F61B495F442D1B0A4AF6C7 /* subxiphoid-approach-on-the-hearts-projection.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "subxiphoid-approach-on-the-hearts-projection.jpg"; sourceTree = "<group>"; };
 		D91FE7285B0E53AEB78255D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DDC6F10B8175710BC56673EA /* ProtocolModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolModels.swift; sourceTree = "<group>"; };
+		DDDD5EACFC39BC370ADC3465 /* why-the-lower-edge-follows-the-rib.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "why-the-lower-edge-follows-the-rib.jpg"; sourceTree = "<group>"; };
+		E039DD84E104B27D8A2F6A78 /* retrograde-intubation-wire-direction-shown-as-a-vertical-sch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "retrograde-intubation-wire-direction-shown-as-a-vertical-sch.png"; sourceTree = "<group>"; };
+		E6C0C966AAF26B694410DF2D /* escharotomy-incision-map-anterior-view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "escharotomy-incision-map-anterior-view.png"; sourceTree = "<group>"; };
+		E71924ACCB2D5C1ECDFED12D /* the-shoulder-dystocia-escalation-sequence-against-a-clock-ab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "the-shoulder-dystocia-escalation-sequence-against-a-clock-ab.png"; sourceTree = "<group>"; };
 		F2F035A0B56410A65970D4D9 /* SourceSerif4[opsz,wght].ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSerif4[opsz,wght].ttf"; sourceTree = "<group>"; };
 		F432D41FF8F0C9D4DBB12931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,7 +203,24 @@
 			isa = PBXGroup;
 			children = (
 				2E21BB3C02CFE2D7289518D7 /* anterior-neck-anatomy-for-front-of-neck-airway.png */,
+				1D691ABCD1D854AC6BBBC6A9 /* binder-level-trochanters-not-iliac-crests.jpg */,
+				10114E28A2B8BC34A1CDDD3B /* cricothyroid-membrane-on-a-real-neck.jpg */,
+				E6C0C966AAF26B694410DF2D /* escharotomy-incision-map-anterior-view.png */,
+				229225DBB96ECB97481941C2 /* femoral-vein-below-the-inguinal-ligament.jpg */,
 				C77077A025FAAD7E2DDFB1A6 /* intracardiac-v1-electrogram-as-the-pacing-wire-advances.png */,
+				54BCD8537E41913F298D693D /* lateral-canthotomy-on-the-tarsal-plates.jpg */,
+				B192E719FE039849A708DA27 /* proximal-humerus-intraosseous-access-in-two-steps.png */,
+				1F289A3776935495E7734D7B /* proximal-tibial-intraosseous-landmarks-anterior-view-of-the-.png */,
+				E039DD84E104B27D8A2F6A78 /* retrograde-intubation-wire-direction-shown-as-a-vertical-sch.png */,
+				17DBE526166FD3F23FB5DFC2 /* safe-triangle-on-real-anatomy.jpg */,
+				D5F61B495F442D1B0A4AF6C7 /* subxiphoid-approach-on-the-hearts-projection.jpg */,
+				E71924ACCB2D5C1ECDFED12D /* the-shoulder-dystocia-escalation-sequence-against-a-clock-ab.png */,
+				7F4188E9904765A018CEA347 /* the-three-reboa-aortic-zones.png */,
+				54A676F0C510E5D334C8AC4D /* transcutaneous-pad-placement-anterior-posterior.jpg */,
+				8EB95AD410111EA25F3401F1 /* transverse-cricothyroid-ultrasound-view-of-the-anterior-neck.jpg */,
+				04F6F5AE4F55344FE94730B9 /* true-capture-versus-false-capture-during-pacing.png */,
+				8E1F1FF940818C6C50F22C29 /* why-needle-cricothyrotomy-depends-on-the-upper-airway.png */,
+				DDDD5EACFC39BC370ADC3465 /* why-the-lower-edge-follows-the-rib.jpg */,
 			);
 			path = figures;
 			sourceTree = "<group>";
@@ -213,7 +264,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 2700;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 6DC64CFE81705A921C431648 /* Build configuration list for PBXProject "CRISIS" */;
 			developmentRegion = en;
@@ -247,11 +300,28 @@
 				276816A1569B77502D62E332 /* SourceSerif4[opsz,wght].ttf in Resources */,
 				5588B4D01B0D2499E2942C65 /* Syne[wght].ttf in Resources */,
 				054A0202C9B60E8EF02FD2B2 /* anterior-neck-anatomy-for-front-of-neck-airway.png in Resources */,
+				595D9F5B6C0448124CCD3159 /* binder-level-trochanters-not-iliac-crests.jpg in Resources */,
+				AD668F3873FD5104EE6D3895 /* cricothyroid-membrane-on-a-real-neck.jpg in Resources */,
 				E65DC49A4A5416A426A2F3BA /* envenomation.json in Resources */,
+				DB0D6930926711C911134876 /* escharotomy-incision-map-anterior-view.png in Resources */,
+				8921E3F775CB57E24EF121E2 /* femoral-vein-below-the-inguinal-ligament.jpg in Resources */,
 				0885FECDCF7C122E00D7721D /* intracardiac-v1-electrogram-as-the-pacing-wire-advances.png in Resources */,
+				9B55E07B1FC65AE60D69D32E /* lateral-canthotomy-on-the-tarsal-plates.jpg in Resources */,
 				D5D37C728B9916D056A9E9F2 /* manifest.json in Resources */,
 				F30D367F6B1989EC8B324EF4 /* procedures.json in Resources */,
 				7495698705545C73C2905E23 /* protocols.json in Resources */,
+				737226E9EC06E842B796E9A4 /* proximal-humerus-intraosseous-access-in-two-steps.png in Resources */,
+				0B5284063E68F373E58E4634 /* proximal-tibial-intraosseous-landmarks-anterior-view-of-the-.png in Resources */,
+				57E4D96E1211718088EB2147 /* retrograde-intubation-wire-direction-shown-as-a-vertical-sch.png in Resources */,
+				F9D474258188A4333DEF45DA /* safe-triangle-on-real-anatomy.jpg in Resources */,
+				86E2BF72C7E8B999AA479642 /* subxiphoid-approach-on-the-hearts-projection.jpg in Resources */,
+				DFF82C6F6CAB4BC9ACC950B7 /* the-shoulder-dystocia-escalation-sequence-against-a-clock-ab.png in Resources */,
+				1B9FED452993C464A61C2F46 /* the-three-reboa-aortic-zones.png in Resources */,
+				3BFA6528366A200C00C50CCE /* transcutaneous-pad-placement-anterior-posterior.jpg in Resources */,
+				D5E9CA12EB4F9DE62C5DB299 /* transverse-cricothyroid-ultrasound-view-of-the-anterior-neck.jpg in Resources */,
+				578C777726112897179C9C21 /* true-capture-versus-false-capture-during-pacing.png in Resources */,
+				7DAB1E413183F3BDF40E5FBF /* why-needle-cricothyrotomy-depends-on-the-upper-airway.png in Resources */,
+				10304CB69F2063A2B82918A5 /* why-the-lower-edge-follows-the-rib.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +393,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -345,7 +414,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -358,7 +426,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2SV7C5X7P3;
 				INFOPLIST_FILE = CRISIS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -376,7 +443,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2SV7C5X7P3;
 				INFOPLIST_FILE = CRISIS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -426,7 +492,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -441,7 +506,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;

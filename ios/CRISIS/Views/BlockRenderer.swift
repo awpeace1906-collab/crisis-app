@@ -28,6 +28,9 @@ struct BlockView: View {
             SourcesBlockView(items: block.items ?? [])
         case "html":
             HTMLTextView(html: block.html ?? "")
+                .font(AppFont.serif(15))
+                .foregroundStyle(Theme.text)
+                .lineSpacing(3)
         case "tagline":
             HTMLTextView(html: block.html ?? "")
                 .font(AppFont.serif(13, italic: true))
@@ -60,9 +63,10 @@ private struct StepsBlockView: View {
                         Text(step.title)
                             .font(AppFont.display(14))
                             .foregroundStyle(Theme.text)
-                        HTMLTextView(html: step.html)
+                        HTMLTextView(html: step.html, spacing: 5)
                             .font(.system(size: 13.5))
                             .foregroundStyle(Theme.text2)
+                            .lineSpacing(2)
                     }
                 }
                 .padding(.vertical, 11)
@@ -81,7 +85,10 @@ private struct BoxBlockView: View {
     let color: String
     let html: String
     var body: some View {
-        HTMLTextView(html: html)
+        HTMLTextView(html: html, spacing: 8)
+            .font(AppFont.serif(15))
+            .foregroundStyle(Theme.text)
+            .lineSpacing(3)
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(color == "red" ? Theme.tint("red") : Theme.surface2)
@@ -115,39 +122,94 @@ private struct AlertBlockView: View {
     }
 }
 
+/// Tables are laid out to FIT the screen, never to scroll sideways. The old
+/// layout sized every header and body cell independently inside a horizontal
+/// ScrollView, so columns never lined up with their headers and wide tables
+/// ran off the side of a phone.
+///
+/// - Two columns: a real grid. The first column has a fixed share of the
+///   width, so every row and the header line up, and text wraps.
+/// - Three or more: one card per row. The first cell is the card's title and
+///   every other cell sits under its own column header. That is the only
+///   layout that keeps four columns readable at 375 pt.
 private struct TableBlockView: View {
     let headers: [String]
     let rows: [[String]]
+
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            VStack(alignment: .leading, spacing: 0) {
-                HStack(spacing: 0) {
-                    ForEach(headers, id: \.self) { h in
-                        Text(h.uppercased())
-                            .font(AppFont.mono(10.5, weight: .semibold))
-                            .foregroundStyle(Theme.text)
-                            .padding(.horizontal, 12).padding(.vertical, 8)
-                            .frame(minWidth: 130, alignment: .leading)
+        Group {
+            if max(headers.count, rows.map(\.count).max() ?? 0) >= 3 {
+                stacked
+            } else {
+                twoColumn
+            }
+        }
+        .background(Theme.surface)
+        .clipShape(RoundedRectangle(cornerRadius: 8))
+        .overlay(RoundedRectangle(cornerRadius: 8).stroke(Theme.border))
+    }
+
+    private func header(_ h: String) -> some View {
+        Text(h.uppercased())
+            .font(AppFont.mono(10, weight: .semibold))
+            .foregroundStyle(Theme.text3)
+    }
+
+    private var twoColumn: some View {
+        Grid(alignment: .topLeading, horizontalSpacing: 12, verticalSpacing: 0) {
+            if !headers.isEmpty {
+                GridRow {
+                    ForEach(Array(headers.enumerated()), id: \.offset) { i, h in
+                        header(h)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .gridColumnAlignment(.leading)
                     }
                 }
+                .padding(.vertical, 8)
                 .background(Theme.surface2)
+            }
+            ForEach(Array(rows.enumerated()), id: \.offset) { rIndex, row in
+                if rIndex > 0 || !headers.isEmpty {
+                    Divider().overlay(Theme.border).gridCellUnsizedAxes(.horizontal)
+                }
+                GridRow {
+                    ForEach(Array(row.enumerated()), id: \.offset) { cIndex, cell in
+                        HTMLTextView(html: cell, spacing: 4)
+                            .font(.system(size: 13.5, weight: cIndex == 0 ? .semibold : .regular))
+                            .foregroundStyle(cIndex == 0 ? Theme.text : Theme.text2)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                }
+                .padding(.vertical, 9)
+            }
+        }
+        .padding(.horizontal, 12)
+    }
 
-                ForEach(Array(rows.enumerated()), id: \.offset) { rIndex, row in
-                    HStack(alignment: .top, spacing: 0) {
-                        ForEach(Array(row.enumerated()), id: \.offset) { cIndex, cell in
-                            HTMLTextView(html: cell)
+    private var stacked: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            ForEach(Array(rows.enumerated()), id: \.offset) { rIndex, row in
+                VStack(alignment: .leading, spacing: 7) {
+                    if let first = row.first {
+                        HTMLTextView(html: first, spacing: 4)
+                            .font(.system(size: 14.5, weight: .semibold))
+                            .foregroundStyle(Theme.text)
+                    }
+                    ForEach(Array(row.enumerated().dropFirst()), id: \.offset) { cIndex, cell in
+                        VStack(alignment: .leading, spacing: 2) {
+                            if cIndex < headers.count { header(headers[cIndex]) }
+                            HTMLTextView(html: cell, spacing: 4)
                                 .font(.system(size: 13.5))
-                                .foregroundStyle(cIndex == 0 ? Theme.text : Theme.text2)
-                                .padding(.horizontal, 12).padding(.vertical, 9)
-                                .frame(minWidth: 130, alignment: .leading)
+                                .foregroundStyle(Theme.text2)
                         }
                     }
-                    if rIndex < rows.count - 1 {
-                        Divider().overlay(Theme.border)
-                    }
+                }
+                .padding(.horizontal, 12).padding(.vertical, 10)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                if rIndex < rows.count - 1 {
+                    Divider().overlay(Theme.border)
                 }
             }
-            .overlay(RoundedRectangle(cornerRadius: 8).stroke(Theme.border))
         }
     }
 }
@@ -213,12 +275,14 @@ struct FigureBlockView: View {
             return img
         }
         // 2. The copy shipped in the app bundle. Note the build flattens
-        //    Resources/figures/*.png to the bundle root, so look it up by
+        //    Resources/figures/* to the bundle root, so look it up by
         //    name with no subdirectory — verified against the built .app.
-        if let url = Bundle.main.url(forResource: assetId, withExtension: "png"),
-           let data = try? Data(contentsOf: url),
-           let img = UIImage(data: data) {
-            return img
+        for ext in DataStore.figureExtensions {
+            if let url = Bundle.main.url(forResource: assetId, withExtension: ext),
+               let data = try? Data(contentsOf: url),
+               let img = UIImage(data: data) {
+                return img
+            }
         }
         // 3. Asset-catalog lookup, in case a figure is ever added that way.
         return UIImage(named: assetId)

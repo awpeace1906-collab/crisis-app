@@ -13,7 +13,12 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const CONTENT_DIST = path.resolve(__dirname, '../../../crisis-content/dist');
+// Default assumes the sibling-folder layout (CV Resources/CRISIS/App next to
+// CV Resources/crisis-content). CRISIS_CONTENT_DIST points it anywhere else,
+// e.g. a clone of crisis-content outside iCloud Drive.
+const CONTENT_DIST = process.env.CRISIS_CONTENT_DIST
+  ? path.resolve(process.env.CRISIS_CONTENT_DIST)
+  : path.resolve(__dirname, '../../../crisis-content/dist');
 const WEB_DATA_DIR = path.resolve(__dirname, '../public/data');
 const IOS_DATA_DIR = path.resolve(__dirname, '../ios/CRISIS/Resources/data');
 
@@ -41,7 +46,7 @@ function main() {
 }
 
 /**
- * Rasterized figure PNGs, for iOS only — the web app renders the inline SVG
+ * Rasterized figures (PNG line art, JPEG plates and scans), for iOS only — the web app renders the inline SVG
  * straight out of the JSON and needs no image files at all.
  */
 function syncFigures() {
@@ -54,13 +59,13 @@ function syncFigures() {
   rmSync(dest, { recursive: true, force: true });
   mkdirSync(dest, { recursive: true });
 
-  const pngs = readdirSync(src).filter((f) => f.endsWith('.png'));
+  const pngs = readdirSync(src).filter((f) => /\.(png|jpg)$/.test(f));
   let bytes = 0;
   for (const png of pngs) {
     copyFileSync(path.join(src, png), path.join(dest, png));
     bytes += statSync(path.join(src, png)).size;
   }
-  console.log(`Synced ${pngs.length} figure PNG(s) (${(bytes / 1024).toFixed(0)} KB) -> ios/CRISIS/Resources/figures/`);
+  console.log(`Synced ${pngs.length} figure(s) (${(bytes / 1024).toFixed(0)} KB) -> ios/CRISIS/Resources/figures/`);
 }
 
 main();

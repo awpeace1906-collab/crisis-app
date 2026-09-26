@@ -124,15 +124,21 @@ final class DataStore: ObservableObject {
         entries.first { $0.id == id }
     }
 
-    /// Location of a rasterized figure PNG in the content cache, if it has
-    /// been fetched. Returns nil when the file isn't present, which lets
+    /// Rasterized figures are PNG for line art and JPEG for anything that
+    /// embeds a plate or scan (see crisis-content's rasterize-figures.mjs).
+    static let figureExtensions = ["png", "jpg"]
+
+    /// Location of a rasterized figure in the content cache, if it has been
+    /// fetched. Returns nil when the file isn't present, which lets
     /// FigureBlockView fall back to the app bundle and then to caption-only.
     static func figureURL(_ figureId: String) -> URL? {
         guard !figureId.isEmpty else { return nil }
-        let url = cacheDir
-            .appendingPathComponent("figures", isDirectory: true)
-            .appendingPathComponent("\(figureId).png")
-        return FileManager.default.fileExists(atPath: url.path) ? url : nil
+        let dir = cacheDir.appendingPathComponent("figures", isDirectory: true)
+        for ext in figureExtensions {
+            let url = dir.appendingPathComponent("\(figureId).\(ext)")
+            if FileManager.default.fileExists(atPath: url.path) { return url }
+        }
+        return nil
     }
 
     /// Groups by whatever category fields the items themselves carry — no
