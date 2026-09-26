@@ -285,6 +285,9 @@ struct FigureBlockView: View {
     let assetId: String
     let caption: String
     let alt: String
+    /// Read in `body` so the view re-renders when a content refresh has
+    /// downloaded a new version of this figure.
+    @EnvironmentObject private var store: DataStore
 
     private var image: UIImage? {
         guard !assetId.isEmpty else { return nil }
@@ -309,6 +312,7 @@ struct FigureBlockView: View {
     }
 
     var body: some View {
+        let _ = store.figureRevision
         VStack(alignment: .leading, spacing: 8) {
             if let image {
                 Image(uiImage: image)

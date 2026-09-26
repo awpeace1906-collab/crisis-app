@@ -1,4 +1,5 @@
 import Foundation
+import CryptoKit
 
 @MainActor
 final class DataStore: ObservableObject {
@@ -26,6 +27,12 @@ final class DataStore: ObservableObject {
     @Published private(set) var contentCommit: String?
     @Published private(set) var lastSyncedAt: Date?
     @Published private(set) var isRefreshing = false
+    /// Bumped after figures are refreshed, so views showing a figure re-read it.
+    @Published private(set) var figureRevision = 0
+    /// builtAt of the content currently loaded. A refresh only swaps in CDN
+    /// content that is newer, so the app never goes backwards — e.g. after an
+    /// app update ships a bundle newer than what the CDN cache had.
+    private var loadedBuiltAt = ""
 
     var protocols: [CrisisProtocol] { entries.filter { $0.type == "protocol" } }
     var procedures: [CrisisProtocol] { entries.filter { $0.type == "procedure" } }
@@ -50,6 +57,14 @@ final class DataStore: ObservableObject {
     /// snapshot, so a device that's fetched fresh content before keeps
     /// using it across launches even offline.
     private func loadFromDisk() {
+        // An app update can ship bundled content newer than a previously
+        // cached CDN copy. The cache used to win unconditionally, leaving the
+        // device on older content until (and unless) a refresh succeeded.
+        if let cached = try? DataStore.decodeCached(ContentManifest.self, "manifest"),
+           let bundled = try? DataStore.decodeBundled(ContentManifest.self, "manifest"),
+           bundled.builtAt > cached.builtAt {
+            DataStore.clearCachedContent()
+        }
         do {
             let protocolBundle: ProtocolBundle = try DataStore.decodeLocal("protocols")
             let envenomationBundle: EnvenomationBundle = try DataStore.decodeLocal("envenomation")
@@ -60,10 +75,30 @@ final class DataStore: ObservableObject {
             entries = protocolBundle.protocols + procedureBundle.procedures
             if let manifest: ContentManifest = try? DataStore.decodeLocal("manifest") {
                 contentCommit = manifest.commit
+                loadedBuiltAt = manifest.builtAt
             }
         } catch {
             loadError = "Failed to load bundled data: \(error.localizedDescription)"
         }
+    }
+
+    private static func decodeCached<T: Decodable>(_ type: T.Type, _ name: String) throws -> T {
+        try JSONDecoder().decode(T.self, from: Data(contentsOf: cacheDir.appendingPathComponent("\(name).json")))
+    }
+
+    private static func decodeBundled<T: Decodable>(_ type: T.Type, _ name: String) throws -> T {
+        guard let url = Bundle.main.url(forResource: name, withExtension: "json") else {
+            throw NSError(domain: "DataStore", code: 1)
+        }
+        return try JSONDecoder().decode(T.self, from: Data(contentsOf: url))
+    }
+
+    /// Drops the cached CDN copy (JSON and figures) so the bundle is used.
+    private static func clearCachedContent() {
+        for name in contentFiles {
+            try? FileManager.default.removeItem(at: cacheDir.appendingPathComponent("\(name).json"))
+        }
+        try? FileManager.default.removeItem(at: figuresDir)
     }
 
     private static func decodeLocal<T: Decodable>(_ name: String) throws -> T {
@@ -106,6 +141,15 @@ final class DataStore: ObservableObject {
               let procedureBundle = try? JSONDecoder().decode(ProcedureBundle.self, from: proceduresData),
               let envenomationBundle = try? JSONDecoder().decode(EnvenomationBundle.self, from: envenomationData) else { return }
 
+        // Never go backwards: a CDN copy older than what is loaded (say, a
+        // new app build whose bundle was synced after the last CDN build) is
+        // ignored rather than swapped in.
+        let remoteManifest = fetched["manifest"].flatMap { try? JSONDecoder().decode(ContentManifest.self, from: $0) }
+        // Figures are skipped too: the CDN's would be older than the bundle's.
+        if let remoteManifest, !loadedBuiltAt.isEmpty, remoteManifest.builtAt < loadedBuiltAt {
+            return
+        }
+
         for (name, data) in fetched {
             try? data.write(to: Self.cacheDir.appendingPathComponent("\(name).json"))
         }
@@ -115,9 +159,80 @@ final class DataStore: ObservableObject {
         regions = envenomationBundle.regions.sorted { $0.label < $1.label }
         entries = protocolBundle.protocols + procedureBundle.procedures
         lastSyncedAt = Date()
-        if let manifestData = fetched["manifest"], let manifest = try? JSONDecoder().decode(ContentManifest.self, from: manifestData) {
-            contentCommit = manifest.commit
+        if let remoteManifest {
+            contentCommit = remoteManifest.commit
+            loadedBuiltAt = remoteManifest.builtAt
         }
+        await refreshFigures()
+    }
+
+    // MARK: - Figures
+
+    private static var figuresDir: URL { cacheDir.appendingPathComponent("figures", isDirectory: true) }
+
+    private struct FigureIndex: Codable {
+        struct Entry: Codable { let file: String; let sha1: String }
+        let figures: [String: Entry]
+    }
+
+    /// Rasterized figures used to reach iOS only in an app release — the
+    /// JSON came from the CDN but the images came from the bundle, so a new or
+    /// corrected figure showed caption-only (or stale) until the next build.
+    /// crisis-content now publishes figures-index.json (figureId -> file +
+    /// sha1); this downloads just the figures whose sha1 differs from both the
+    /// cached and the bundled copy, verifies each, and removes cached files
+    /// the index no longer lists. Any failure leaves what is there untouched.
+    private func refreshFigures() async {
+        let base = "\(ContentConfig.cdnBase)/figures/png"
+        guard let url = URL(string: "\(base)/figures-index.json") else { return }
+        var request = URLRequest(url: url)
+        request.cachePolicy = .reloadIgnoringLocalCacheData
+        guard let (data, response) = try? await URLSession.shared.data(for: request),
+              (response as? HTTPURLResponse)?.statusCode == 200,
+              let index = try? JSONDecoder().decode(FigureIndex.self, from: data) else { return }
+
+        let fm = FileManager.default
+        let dir = Self.figuresDir
+        try? fm.createDirectory(at: dir, withIntermediateDirectories: true)
+        let cachedIndexURL = dir.appendingPathComponent("figures-index.json")
+        let cachedIndex = (try? Data(contentsOf: cachedIndexURL))
+            .flatMap { try? JSONDecoder().decode(FigureIndex.self, from: $0) }
+
+        var kept = Set<String>(["figures-index.json"])
+        for (id, entry) in index.figures {
+            let dest = dir.appendingPathComponent(entry.file)
+            // Already have exactly this version cached.
+            if cachedIndex?.figures[id]?.sha1 == entry.sha1, fm.fileExists(atPath: dest.path) {
+                kept.insert(entry.file)
+                continue
+            }
+            // The copy in the app bundle is this version: use it, no download.
+            let name = (entry.file as NSString).deletingPathExtension
+            let ext = (entry.file as NSString).pathExtension
+            if let bundled = Bundle.main.url(forResource: name, withExtension: ext),
+               let bundledData = try? Data(contentsOf: bundled),
+               Self.sha1(bundledData) == entry.sha1 {
+                continue
+            }
+            guard let fileURL = URL(string: "\(base)/\(entry.file)"),
+                  let (fileData, fileResponse) = try? await URLSession.shared.data(from: fileURL),
+                  (fileResponse as? HTTPURLResponse)?.statusCode == 200,
+                  Self.sha1(fileData) == entry.sha1,
+                  (try? fileData.write(to: dest, options: .atomic)) != nil else { continue }
+            kept.insert(entry.file)
+        }
+        // Anything else in the cache is stale — including the other extension
+        // of a figure that switched between PNG and JPEG, which figureURL would
+        // otherwise find first.
+        for file in (try? fm.contentsOfDirectory(atPath: dir.path)) ?? [] where !kept.contains(file) {
+            try? fm.removeItem(at: dir.appendingPathComponent(file))
+        }
+        try? data.write(to: cachedIndexURL, options: .atomic)
+        figureRevision += 1
+    }
+
+    private static func sha1(_ data: Data) -> String {
+        Insecure.SHA1.hash(data: data).map { String(format: "%02x", $0) }.joined()
     }
 
     func entry(_ id: String) -> CrisisProtocol? {
